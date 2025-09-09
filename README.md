@@ -489,6 +489,17 @@ Las epics definidas para el proyecto GigU están orientadas a cubrir las necesid
 | US50 | Historial de Precios de Servicios Similares | Como usuario, deseo ver precios promedios de servicios similares contratados anteriormente para decidir mejor mi tarifa. | **Escenario 01:** Given que estoy creando una propuesta, When hago clic en "See price history", Then debería verse un gráfico o listado con precios de trabajos similares. **Escenario 02**: Given que estoy viendo precios anteriores, When selecciono una categoría distinta, Then debería actualizarse el historial mostrado según la nueva categoría. | EP13 |
 
 ## 3.3. Impact Mapping
+
+Se realizaron los siguientes cuadros en la herramienta Miro, el link original puede ser observado aquí: [LINK Impact Mapping](https://miro.com/app/board/uXjVIE5Pk5Q=/?share_link_id=296495865120)
+
+**Impact Map Segmento 1:** Estudiantes Universitarios Freelancers  
+El impact map de GigU para los estudiantes universitarios freelancers busca proporcionar un sistema robusto con alta posibilidad de personalización para la expresión creativa y profesional de los freelancers con la posibilidad de subir portafolios completos, publicar diversos tipos de servicios y editar o personalizar los perfiles junto a los servicios del freelancer.  
+<img src="imgs/ImpactMap1.png" alt="ImpactMapping" title="ImpactMapping"/>
+
+**Impact Map Segmento 2:** Personas y Emprendimientos que buscan contratar servicios freelance  
+El impact map de GigU para las personas y emprendimientos que buscan contratar servicios freelance busca optimizar el proceso del contratado de freelancers por medio de un sistema de búsqueda completo que permite encontrar al freelancer indicado teniendo en cuenta sus servicios disponibles, la media de costos que propone y su nivel de experiencia.  
+<img src="imgs/ImpactMap2.png" alt="ImpactMapping" title="ImpactMapping"/>
+
 ## 3.4. Product Backlog
 
 # Capítulo IV: Solution Software Design
