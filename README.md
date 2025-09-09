@@ -313,8 +313,19 @@ Características:
   
 # Capítulo II: Requirements Elicitation & Analysis
 ## 2.1. Competidores
+Los competidores que hemos identificado para GigU son las plataformas freelancer, aunque no existen plataformas que estén 100% enfocadas en estudiantes como lo realiza GigU, si presenta productos con mucha similaridad lo que genera una competencia directa.
+
 ### 2.1.1. Análisis competitivo
+<img src="imgs/Competidores1.png" alt="Competidores1" title="Competidores1"/>
+<img src="imgs/Competidores2.png" alt="Competidores2" title="Competidores2"/>
+<img src="imgs/Competidores3.png" alt="Competidores3" title="Competidores3"/>
+<img src="imgs/Competidores4.png" alt="Competidores4" title="Competidores4"/>
+<img src="imgs/Competidores5.png" alt="Competidores5" title="Competidores5"/>
+<img src="imgs/Competidores6.png" alt="Competidores6" title="Competidores6"/>
+
 ### 2.1.2. Estrategias y tácticas frente a competidores
+GigU aplicará una estrategia de diferenciación enfocada en el talento universitario, destacando por su enfoque educativo, precios accesibles y alianzas con instituciones académicas. Frente a los grandes competidores del mercado freelance, GigU se posiciona como una alternativa confiable y de propósito social, conectando clientes con estudiantes verificados. Su valor está en ofrecer soluciones personalizadas, soporte en español y una experiencia centrada en el desarrollo profesional de los jóvenes. Aprovechará las debilidades de otras plataformas como su falta de personalización o enfoque regional, mientras mitiga amenazas como la falta de experiencia estudiantil con garantías y filtros de calidad
+
 ## 2.2. Entrevistas
 ### 2.2.1. Diseño de entrevistas
 ### 2.2.2. Registro de entrevistas
