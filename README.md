@@ -231,9 +231,68 @@ El impacto es considerable tanto en el plano individual como en el social. En el
 
 ### 1.2.2. Lean UX Process
 #### 1.2.2.1. Lean UX Problem Statements
+En el contexto universitario peruano, los estudiantes enfrentan grandes desafíos para insertarse en el mercado laboral mientras cursan sus estudios. La mayoría se enfrenta a condiciones de informalidad o desempleo, lo cual limita su desarrollo profesional desde una etapa temprana.  
+ Hemos observado que no existen plataformas efectivas y especializadas que conectan directamente a estudiantes universitarios con oportunidades laborales formales, flexibles y alineadas a sus carreras, lo cual perpetúa la falta de experiencia profesional al egresar.  
+ ¿Cómo podemos ayudar a los estudiantes universitarios en el Perú a insertarse en el mercado laboral de forma formal, flexible y segura durante su etapa académica, permitiéndoles desarrollar habilidades prácticas, generar ingresos y mejorar su empleabilidad desde los primeros ciclos?
+ 
 #### 1.2.2.2. Lean UX Assumptions
+
+¿Quién es el usuario?  
+ Estudiantes universitarios peruanos, principalmente entre los 17 y 24 años, que buscan generar ingresos y experiencia profesional compatible con sus horarios académicos.
+
+¿Dónde encaja nuestro producto en su vida?  
+Gigu se integra como una herramienta esencial para complementar su formación académica con experiencia laboral real, generar ingresos, y conectarse con profesionales, clientes o mentores, sin sacrificar su rendimiento académico.
+
+¿Qué problemas tiene nuestro producto y cómo se pueden resolver?
+
+* Posible desconfianza hacia la formalidad de las oportunidades.  
+   → Solución: verificación de empleadores/clientes y contratos inteligentes.
+
+* Dificultad para encontrar tareas relacionadas a su carrera.  
+   → Solución: sistema de categorización inteligente por carreras y habilidades.
+
+* Baja retención o uso esporádico.  
+   → Solución: gamificación, badges y recompensas por participación activa.
+
+¿Cómo y cuándo es usado nuestro producto?  
+El producto es usado principalmente durante los tiempos libres o entre clases. Los estudiantes lo utilizan para buscar encargos, postular a proyectos freelance, recibir feedback, y conectarse con mentores o empresas pequeñas que necesitan apoyo técnico o creativo.
+
+¿Qué características son importantes?
+
+* Perfiles profesionales con historial académico y de proyectos.
+
+* Oportunidades freelance o part-time verificadas.
+
+* Inteligencia artificial para emparejar tareas con habilidades.
+
+* Retroalimentación entre estudiantes y clientes.
+
+* Panel de seguimiento de experiencia acumulada.
+
+* Integración con LinkedIn y portafolios.
+
+* Sistema de reputación y badges.
+
+* Chat seguro entre clientes y postulantes.
+
+* Acceso a micro cursos gratuitos recomendados según proyectos.
+
+¿Cómo debe verse nuestro producto y cómo comportarse?  
+ Debe tener un diseño moderno, amigable y responsivo. Su comportamiento debe ser fluido, con tiempos de carga bajos y navegación clara. La experiencia de usuario debe motivar la interacción constante, con notificaciones relevantes y recomendaciones que generen valor real para el usuario.
+
 #### 1.2.2.3. Lean UX Hypothesis Statements
+* Creemos que al conectar estudiantes universitarios con oportunidades laborales compatibles con sus carreras y horarios, lograremos que desarrollen experiencia profesional antes de egresar.  
+   Sabremos que hemos tenido éxito cuando más del 50% de los usuarios activos complete al menos una tarea remunerada en su primer mes.
+
+* Creemos que implementar un sistema de reputación y gamificación aumentará la participación y compromiso con la plataforma.  
+   Sabremos que hemos tenido éxito cuando el tiempo promedio de uso semanal supere los 45 minutos por usuario activo.
+
+* Creemos que ofrecer oportunidades relacionadas a sus habilidades y carrera aumentará su satisfacción y fidelización.  
+   Sabremos que hemos tenido éxito cuando al menos el 70% de los usuarios califique la relevancia de las recomendaciones como “alta” o “muy alta”.
+
 #### 1.2.2.4. Lean UX Canvas
+<img src="imgs/LeanUX_canvas_Freelance.png" alt="LeanUXCanvas" title="LeanUXCanvas"/>
+
 ## 1.3. Segmentos objetivo
 
 # Capítulo II: Requirements Elicitation & Analysis
