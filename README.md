@@ -404,6 +404,15 @@ As-Is Scenario Mapping para Personas y Emprendimientos que buscan contratar serv
 
 # Capítulo III: Requirements Specification
 ## 3.1. To-Be Scenario Mapping
+Se realizaron los siguientes cuadros en la herramienta Miro, el link original puede ser observado aquí: 
+[LINK TO-BE](https://miro.com/app/board/uXjVIFvzuZo=/?share_link_id=785027992176)
+
+* To-Be Scenario Mapping para Estudiantes Universitarios Freelancers
+<img src="imgs/TO-BE1.png" alt="To-Be" title="To-BeScenarioMapping"/>
+
+* To-Be Scenario Mapping para Personas y Emprendimientos que buscan contratar servicios Freelance
+<img src="imgs/TO-BE2.png" alt="To-Be" title="To-BeScenarioMapping"/>
+
 ## 3.2. User Stories
 ## 3.3. Impact Mapping
 ## 3.4. Product Backlog
