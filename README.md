@@ -332,10 +332,51 @@ GigU aplicará una estrategia de diferenciación enfocada en el talento universi
 ### 2.2.3. Análisis de entrevistas
 ## 2.3. Needfinding
 ### 2.3.1. User Personas
+User Persona del Usuario estudiante Freelancer
+<img src="imgs/UserPersona1.png" alt="LeanUXCanvas" title="LeanUXCanvas"/>
+User Persona del Usuario Persona o emprendimiento
+<img src="imgs/UserPersona2.png" alt="LeanUXCanvas" title="LeanUXCanvas"/>
+
 ### 2.3.2. User Task Matrix
+En esta se presenta el user task matrix, herramienta centrada en los segmentos objetivos que nos permitirá identificar las tareas y objetivos claves de los usuarios.
+
+| USER TASK  | Julio Bernal |  | Luisa Fuentes |  |
+| :---- | ----- | :---- | ----- | :---- |
+|  | Frequency | Importance | Frequency | Importance |
+| Publicar servicios y mostrar habilidades | Often | High | Sometimes | High |
+| Cotizar precios fácilmente según tipo de trabajo | Sometimes | High | Often | High |
+| Encontrar oportunidades mediante una app centralizada | Sometimes | High | Often  | Medium |
+| Procesar pagos seguros a través de la plataforma | Always  | High | Always | High |
+| Mostrar historial de trabajos realizados | Sometimes | Medium | Often | Medium |
+| Negociar precios dentro de un rango flexible | Sometimes | Medium | Always | High |
+| Establecer acuerdos y comunicación en la plataforma | Often | High | Always | High |
+
 ### 2.3.3. User Journey Mapping
+User Journey estudiante freelance
+<img src="imgs/JourneyMapping1.png" alt="LeanUXCanvas" title="LeanUXCanvas"/>
+
+User Journey persona o empresa:
+<img src="imgs/JourneyMapping2.png" alt="LeanUXCanvas" title="LeanUXCanvas"/>
+
 ### 2.3.4. Empathy Mapping
+En esta sección se presenta el Empathy Mapping, herramienta para crear un perfil detallado de los user personas y desarrollar una comprensión profunda de su perspectiva y experiencia. Para cada user persona, se incluyen cinco elementos clave: lo que el usuario ve, lo que el usuario escucha, lo que el usuario dice, lo que el usuario hace y lo que el usuario siente. Además, se incluyen los pains y gains identificados en base a las preguntas: ¿Qué le preocupa?
+
+Empathy mapping de estudiante freelance:
+<img src="imgs/Empathymap1.png" alt="LeanUXCanvas" title="LeanUXCanvas"/>
+
+Empathy mapping de persona o empresa:
+<img src="imgs/Empathymap2.png" alt="LeanUXCanvas" title="LeanUXCanvas"/>
+
 ### 2.3.5. As-is Scenario Mapping
+Se realizaron los siguientes cuadros en la herramienta Miro, el link original puede ser observado aquí: 
+[LINK AS-IS](https://miro.com/welcomeonboard/SHJEektJMkxMZFNycTN4eVVtVUJ4a0d5VTk2amQ5dGJLWS9UTGU3Nm10aDQ1SmlCUkI2ZjYwZm93NS9nVGo3K1lLdU1EVmV4blFVK0prZHQ5VjRyR1gxNXJHS2xQcGJUQW1JS1Z3eW9pQVZHOUFLRXJNT2Z3OWU2SHJwT2ttOERBd044SHFHaVlWYWk0d3NxeHNmeG9BPT0hdjE=?share_link_id=926791313064)
+
+As-Is Scenario Mapping para Estudiantes Universitarios Freelancers
+<img src="imgs/AS-IS1.png" alt="LeanUXCanvas" title="LeanUXCanvas"/>
+
+As-Is Scenario Mapping para Personas y Emprendimientos que buscan contratar servicios Freelance
+<img src="imgs/AS-IS2.png" alt="LeanUXCanvas" title="LeanUXCanvas"/>
+
 ## 2.4. Ubiquitous Language
 
 # Capítulo III: Requirements Specification
