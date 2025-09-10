@@ -206,23 +206,23 @@ GigU no solo ayuda a los estudiantes a generar ingresos mientras estudian, sino 
 Además, con GigU, los estudiantes tienen una forma flexible, accesible y efectiva de adquirir experiencia laboral y construir una red de clientes y contactos profesionales desde el inicio de su carrera.
 
 ### 1.1.2. Perfiles de integrantes del equipo
-| Nombre: Oblitas Dávila, Mariano Moisés  |  <img src="imgIntegrantes/Mariano.png" alt="Mariano" title="Foto de Mariano" width="320"/> |
+| Nombre: Oblitas Dávila, Mariano Moisés  |  <img src="imgs/Mariano.png" alt="Mariano" title="Foto de Mariano" width="320"/> |
 | :---- | :---- |
 | **Código:** U202310222 |  |
 | **Carrera:** Ingeniería en software |  |
 | **Habilidades:** Estudiante de 19 años de Ingeniería de Software en la UPC. Me caracterizo por mi creatividad, eficacia y capacidad para resolver problemas de manera racional. Apasionado por la programación y el desarrollo de software, busco constantemente innovar y aprender nuevas tecnologías. |  || Nombre: Cacho Seminario, Diego Alonso |   |
 
-| Nombre: Cacho Seminario, Diego Alonso  | <img src="imgIntegrantes/DiegoC.png" alt="DiegoC" title="Foto de Diego Cacho" /> |
+| Nombre: Cacho Seminario, Diego Alonso  | <img src="imgs/DiegoC.png" alt="DiegoC" title="Foto de Diego Cacho" /> |
 | :---- | :---- |
 | **Código:** U202223990 |  |
 | **Carrera:** Ingeniería de Software |  |
 | **Habilidades:** Soy estudiante de Ingeniería de Software cursando el 7mo ciclo de mi carrera en la UPC y tengo 20 años. Me considero una persona tranquila y diligente, intentó realizar mis tareas y trabajos lo antes posible para evitar contratiempos en un futuro, especialmente si son actividades que consumen mucho tiempo. Como miembro de equipo buscaré ayudar a mis compañeros cuando lo necesiten, realizando además mis entregas lo más temprano posible. Habilidades en C++, C\#, Python, Unity 2D/3D, html/css/js. |  |
 
-| Nombre: Allca Guerrero, Irving  |  <img src="imgIntegrantes/Irving.png" alt="Irving" title="Foto de Irving" width="320"/> |
+| Nombre: Allca Guerrero, Irving  |  <img src="imgs/Irving.jpg" alt="Irving" title="Foto de Irving" width="320"/> |
 | :---- | :---- |
 | **Código:** U202213241 |  |
 | **Carrera:** Ingeniería en software |  |
-| **Habilidades:** Soy estudiante de Ingeniería de Software cursando el 7to ciclo de mi carrera en la UPC y tengo 20 años. Soy una persona proactiva. Me gusta abordar mis tareas de manera eficiente,  especialmente cuando se trata de proyectos largos o complejos. En equipo, me esfuerzo por colaborar y apoyar a mis compañeros en todo lo que pueda. Tengo experiencia en programación con C + +, Java, Python, así como en el diseño web con html, CSS y JavaScript. |  || Nombre: Allca Guerrero, Irving |   |
+| **Habilidades:** Mi nombre es Irving Allca Guerrero, tengo 20 años y actualmente estudio Ingeniería de Software en la UPC, cursando el sexto ciclo de la carrera. Me considero una persona proactiva, con un enfoque orientado a la eficiencia, especialmente al enfrentar proyectos extensos o de alta complejidad. Disfruto trabajar en equipo y siempre busco colaborar y brindar apoyo a mis compañeros. |  || Nombre: Allca Guerrero, Irving |   |
 
 ## 1.2. Solution Profile
 ### 1.2.1. Antecedentes y problemática
