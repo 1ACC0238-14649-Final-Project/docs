@@ -594,83 +594,72 @@ Se utilizó la escala Fibonacci para la estimación de los Story Points. En tota
 ### 2.5.3. Software Architecture
 #### 2.5.3.1. Software Architecture Context Level Diagrams
 **Objetivo:**  
-Descomponer el sistema GigU en sus contenedores tecnológicos principales y mostrar sus interacciones.
+Mostrar el sistema GigU como un sistema central rodeado por sus actores (usuarios) y sistemas externos con los que interactúa.
 
- ![DiagramaContenedores](imgs/structurizr-102394-Container-001.png)
+ ![DiagramaContexto](imgs/context-diagram.png)
 
 **Contenedores:**  
-- **Landing Page:** Página web estática para presentación y redireccionamiento.  
-- **Aplicación Móvil (Android - Flutter):** Interfaz principal para interacción de usuarios, desarrollada en Android Studio con Flutter.  
-- **API RESTful:** Backend en ASP.NET Core que maneja la lógica y acceso a datos.  
-- **Base de Datos:** MySQL que almacena toda la información del sistema.
+- **Landing Page:** Página web estática para presentación y redireccionamiento (al Play Store o App links).  
+- **Aplicación Móvil (Android - Flutter):** Interfaz principal para interacción de usuarios, desarrollada en Android Studio con Flutter. Incluye almacenamiento local (SQLite/Shared Preferences) y acceso a recursos del dispositivo (cámara, ubicación, etc.).  
+- **API RESTful:** Backend en ASP.NET Core que maneja la lógica de negocio, integra con servicios externos y persiste información.  
+- **Base de Datos:** MySQL que almacena toda la información del sistema.  
 
 **Relaciones:**  
 - Los usuarios interactúan con la Landing Page y principalmente con la Aplicación Móvil.  
 - La Aplicación Móvil se comunica con el API RESTful para todas las operaciones.  
 - El API RESTful accede a la Base de Datos para lectura y escritura.  
-- El API también integra servicios externos para validaciones y notificaciones.
+- El API también integra servicios externos para validaciones, autenticación y notificaciones.
 
-**Componentes Utilizados**
- ![DiagramaContenedores](imgs/structurizr-102394-Container-001-key.png)
-
----
+**Componentes Utilizados**  
+ ![DiagramaContextKey](imgs/context-diagram-key.png)
 
 #### 2.5.3.2. Software Architecture Container Level Diagrams
 **Objetivo:**  
-Detallar los componentes internos del API RESTful para definir responsabilidades y dependencias.
+Descomponer el sistema en contenedores tecnológicos y mostrar sus interacciones principales.
 
-   ![DiagramaComponentes](imgs/structurizr-102394-Container-001.png)
+   ![DiagramaContenedores](imgs/container-diagram.png)
 
-**Componentes:**  
-- Notificaciones  
-- Chat  
-- Gestión de servicios  
-- Contratos  
-- Calificaciones y comentarios  
-- Calculadora  
-- Autenticación y registro  
-- Perfiles  
-- Shared Kernel
+**Contenedores:**  
+- **Landing Page:** Servida desde CDN para distribución global y alta disponibilidad.  
+- **Aplicación Móvil (Android - Flutter):** Aplicación cliente instalada en dispositivos, conectada a la API vía HTTPS.  
+- **API RESTful (ASP.NET Core):** Desplegada en contenedores (Docker/Kubernetes).  
+- **Base de Datos MySQL:** Servicio gestionado con réplicas y backups.  
+- **Blob Storage:** Para almacenar imágenes, documentos y archivos de usuarios.  
 
 **Relaciones:**  
-- Todos los componentes interactúan con la Base de Datos para persistencia.  
-- Los componentes *Perfiles* y *Autenticación y registro* consumen servicios externos (Factiliza, RENIEC, Google, SendGrid).  
-- La Aplicación Móvil llama al componente *Autenticación y registro* para la gestión de usuarios.
+- La Aplicación Móvil consume los endpoints de la API a través de HTTPS.  
+- La API interactúa con la Base de Datos, Blob Storage y Servicios Externos.  
+- La Landing Page sirve como punto de entrada y redirección.  
 
-**Componentes Utilizados**
- ![DiagramaContenedores](imgs/structurizr-102394-Container-001-key.png)
-
----
+**Componentes Utilizados**  
+ ![DiagramaContenedoresKey](imgs/container-diagram-key.png)
 
 #### 2.5.3.3. Software Architecture Deployment Diagrams
 **Objetivo:**  
 Representar la distribución física del sistema, mostrando cómo los diferentes contenedores de software (Landing Page, Aplicación Móvil, API RESTful y Base de Datos) se despliegan en la infraestructura y cómo se comunican entre sí, incluyendo servicios externos.
 
-   ![DiagramaDeployment](imgs/deployment-diagram-plantuml.png)
+   ![DiagramaDeployment](imgs/deployment-diagram.png)
 
 **Nodos principales:**  
-- **Internet**: Punto de entrada de los usuarios hacia la aplicación.  
-- **CDN / Static Hosting (Landing Page)**: Distribución global de la página de aterrizaje y recursos estáticos.  
-- **Aplicación Móvil (Android - Flutter):** Aplicación instalada en el dispositivo del usuario que se conecta a la API vía Internet.  
-- **Load Balancer / Reverse Proxy**: Encargado de balancear tráfico, gestionar certificados TLS y aplicar reglas de seguridad (WAF).  
-- **API RESTful (ASP.NET Core en contenedores Docker/Kubernetes)**: Lógica central del sistema desplegada en clúster escalable.  
-- **Base de Datos MySQL**: Persistencia de la información, con réplicas y respaldos automáticos.  
-- **Blob Storage**: Almacenamiento de archivos (imágenes, documentos).  
-- **Servicios externos**: RENIEC, Factiliza, SendGrid y Google para validaciones, autenticación y notificaciones.
+- **Android Device (App Flutter):** Aplicación instalada en el dispositivo del usuario, con almacenamiento local y acceso a recursos del teléfono.  
+- **CDN / Static Hosting (Landing Page):** Distribución global de la página de aterrizaje y recursos estáticos.  
+- **Load Balancer / Reverse Proxy (WAF):** Encargado de balancear tráfico, gestionar certificados TLS y aplicar reglas de seguridad.  
+- **API RESTful (ASP.NET Core en contenedores Docker/Kubernetes):** Lógica central desplegada en clúster escalable con soporte a workers de segundo plano.  
+- **Base de Datos MySQL:** Persistencia de información con réplicas y respaldos automáticos.  
+- **Blob Storage:** Almacenamiento de archivos (imágenes, documentos).  
 
 **Relaciones:**  
+- La Aplicación Móvil se conecta al API a través del Load Balancer / Reverse Proxy mediante HTTPS.  
+- El API se comunica con la Base de Datos, el Blob Storage y con los Servicios Externos usando conexiones seguras (TLS).  
 - Los usuarios acceden a la Landing Page vía HTTPS.  
-- La Aplicación Móvil consume los endpoints de la API a través del Load Balancer / Reverse Proxy.  
-- La API se comunica con la Base de Datos (MySQL), el Blob Storage y con servicios externos vía conexiones seguras (HTTPS/TLS).  
-- Los servicios externos proveen validaciones de identidad, facturación, autenticación social y envío de correos.  
 
 **Decisiones tecnológicas:**  
 - **Aplicación Móvil (Android - Flutter):** multiplataforma con un único código base que permite despliegue en Android y potencial extensión a iOS.  
-- **Contenedores (Docker/Kubernetes):** para despliegue portable y escalable de la API.  
+- **Contenedores (Docker/Kubernetes):** despliegue portable y escalable del API.  
 - **Azure Database for MySQL:** servicio gestionado con backups automáticos y alta disponibilidad.  
 - **Azure Storage:** almacenamiento masivo de archivos.  
 - **CDN:** optimización de tiempos de carga y protección frente a ataques.  
-- **Seguridad:** comunicación cifrada TLS, gestión de secretos en KeyVault, y firewall de aplicaciones web.
+- **Seguridad:** comunicación cifrada TLS, gestión de secretos en KeyVault y firewall de aplicaciones web.
 
 ## 2.6. Tactical-Level Domain-Driven Design
 ### 2.6.1. Bounded Context 1
