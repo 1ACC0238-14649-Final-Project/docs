@@ -619,7 +619,7 @@ Descomponer el sistema GigU en sus contenedores tecnológicos principales y most
 **Objetivo:**  
 Detallar los componentes internos del API RESTful para definir responsabilidades y dependencias.
 
-   ![DiagramaComponentes](imgs/structurizr-102394-Component-001-001.png)
+   ![DiagramaComponentes](imgs/structurizr-102394-Container-001.png)
 
 **Componentes:**  
 - Notificaciones  
@@ -638,7 +638,7 @@ Detallar los componentes internos del API RESTful para definir responsabilidades
 - La Aplicación Móvil llama al componente *Autenticación y registro* para la gestión de usuarios.
 
 **Componentes Utilizados**
- ![DiagramaContenedores](imgs/structurizr-102394-Component-001-key.png)
+ ![DiagramaContenedores](imgs/structurizr-102394-Container-001-key.png)
 
 ---
 
