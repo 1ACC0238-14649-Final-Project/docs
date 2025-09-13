@@ -614,6 +614,30 @@ Descomponer el sistema GigU en sus contenedores tecnológicos principales y most
  ![DiagramaContenedores](imgs/structurizr-102394-Container-001-key.png)
 
 #### 2.5.3.2. Software Architecture Container Level Diagrams
+**Objetivo:**  
+Detallar los componentes internos del API RESTful para definir responsabilidades y dependencias.
+
+   ![DiagramaComponentes](imgs/structurizr-102394-Component-001-001.png)
+**Componentes:**  
+- Notificaciones  
+- Chat  
+- Gestión de servicios  
+- Contratos  
+- Calificaciones y comentarios  
+- Calculadora  
+- Autenticación y registro  
+- Perfiles  
+- Shared Kernel
+
+**Relaciones:**  
+- Todos los componentes interactúan con la Base de Datos para persistencia.  
+- Los componentes *Perfiles* y *Autenticación y registro* consumen servicios externos (Factiliza, RENIEC, Google, SendGrid).  
+- La Landing Page y Aplicación Web llaman al componente *Autenticación y registro* para la gestión de usuarios.
+
+
+  **Componentes Utilizados**
+ ![DiagramaContenedores](imgs/structurizr-102394-Component-001-key.png)
+
 #### 2.5.3.3. Software Architecture Deployment Diagrams
 ## 2.6. Tactical-Level Domain-Driven Design
 ### 2.6.1. Bounded Context 1
