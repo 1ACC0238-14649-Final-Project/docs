@@ -593,6 +593,26 @@ Se utilizó la escala Fibonacci para la estimación de los Story Points. En tota
 ### 2.5.2. Context Mapping
 ### 2.5.3. Software Architecture
 #### 2.5.3.1. Software Architecture Context Level Diagrams
+**Objetivo:**  
+Descomponer el sistema GigU en sus contenedores tecnológicos principales y mostrar sus interacciones.
+
+ ![DiagramaContenedores](imgs/structurizr-102394-Container-001.png)
+
+**Contenedores:**  
+- **Landing Page:** Página web estática para presentación y redireccionamiento.  
+- **Aplicación Web:** Frontend en Vue.js para interacción de usuarios.  
+- **API RESTful:** Backend en ASP.NET Core que maneja la lógica y acceso a datos.  
+- **Base de Datos:** MySQL que almacena toda la información del sistema.
+
+**Relaciones:**  
+- Los usuarios interactúan con la Landing Page y la Aplicación Web.  
+- La Aplicación Web se comunica con el API RESTful para operaciones.  
+- El API RESTful accede a la Base de Datos para lectura y escritura.  
+- El API también integra servicios externos para validaciones y notificaciones.
+
+**Componentes Utilizados**
+ ![DiagramaContenedores](imgs/structurizr-102394-Container-001-key.png)
+
 #### 2.5.3.2. Software Architecture Container Level Diagrams
 #### 2.5.3.3. Software Architecture Deployment Diagrams
 ## 2.6. Tactical-Level Domain-Driven Design
