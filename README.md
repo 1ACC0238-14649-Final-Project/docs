@@ -1054,13 +1054,84 @@ Se adoptaron una serie de convenciones específicas para cada tecnología utiliz
 ## 4.2. Landing Page & Mobile Application Implementation
 ### 4.2.1. Sprint 1
 #### 4.2.1.1. Sprint Planning 1
+
+*  Sprint Details
+
+| Field | Value |
+| :---: | :---: |
+| Sprint Number | Sprint 1 |
+| Date | 13 de Septiembre de 2025 |
+| Time | 17:20 PM |
+| Location | Modalidad remota |
+| Prepared By | GigU |
+| Attendees | Todos los miembros del equipo |
+
+* Sprint Overview
+
+**Previous Sprint Summary:**  
+Para el Sprint 0, el equipo organizó reuniones para coordinar el tema a elegir y recolectar la información necesaria para la documentación del trabajo del curso.
+
+**Sprint Goal:**  
+Para el Sprint 1, buscamos desarrollar y desplegar una landing page funcional que cumpla con todas las historias de usuario especificadas para la interacción inicial con clientes y presentación del producto.
+
+**Technical Specifications:**
+
+| Aspect | Details |
+| :---: | :---: |
+| Duration | 25 de Agosto \- 20 de Septiembre de 2025 |
+| Team Capacity | 120 horas totales |
+| Tech Stack |  |
+| Velocity | \# |
+| Total Story Points | \# |
+
 #### 4.2.1.2. Sprint Backlog 1
+**Objetivo:** Desarrollar y desplegar una landing page funcional que cumpla con todas las historias de usuario especificadas para la interacción inicial con clientes y presentación del producto.
+
+**Alcance:**
+
+* Implementar barra de navegación responsive  
+* Crear componentes de llamada a la acción (CTA)  
+* Desarrollar sección de beneficios del servicio  
+* Construir tarjetas interactivas de servicios  
+* Implementar funcionalidad de preguntas frecuentes (FAQ)  
+* Colocar los nuevos puntos a la documentación del trabajo
+
+**Duración:** 25 de Agosto \- 20 de Septiembre de 2025
+
+**Capacidad de equipo:** 120 horas totales \- 5 integrantes
+
+**Requisitos técnicos:** Android Studio, JetPack Compose, Figma
+
+| Task ID | User Story | Description | Assigned To | Estimated Hours | Status | Epic |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| T01 | US01 | Implementar barra de navegación responsive | Mariano Moises Oblitas Davila | 5 | Completed | EP01 |
+| T02 | US01 | Diseñar componentes de navegación en Figma	 | Diego Alonso Cacho Seminario | 3 | Completed | EP01 |
+| T03 | US02 | Desarrollar botones CTA principales | Carlos Fredy Fernández Camayo | 4 | Completed | EP02 |
+| T04 | US08 | Crear contenido de sección de beneficios | Irving Washington Allcca Guerrero | 2 | Completed | EP04 |
+| T05 | US08 | Implementar interfaz de tarjetas de beneficios | Adrian Ricardo Donayre Alvarez | 6 | Completed | EP04 |
+| T06 | US11 | Diseñar tarjetas de servicios | Mariano Moises Oblitas Davila | 4 | Completed | EP04 |
+| T07 | US11 | Programar interactividad de tarjetas | Diego Alonso Cacho Seminario | 5 | Completed | EP04 |
+| T08 | US12 | Investigar y compilar preguntas frecuentes	 | Irving Washington Allcca Guerrero | 3 | Completed | EP05 |
+| T09 | US12 | Implementar acordeón de FAQ | Irving Washington Allcca Guerrero | 5 | Completed | EP05 |
+
 #### 4.2.1.3. Development Evidence for Sprint Review
+En el alcance del sprint 1 se ha desarrollado el landing page como primera instancia, por lo que no se evidencia testeo de servicios o interacciones.
+
 #### 4.2.1.4. Testing Suite Evidence for Sprint Review
+En la presente entrega del Sprint 1 no se incluye esta sección debido a que se realizó principalmente la Landing Page. Este se consiguió realizar correctamente teniendo en cuenta las necesidades de nuestros usuarios.
+
 #### 4.2.1.5. Execution Evidence for Sprint Review
+Se evidencia el avance del Primer Sprint por medio del siguiente video acerca de la Landing Page: \*link landing page\*
+
 #### 4.2.1.6. Services Documentation Evidence for Sprint Review
+En el primer Sprint solamente se ha desarrollado la Landing Page por lo que no se ha hecho uso de servicios web.
+
 #### 4.2.1.7. Software Deployment Evidence for Sprint Review
+\*link landing page\*
+
 #### 4.2.1.8. Team Collaboration Insights during Sprint
+\*img git flow\*
+
 ### 4.2.2. Sprint 2
 #### 4.2.2.1. Sprint Planning 2
 #### 4.2.2.2. Sprint Backlog 2
