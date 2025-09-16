@@ -111,6 +111,30 @@ ABET – EAC - Student Outcome 7: La capacidad de adquirir y aplicar nuevos cono
 
         * [2.6.1.6.1. Bounded Context Domain Layer Class Diagrams](#26161-bounded-context-domain-layer-class-diagrams)
         * [2.6.1.6.2. Bounded Context Database Design Diagram](#26162-bounded-context-database-design-diagram)
+  
+    * [2.6.2. Bounded Context 2](#262-bounded-context-2)
+
+      * [2.6.2.1. Domain Layer](#2621-domain-layer)
+      * [2.6.2.2. Interface Layer](#2622-interface-layer)
+      * [2.6.2.3. Application Layer](#2623-application-layer)
+      * [2.6.2.4. Infrastructure Layer](#2624-infrastructure-layer)
+      * [2.6.2.5. Bounded Context Software Architecture Component Level Diagrams](#2625-bounded-context-software-architecture-component-level-diagrams)
+      * [2.6.2.6. Bounded Context Software Architecture Code Level Diagrams](#2626-bounded-context-software-architecture-code-level-diagrams)
+
+        * [2.6.2.6.1. Bounded Context Domain Layer Class Diagrams](#26261-bounded-context-domain-layer-class-diagrams)
+        * [2.6.2.6.2. Bounded Context Database Design Diagram](#26262-bounded-context-database-design-diagram)  
+
+    * [2.6.3. Bounded Context 3](#263-bounded-context-3)
+
+      * [2.6.3.1. Domain Layer](#2631-domain-layer)
+      * [2.6.3.2. Interface Layer](#2632-interface-layer)
+      * [2.6.3.3. Application Layer](#2633-application-layer)
+      * [2.6.3.4. Infrastructure Layer](#2634-infrastructure-layer)
+      * [2.6.3.5. Bounded Context Software Architecture Component Level Diagrams](#2635-bounded-context-software-architecture-component-level-diagrams)
+      * [2.6.3.6. Bounded Context Software Architecture Code Level Diagrams](#2636-bounded-context-software-architecture-code-level-diagrams)
+
+        * [2.6.3.6.1. Bounded Context Domain Layer Class Diagrams](#26361-bounded-context-domain-layer-class-diagrams)
+        * [2.6.3.6.2. Bounded Context Database Design Diagram](#26362-bounded-context-database-design-diagram)  
 
 * [Capítulo III: Solution UI/UX Design](#capítulo-iii-solution-uiux-design)
 
@@ -757,6 +781,154 @@ Representar la distribución física del sistema, mostrando cómo los diferentes
 #### 2.6.1.6. Bounded Context Software Architecture Code Level Diagrams
 ##### 2.6.1.6.1. Bounded Context Domain Layer Class Diagrams
 ##### 2.6.1.6.2. Bounded Context Database Design Diagram
+
+### 2.6.2. Bounded Context 2
+#### 2.6.2.1. Domain Layer
+#### 2.6.2.2. Interface Layer
+#### 2.6.2.3. Application Layer
+#### 2.6.2.4. Infrastructure Layer
+#### 2.6.2.5. Bounded Context Software Architecture Component Level Diagrams
+#### 2.6.2.6. Bounded Context Software Architecture Code Level Diagrams
+##### 2.6.2.6.1. Bounded Context Domain Layer Class Diagrams
+##### 2.6.2.6.2. Bounded Context Database Design Diagram
+
+### 2.6.3. Bounded Context 3
+Este bounded context permite a los usuarios de la plataforma intercambiar mensajes relacionados a un Pull o Gig contratado. Los chats facilitan la negociación y comunicación en tiempo real entre estudiantes freelancers y clientes, soportando texto y archivos adjuntos.
+
+#### 2.6.3.1. Domain Layer
+El Domain Layer contiene la lógica de negocio pura y las entidades principales relacionadas con la mensajería entre usuarios.
+
+**Aggregate 1: Chat**
+
+| Nombre | Categoría | Descripción |
+| :---: | :---: | :---: |
+| Chat Entity | Entidad | Representa un mensaje enviado dentro de un chat asociado a un Pull/Order. |
+
+**Attributes**
+
+| Nombre | Tipo de dato | Visibilidad | Descripción |
+| :---: | :---: | :---: | :---: |
+| id | int | Private | Identificador único del mensaje (heredado de BaseEntity). |
+| senderId | int | Public | Identificador del usuario remitente. |
+| receiverId | int | Public | Identificador del usuario destinatario. |
+| content | String | Public | Contenido del mensaje. |
+| sentAt | DateTime | Public | Marca de tiempo del envío. |
+| isRead | bool | Public | Estado de lectura del mensaje. |
+| createdDate | DateTime | Public | Fecha de creación del mensaje. |
+| modifiedDate | DateTIme? | Public | Fecha de modificación (opcional). |
+
+**Methods**
+
+| Nombre | Tipo de retorno | Visibilidad | Descripción |
+| :---: | :---: | :---: | :---: |
+| Chat(...) (constructor) | Chat | Public | Crea un nuevo mensaje inicializando sender, receiver, contenido, fecha y estado de lectura. |
+| markAsRead() | Void | Public | Permite cambiar el estado de IsRead a true cuando el receptor visualiza el mensaje. |
+| updateContent(string newContent) | Void | Public | (Opcional) Permite actualizar el contenido de un mensaje antes de ser leído. |
+
+#### 2.6.3.2. Interface Layer
+El Interface Layer es responsable de la recepción de peticiones externas (REST), validación de entradas y conversión de datos para delegar al Application Layer.
+
+**Controller: ChatController**
+
+| Nombre | Categoría | Descripción |
+| :---: | :---: | :---: |
+| ChatController | Controller | Controlador que gestiona operaciones de creación y consulta de mensajes de chat. |
+
+**Attributes**
+
+| Nombre | Tipo de dato | Visibilidad | Descripción |
+| :---: | :---: | :---: | :---: |
+| chatService | ChatApplicationService | Private | Servicio de aplicación encargado de la gestión de mensajes. |
+
+**Endpoints**
+
+| Ruta | Método | Descripción |
+| :---: | :---: | :---: |
+| /api/v1/chat | POST | Permite a un usuario enviar un nuevo mensaje de chat. |
+| /api/v1/chat/{userId} | GET | Devuelve todos los mensajes asociados a un usuario (como remitente o receptor). |
+| /api/v1/chat/{id} | GET | Devuelve el detalle de un mensaje específico (por id). |
+
+**DTOs**  
+**Request DTOs**
+
+| Nombre | Descripción |
+| :---: | :---: |
+| CreateChatRequestDto | Contiene los campos requeridos para registrar un nuevo mensaje (senderId, receiverId, content). |
+
+**Response DTOs**
+
+| Nombre | Descripción |
+| :---: | :---: |
+| ChatResponseDto | Representa un mensaje de chat con todos sus campos (equivalente a tu ChatResource). |
+| ListChatsResponseDto | Contiene una lista de mensajes asociados a un usuario (completa o paginada). |
+
+#### 2.6.3.3. Application Layer
+Esta capa coordina la lógica de negocio entre las entidades del dominio, la infraestructura y los casos de uso externos.
+
+**Service: ChatApplicationService**
+
+| Nombre | Categoría | Descripción |
+| :---: | :---: | :---: |
+| ChatApplicationService | Service | Orquesta la creación y recuperación de mensajes desde la interfaz. |
+
+**Dependencies**
+
+| Nombre | Tipo de objeto | Visibilidad | Descripción |
+| :---: | :---: | :---: | :---: |
+| chatSchatRepositoryervice | ChatRepository | Private | Accede a la base de datos de mensajes de chat. |
+| userRepository | UserRepository | Private | Permite validar la existencia de usuarios antes de enviar mensajes. |
+| unitOfWork | UnitOfWork | Private | Gestiona la confirmación de transacciones. |
+
+**Methods**
+
+| Nombre | Tipo de retorno | Visibilidad | Descripción |
+| :---: | :---: | :---: | :---: |
+| createChat(...) | UUID / ChatResponseDto | Public | Crea un nuevo mensaje con los datos del remitente, receptor y contenido. |
+| listChatsByUserId(userId) | List\<ChatResponseDto\> | Public | Retorna todos los mensajes en los que participa un usuario (como remitente o receptor). |
+| getChatById(id) | ChatResponseDto | Public | Obtiene los detalles de un mensaje específico por su ID. |
+
+#### 2.6.3.4. Infrastructure Layer
+Incluye las implementaciones de acceso a la persistencia y servicios auxiliares utilizados por la capa de aplicación.
+
+**ChatRepositoryImpl**
+
+| Nombre | Categoría | Implementa | Descripción |
+| :---: | :---: | :---: | :---: |
+| ChatRepositoryImpl | Repository | ChatRepository | Implementación concreta para almacenar y consultar mensajes de chat. |
+
+**Funcionalidades clave**  
+**Crear mensajes de chat**
+
+* Persisten nuevos mensajes enviados por usuarios.
+
+* Asigna automáticamente fecha y estado inicial (IsRead \= false).
+
+**Buscar mensajes por ID**
+
+* Recupera un mensaje específico a partir de su identificador único (id).
+
+**Buscar mensajes por usuario**
+
+* Devuelve todos los mensajes en los que participa un usuario (como senderId o receiverId).
+
+**Listar mensajes por conversación**
+
+* Filtra mensajes entre dos usuarios específicos para reconstruir el historial de conversación.
+
+**Actualizar estado de lectura**
+
+* Marca mensajes como leídos (IsRead \= true) cuando el receptor los visualiza.
+
+#### 2.6.3.5. Bounded Context Software Architecture Component Level Diagrams
+![GigU-ChatBoundedContextContainerLevelDiagram](imgs/GigU-ChatBoundedContextContainerLevelDiagram.png)
+![GigU-ChatBoundedContextComponentLevelDiagram](imgs/GigU-ChatBoundedContextComponentLevelDiagram.png)
+
+#### 2.6.3.6. Bounded Context Software Architecture Code Level Diagrams
+##### 2.6.3.6.1. Bounded Context Domain Layer Class Diagrams
+![ChatDomainLayer](imgs/ChatDomainLayer.png)
+
+##### 2.6.3.6.2. Bounded Context Database Design Diagram
+![DatabaseGigU](imgs/DatabaseGigU.png)
 
 # Capítulo III: Solution UI/UX Design
 ## 3.1. Product design
