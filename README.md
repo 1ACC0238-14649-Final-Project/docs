@@ -953,9 +953,104 @@ Incluye las implementaciones de acceso a la persistencia y servicios auxiliares 
 # Capítulo IV: Product Implementation & Validation
 ## 4.1. Software Configuration Management
 ### 4.1.1. Software Development Environment Configuration
+Se detallan las herramientas de software utilizadas durante el desarrollo de nuestro proyecto.
+
+* Gestión de Proyectos  
+- **WhatsApp**: [https://www.whatsapp.com](https://www.whatsapp.com)   
+  Utilizamos WhatsApp como canal principal de comunicación para coordinar tareas, compartir ideas y brindar soporte entre los miembros del equipo durante todo el proceso de desarrollo.
+
+* Diseño UX/UI del Producto  
+- **Miro:** [https://miro.com/es/](https://miro.com/es/)   
+  Se empleó Miro para la elaboración del Lean UX Canvas y To-Be Scenario Mapping, el cual nos ayudó a visualizar los aspectos estratégicos del diseño centrado en el usuario.  
+    
+- **Uxpressia:** [https://uxpressia.com/](https://uxpressia.com/)   
+  Con esta herramienta desarrollamos las User Personas, Mapas de Empatía y Journey Maps, facilitando así el entendimiento profundo de nuestros usuarios.  
+    
+- **Figma:** [https://www.figma.com/](https://www.figma.com/)   
+  Figma fue nuestra herramienta principal para crear wireframes, wireflows, prototipos y maquetas de la landing page y las aplicaciones web.
+
+* Desarrollo de Software  
+- **Landing Page**:  
+  La página principal del proyecto fue desarrollada utilizando tecnologías estándar como HTML5, CSS y JavaScript.
+
+* Pruebas de Software  
+- **Navegador**:  
+  Las pruebas del sitio web y la aplicación se llevaron a cabo mediante las herramientas de desarrollo integradas en los navegadores Google Chrome, Brave, Opera y Edge.
+
+* Entornos de Desarrollo (IDE)  
+- **Android Studio:** [https://developer.android.com/?hl=es-419](https://developer.android.com/?hl=es-419)   
+  Android Studio fue nuestro IDE utilizado para el desarrollo de nuestra aplicación móvil.
+
+* Despliegue de Software  
+- **GitHub Pages**: [https://pages.github.com/](https://pages.github.com/)   
+  Nuestra landing page fue desplegada a través de GitHub Pages, lo que permitió una publicación automatizada desde el repositorio.
+
+* Documentación de Software  
+- **Google Docs**: [https://docs.google.com/document](https://docs.google.com/document)   
+  Google Docs nos permitió hacer seguimiento de tareas y compartir información relevante entre los integrantes del equipo.  
+    
+- **GitHub**: [https://github.com/](https://github.com/)   
+  GitHub fue clave para la documentación colaborativa del proyecto, permitiendo la trazabilidad de cambios mediante commits y GitFlow.
+
 ### 4.1.2. Source Code Management
+Establecimos un repositorio en GitHub para lograr un avance centralizado de nuestro proyecto, la estructura del repositorio fue la siguiente.
+
+* Organización  
+- **Repositorio en GitHub**: [https://github.com/1ACC0238-14649-Final-Project](https://github.com/1ACC0238-14649-Final-Project)   
+    
+- **Landing Page:** 
+
+* Ramas Principales  
+- **Rama main**:  
+  Contiene la versión estable del proyecto, lista para ser puesta en producción.  
+    
+- **Rama docs/**:  
+  Rama destinada a la integración de nuevas funcionalidades antes de ser lanzadas.
+
 ### 4.1.3. Source Code Style Guide & Conventions
+Se adoptaron una serie de convenciones específicas para cada tecnología utilizada en el proyecto con el objetivo de mantener legibilidad, coherencia y calidad del código.
+
+* Landing Page  
+- HTML  
+- Tipo de Documento: Cada archivo HTML inicia con \<\!DOCTYPE html\> para asegurar su correcta interpretación por los navegadores.  
+    
+- Etiquetas en Minúsculas: Todas las etiquetas y atributos se escriben en minúscula.  
+    
+- Cierre Correcto de Etiquetas: Nos aseguramos de cerrar todas las etiquetas, incluso las opcionales, para mantener una estructura clara y evitar errores.  
+    
+- Atributos entre Comillas: Los valores de los atributos siempre están entre comillas dobles.  
+    
+- Imágenes Accesibles: Incluimos los atributos alt, width y height en las imágenes, lo cual mejora tanto la accesibilidad como el diseño adaptable.  
+    
+- Formato Limpio en Atributos: No se colocan espacios alrededor del signo igual, por ejemplo.  
+    
+- Uso del Elemento \<title\>: No se omite el título de la página, ya que es fundamental para el SEO y la accesibilidad.  
+    
+- Idioma y Codificación: Se declara el idioma con el atributo lang.  
+    
+- CSS  
+- **Recursos Seguros**: Todos los recursos externos, como fuentes y multimedia, se cargan mediante HTTPS.  
+    
+- **Nombres en minúsculas**: Los selectores, propiedades y valores se escriben en minúsculas para mantener un estilo uniforme.  
+    
+- **Nombres de Clase Descriptivos**: Las clases CSS reflejan su función usando palabras clave separadas por guiones.  
+    
+- **Propiedades Abreviadas**: Se aplican propiedades abreviadas siempre que sea posible para optimizar el tamaño del código.  
+    
+- **Orden Alfabético**: Las propiedades CSS dentro de un bloque se ordenan alfabéticamente para facilitar la lectura y mantenimiento.  
+    
+- **Uso Consistente del Punto y Coma**: Cada línea termina con un punto y coma para evitar errores de interpretación.  
+    
+- **Espaciado Uniforme**: Se mantiene un espacio después de los dos puntos y dentro de las llaves de los bloques.  
+    
+- **Comillas en Atributos**: Los valores como fuentes están entre comillas simples.
+
 ### 4.1.4. Software Deployment Configuration
+
+
+
+
+
 ## 4.2. Landing Page & Mobile Application Implementation
 ### 4.2.1. Sprint 1
 #### 4.2.1.1. Sprint Planning 1
