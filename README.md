@@ -591,6 +591,92 @@ Se utilizó la escala Fibonacci para la estimación de los Story Points. En tota
 #### 2.5.1.2. Domain Message Flows Modeling
 #### 2.5.1.3. Bounded Context Canvases
 ### 2.5.2. Context Mapping
+Para esta sección se analizaron las relaciones entre cada Bounded Contexts para asignar los patrones de context mapping a cada uno.
+
+1. **User ➔ Portafolio / Gig / Pulls / Chats**
+
+**Descripción:**  
+El contexto User actúa como Identity Provider (proveedor de identidad). Todos los demás contextos dependen de él para identificar de manera confiable a los usuarios.
+
+* Portafolio usa User para asociar trabajos previos y habilidades al perfil del freelancer.
+
+* Gig usa User para definir quién publica un servicio y quién lo contrata.
+
+* Pulls depende de User para vincular qué cliente abrió un pull y a qué freelancer se dirige.
+
+* Chats utiliza User para garantizar la autenticidad de los remitentes y destinatarios en la mensajería.
+
+**Patrón aplicado:** Supplier-Consumer.  
+User es el Supplier de identidad y metadatos, los demás contextos son Consumers.
+
+2. **Portafolio ➔ Gig**
+
+**Descripción:**  
+Un Gig publicado puede estar enriquecido con información del Portafolio del freelancer (ejemplo: reseñas, casos de estudio, proyectos realizados). Esto genera confianza en el cliente.  
+Patrón aplicado: Conformist.  
+El contexto Gig se adapta al modelo de datos expuesto por Portafolio, sin imponer modificaciones, para mantener consistencia.
+
+3. **Gig ➔ Pulls**
+
+**Descripción:**  
+Un Pull (propuesta/solicitud de servicio) depende de los Gig creados por freelancers. El cliente abre un Pull seleccionando un Gig como base.  
+Patrón aplicado: Upstream-Downstream (Customer-Supplier).
+
+* Gig es el Upstream que provee el catálogo de servicios.
+
+* Pulls es el Downstream que consume esa información para generar solicitudes concretas.
+
+4. **Pulls ➔ Chats**
+
+**Descripción:**  
+Cuando un Pull es creado, se habilita un canal de comunicación en Chats entre el cliente y el freelancer.  
+**Patrón aplicado:** Published Language.  
+Pulls publica un evento (ejemplo: “Pull creado”), que Chats entiende en un lenguaje compartido para iniciar la conversación.
+
+5. **Gig & Pulls ➔ Chats**
+
+**Descripción:**  
+Ambos contextos (Gig y Pulls) pueden generar la necesidad de abrir un canal de comunicación en Chats:
+
+* Desde un Gig, un cliente puede iniciar un chat directo con el freelancer.
+
+* Desde un Pull, se crea un chat automático para negociar términos.
+
+**Patrón aplicado:** Anticorruption Layer (ACL).  
+El Chats traduce los modelos de Gig y Pulls a su propia representación de conversación, evitando dependencias directas que lo acoplen a sus estructuras internas.
+
+**Preguntas estratégicas de reflexión**
+
+¿Qué pasaría si separamos la gestión de identidad (User) en un servicio externo?  
+Podría integrarse con un proveedor de terceros (ej. Google OAuth), pero perderíamos control sobre lógica propia (roles académicos, validación de estudiante UPC).
+
+¿Qué ocurriría si unificamos Gig y Portafolio?  
+Aunque ambos giran en torno al freelancer, el Portafolio es histórico y validación, mientras que el Gig es transaccional (ofertas activas). Unificarlos complicaría la escalabilidad.
+
+¿Deberíamos fusionar Pulls y Chats?  
+No. Aunque están relacionados, Pulls define la negociación formal de un servicio, mientras que Chats se limita a comunicación. Fusionarlos diluiría responsabilidades.
+
+¿Qué pasaría si creamos un contexto independiente de Calificaciones/Reviews?  
+Sería viable en el futuro. Actualmente, se almacenan como parte del Portafolio, pero separar este contexto podría facilitar la analítica avanzada.
+
+**Conclusión del análisis**
+
+* No se crean nuevos bounded contexts adicionales en esta etapa.  
+    
+* User actúa como Supplier central de identidad.  
+    
+* Gig provee catálogo de servicios y es consumido por Pulls y Chats.  
+    
+* Portafolio enriquece la credibilidad de Gig.  
+    
+* Pulls orquesta solicitudes y habilita comunicación en Chats.  
+    
+* Chats actúa como un servicio aislado con capas de traducción, manteniendo bajo acoplamiento con Gig y Pulls.
+
+El diagrama de context mapping resultante muestra a User como núcleo de identidad, y a Gig, Pulls, Portafolio y Chats interactuando en torno a él con patrones claros de consumo y publicación.
+
+![ContextMapping](imgs/ContextMapping.png)
+
 ### 2.5.3. Software Architecture
 #### 2.5.3.1. Software Architecture Context Level Diagrams
 **Objetivo:**  
