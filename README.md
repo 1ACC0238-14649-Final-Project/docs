@@ -908,14 +908,14 @@ Incluye implementaciones concretas para acceso a datos y servicios externos.
 * Persistir fecha de creación y última modificación.
 
 #### 2.6.2.5. Bounded Context Software Architecture Component Level Diagrams
-![Context Software Architecture Component Level Diagrams](imgs/Context Software Architecture Component Level Diagrams.png)
+![Context Software Architecture Component Level Diagrams](imgs/ContextSoftwareArchitectureComponentLevelDiagrams.png)
 
 #### 2.6.2.6. Bounded Context Software Architecture Code Level Diagrams
 ##### 2.6.2.6.1. Bounded Context Domain Layer Class Diagrams
-![Context Domain Layer Class Diagrams](imgs/Context Domain Layer Class Diagrams.png)
+![Context Domain Layer Class Diagrams](imgs/ContextDomainLayerClassDiagrams.png)
 
 ##### 2.6.2.6.2. Bounded Context Database Design Diagram
-![Context Database Design Diagram](imgs/Context Database Design Diagram.png)
+![Context Database Design Diagram](imgs/ContextDatabaseDesignDiagram.png)
 
 ### 2.6.3. Bounded Context 3
 Este bounded context permite a los usuarios de la plataforma intercambiar mensajes relacionados a un Pull o Gig contratado. Los chats facilitan la negociación y comunicación en tiempo real entre estudiantes freelancers y clientes, soportando texto y archivos adjuntos.
