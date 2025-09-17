@@ -618,6 +618,11 @@ Se utilizó la escala Fibonacci para la estimación de los Story Points. En tota
 
 ## 2.5. Strategic-Level Domain-Driven Design
 ### 2.5.1. EventStorming
+<img src="imgs\eventstorming.png" alt="EventStorming" title="EventStorming"/>
+
+[Link a whiteboard](https://whiteboard.cloud.microsoft/me/whiteboards/p/c3BvOmh0dHBzOi8vdXBjZWR1cGUtbXkuc2hhcmVwb2ludC5jb20vcGVyc29uYWwvdTIwMjMxMDIyMl91cGNfZWR1X3Bl/b\!i3wi0-Zp10KBwpP2dsOQxmvYYHS7x91ChgL6joND6JV9EG89oq6-SbVk8MnpMmcp/01ACQWLUFEKBLQEIPVLNCLWIJVGURYAICY)
+
+
 #### 2.5.1.1. Candidate Context Discovery
 Nuestro equipo optó por aplicar la técnica **“start-with-simple”**, dado que esta se centra en reconocer aquellas partes del sistema que, desde la perspectiva funcional, del usuario o de la infraestructura, tienen una relación clara y natural entre sí. Esta aproximación resulta especialmente adecuada en sistemas cuya lógica ya se encuentra bien comprendida.  
 A partir de este enfoque, hemos logrado identificar 5 **Bounded Context**.  
