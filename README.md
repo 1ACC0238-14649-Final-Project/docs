@@ -280,6 +280,13 @@ Además, con GigU, los estudiantes tienen una forma flexible, accesible y efecti
 | **Carrera:** Ingeniería en software                                                                                                                                                                                                                                                                                                                                                                                              |                                                                           |
 | **Habilidades:** Soy estudiante de ingenieria de software, estoy cursando el sexto ciclo de la carrera. Tengo conocimientos en programacion web en frontend y busco el aprendizaje continuo, asi como el trabajar colaborativamente para lograr mejores resultados en los proyectos. Espero poder mejorar en diversas areas de la carrera, asi como aportar adecuadamente al desarrollo de los proyectos donde este envolucrado. |                                                                           || Nombre: Fernandez Camayo, Carlos Fredy |   |
 
+
+| Nombre: Donayre Alvarez, Adrian  |  <img src="imgs/Adrian.png" alt="Adrian" title="Foto de Adrian" width="320"/> |
+| :---- | :---- |
+| **Código:** U202310187 |  |
+| **Carrera:** Ingeniería de software |  |
+| **Habilidades:** Con 20 años, me encuentro cursando el sexto ciclo de mi carrera. Una de mis características es que me gusta aprender nuevas tecnologías mientras trabajo en equipo. Asimismo, me considero una persona proactiva, organizada y con facilidad para adaptarme a distintos entornos. Mi objetivo es dar todo de mí en los proyectos para que generen impacto y me permitan seguir creciendo profesionalmente.|  || Nombre: Donayre Alvarez, Adrian |   |
+
 ## 1.2. Solution Profile
 ### 1.2.1. Antecedentes y problemática
 ##### **¿Cuál es el problema?**  
