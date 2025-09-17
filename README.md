@@ -617,6 +617,8 @@ Se utilizó la escala Fibonacci para la estimación de los Story Points. En tota
 | 50 | US50 | Historial de Precios de Servicios Similares | Como usuario, deseo ver precios promedios de servicios similares contratados anteriormente para decidir mejor mi tarifa. | 2 |
 
 ## 2.5. Strategic-Level Domain-Driven Design
+En esta sección nos reunimos todo el equipo para realizar una lluvia de ideas sobre los eventos que ocurrirían en la aplicación. Primero se empezó por poner en una pizarra todos los eventos del dominio que se nos ocurrieran que podría tener la aplicación. Después empezamos a agregar los comandos que desencadenan los eventos. Finalmente ya se agregaron los demás elementos como actores, políticas, aggregates, sistemas externos, y modelos de lectura. Poco a poco al hacer esto se empezaron a formar pequeños flujos de eventos que nos servirían para los siguientes puntos.
+
 ### 2.5.1. EventStorming
 <img src="imgs\eventstorming.png" alt="EventStorming" title="EventStorming"/>
 
