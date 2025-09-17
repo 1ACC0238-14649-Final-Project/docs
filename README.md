@@ -790,14 +790,132 @@ Representar la distribución física del sistema, mostrando cómo los diferentes
 ##### 2.6.1.6.2. Bounded Context Database Design Diagram
 
 ### 2.6.2. Bounded Context 2
+El bounded context Pulls representa el proceso de negociación y transacción entre un buyer y un seller dentro de la plataforma, siempre basado en un Gig.  
+Un Pull se inicia cuando un buyer abre una negociación para un gig ofrecido por un seller.  
+Durante el proceso, pueden producirse ajustes en el precio hasta llegar al precio actualizado que será finalmente pagado.
+
 #### 2.6.2.1. Domain Layer
+El Domain Layer encapsula la lógica principal de negocio de los Pulls. Incluye la entidad raíz Pull, sus invariantes y métodos para manejar los estados de negociación.  
+**Aggregate**
+
+| Nombre | Categoría | Descripción |
+| :---: | :---: | :---: |
+| Pull | Entity (Aggregate Root) | Representa una negociación activa entre un buyer y un seller, basada en un Gig. Permite registrar el precio inicial, su evolución en el precio actualizado y el estado actual de la negociación. |
+
+**Attributes**
+
+| Nombre | Tipo de dato | Visibilidad | Descripción |
+| ----- | ----- | ----- | ----- |
+| id | UUID | Private | Identificador único del Pull. |
+| sellerId | UUID | Public | Identificador del vendedor (seller) asociado al Gig. |
+| buyerId | UUID | Public | Identificador del comprador que abre la negociación. |
+| gigId | UUID | Public | Identificador del Gig sobre el que se abre la negociación. |
+| priceInit | Decimal | Public | Precio inicial propuesto al abrir la negociación. |
+| priceUpdate | Decimal | Public | Precio actualizado de la negociación (última oferta válida). |
+| state | Enum(OPENED, PENDING, PAYED, COMPLETE) | Public | Estado actual de la negociación. |
+| createdAt | DateTime | Private | Fecha de creación del Pull. |
+| updatedAt | DateTime | Private | Última fecha de actualización. |
+
+**Methods**
+
+| Nombre | Tipo de retorno | Visibilidad | Descripción |
+| ----- | ----- | ----- | ----- |
+| Pull(...) (constructor) | Pull | Public | Inicializa un Pull con sellerId, buyerId, gigId y priceInit. |
+| updatePrice(newPrice: Decimal) | Void | Public | Permite actualizar el precio durante la negociación. |
+| changeState(newState: Enum) | Void | Public | Cambia el estado de la negociación validando la transición. |
+
 #### 2.6.2.2. Interface Layer
+La Interface Layer expone las operaciones de Pulls mediante una API REST. Se encarga de recibir solicitudes externas, validar datos y delegar la lógica al Application Layer.
+
+| Nombre | Categoría | Descripción |
+| :---: | :---: | :---: |
+| PullController | Controller | Controlador que gestiona operaciones CRUD y de transición de estado de los Pulls. |
+
+**Attributes**
+
+| Nombre | Tipo de dato | Visibilidad | Descripción |
+| ----- | ----- | ----- | ----- |
+| pullQueryService | IPullQueryService | Private | Servicio de consulta para Pulls. |
+| pullCommandService | IPullCommandService | Private | Servicio de comandos para creación y actualización de Pulls. |
+
+**Endpoints**
+
+| Ruta | Método | Descripción |
+| ----- | ----- | ----- |
+| /api/pulls | GET | Lista todos los Pulls disponibles. |
+| /api/pulls/{id} | GET | Devuelve un Pull por su identificador. |
+| /api/pulls/by-role | GET | Lista Pulls según rol (buyer o seller) e id de usuario. |
+| /api/pulls | POST | Crea un nuevo Pull a partir de un Gig. |
+| /api/pulls/{id} | PUT | Actualiza el precio o estado de un Pull. |
+| /api/pulls/{id}/close | PUT | Cierra el Pull y cambia su estado a COMPLETE. |
+
+**DTOs**
+
+**Request DTOs**
+
+| Nombre | Descripción |
+| ----- | ----- |
+| CreatePullRequestDto | Contiene los campos requeridos para crear un nuevo pull { sellerId, buyerId, gigId, priceInit }. |
+| UpdatePullRequestDto | Contiene los campos opcionales para actualizar un pull existente { newPrice?, newState? }. |
+
+**Response DTOs**
+
+| Nombre | Descripción |
+| ----- | ----- |
+| PullResponseDto | Representa un recurso pull con todos sus campos { id, sellerId, buyerId, gigId, priceInit, priceUpdate, state } ). |
+| ListPullsResource | Lista de Pulls paginada o completa. |
+
+
 #### 2.6.2.3. Application Layer
+
+Esta capa coordina la lógica de negocio entre el dominio, la infraestructura y los casos de uso expuestos.
+
+| Nombre | Categoría | Descripción |
+| :---: | :---: | :---: |
+| PullApplicationService | Service | Orquesta la creación, negociación y finalización de Pulls. |
+
+#### **Dependencies**
+
+| Nombre | Tipo de objeto | Visibilidad | Descripción |
+| ----- | ----- | ----- | ----- |
+| pullRepository | PullRepository | Private | Accede a la base de datos de Pulls. |
+| gigRepository | GigRepository | Private | Verifica existencia y validez del Gig al abrir un Pull. |
+| userRepository | UserRepository | Private | Verifica existencia de buyer y seller. |
+| unitOfWork | UnitOfWork | Private | Maneja confirmación de transacciones. |
+
+#### **Methods**
+
+| Nombre | Tipo de retorno | Visibilidad | Descripción |
+| ----- | ----- | ----- | ----- |
+| openPull(buyerId, sellerId, gigId, priceInit) | PullResource | Public | Abre un nuevo Pull para un Gig. |
+| updatePull(id, newPrice?, newState?) | PullResource | Public | Actualiza el precio o estado del Pull. |
+| closePull(id) | PullResource | Public | Marca un Pull como **COMPLETE**. |
+
 #### 2.6.2.4. Infrastructure Layer
+Incluye implementaciones concretas para acceso a datos y servicios externos.
+
+**PullRepositoryImpl**
+
+| Nombre | Categoría | Implementa | Descripción |
+| :---: | :---: | :---: | :---: |
+| PullRepository | Repository | PullRepositoryImpl | Implementación para la persistencia de Pulls en base de datos. |
+
+#### **Funcionalidades clave**
+
+* Crear nuevos Pulls.  
+* Consultar Pulls por `id`, `buyerId` o `sellerId`.  
+* Actualizar estado y precio negociado.  
+* Persistir fecha de creación y última modificación.
+
 #### 2.6.2.5. Bounded Context Software Architecture Component Level Diagrams
+![Context Software Architecture Component Level Diagrams](imgs/Context Software Architecture Component Level Diagrams.png)
+
 #### 2.6.2.6. Bounded Context Software Architecture Code Level Diagrams
 ##### 2.6.2.6.1. Bounded Context Domain Layer Class Diagrams
+![Context Domain Layer Class Diagrams](imgs/Context Domain Layer Class Diagrams.png)
+
 ##### 2.6.2.6.2. Bounded Context Database Design Diagram
+![Context Database Design Diagram](imgs/Context Database Design Diagram.png)
 
 ### 2.6.3. Bounded Context 3
 Este bounded context permite a los usuarios de la plataforma intercambiar mensajes relacionados a un Pull o Gig contratado. Los chats facilitan la negociación y comunicación en tiempo real entre estudiantes freelancers y clientes, soportando texto y archivos adjuntos.
