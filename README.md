@@ -620,6 +620,38 @@ Se utilizó la escala Fibonacci para la estimación de los Story Points. En tota
 ### 2.5.1. EventStorming
 #### 2.5.1.1. Candidate Context Discovery
 #### 2.5.1.2. Domain Message Flows Modeling
+En esta sección se presentan los **Domain Message Flows** de GigU, elaborados a partir de la técnica de **Domain Storytelling** y del brainstorming realizado previamente. El objetivo es describir cómo los diferentes **bounded contexts** de la plataforma (User, Portfolio, Gig, Pull y Chat), así como servicios externos como el proveedor de pagos, **intercambian mensajes y eventos de dominio** para dar soporte a los principales flujos de negocio a través de eventos clave que representan acciones del negocio.
+
+* User **➔** Portfolio
+
+Cuando un usuario actualiza su perfil en el contexto **User (IAM)**, la información sincronizada (nombre, foto, datos relevantes) se envía a **Portfolio** para reflejar los cambios en la vista del seller. Los buyers pueden acceder a estos portafolios para evaluar a los freelancers.  
+<img src="imgs/DomainMessageFlowsModeling1.png" alt="DomainMessageFlowsModeling1" title="DomainMessageFlowsModeling1"/>
+
+* Gig **➔** Pull
+
+Al seleccionarse un gig, el contexto **Gig** envía la información necesaria a **Pull** para crear una nueva negociación (Pull) con la oferta inicial. Esto permite que buyer y seller comiencen el proceso contractual.  
+<img src="imgs/DomainMessageFlowsModeling2.png" alt="DomainMessageFlowsModeling2" title="DomainMessageFlowsModeling2"/>
+
+* Pull **➔** Chat
+
+Cada vez que se inicia una **Pull** o se ajusta una oferta, en el contexto **Chat**, se abre un hilo de conversación entre buyer y seller. Aquí se coordina y queda trazabilidad de las negociaciones.  
+<img src="imgs/DomainMessageFlowsModeling3.png" alt="DomainMessageFlowsModeling3" title="DomainMessageFlowsModeling3"/>
+
+* Gig **➔** Payment provider
+
+Cuando el buyer completa su método de pago en **Gig**, se envía información al **Payment Provider** para autorizar y capturar el pago. En caso de reembolso, el mismo flujo actualiza el estado del **Pull**.  
+<img src="imgs/DomainMessageFlowsModeling4.png" alt="DomainMessageFlowsModeling4" title="DomainMessageFlowsModeling4"/>
+
+* Portafolio **➔** Gig
+
+Desde el **Portfolio**, los buyers pueden explorar los trabajos destacados de un seller. Al elegir un proyecto, se redirige la información al contexto **Gig**, donde el buyer puede acceder al detalle del servicio ofrecido.  
+<img src="imgs/DomainMessageFlowsModeling5.png" alt="DomainMessageFlowsModeling5" title="DomainMessageFlowsModeling5"/>
+
+* Pull **➔** User
+
+Al completarse una **Pull**, el contexto notifica a **User (IAM)** para actualizar métricas de calificación del seller y del buyer. Esta información se muestra en el perfil público.  
+<img src="imgs/DomainMessageFlowsModeling6.png" alt="DomainMessageFlowsModeling6" title="DomainMessageFlowsModeling6"/>
+
 #### 2.5.1.3. Bounded Context Canvases
 ### 2.5.2. Context Mapping
 Para esta sección se analizaron las relaciones entre cada Bounded Contexts para asignar los patrones de context mapping a cada uno.
