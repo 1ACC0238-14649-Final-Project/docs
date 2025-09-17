@@ -619,6 +619,29 @@ Se utilizó la escala Fibonacci para la estimación de los Story Points. En tota
 ## 2.5. Strategic-Level Domain-Driven Design
 ### 2.5.1. EventStorming
 #### 2.5.1.1. Candidate Context Discovery
+Nuestro equipo optó por aplicar la técnica **“start-with-simple”**, dado que esta se centra en reconocer aquellas partes del sistema que, desde la perspectiva funcional, del usuario o de la infraestructura, tienen una relación clara y natural entre sí. Esta aproximación resulta especialmente adecuada en sistemas cuya lógica ya se encuentra bien comprendida.  
+A partir de este enfoque, hemos logrado identificar 5 **Bounded Context**.  
+   
+User:  
+Este contexto abarca la **gestión y administración de cuenta** de los usuarios en la plataforma. Incluye procesos como el registro, autenticación, edición de información personal y configuración del perfil. Los *sellers* pueden actualizar su portafolio y datos de contacto, mientras que los *buyers* acceden a los perfiles de los sellers y confirman cambios relevantes. Se trata del núcleo de **Identity and Access Management (IAM)**, asegurando que la información de los usuarios se mantenga consistente y actualizada.  
+<img src="imgs\CandidateContextDiscovery1.png" alt="CandidateContextDiscovery1" title="CandidateContextDiscovery1"/>
+
+Chat:  
+Este contexto está orientado a la **comunicación síncrona** entre *buyers* y *sellers*. A través de este módulo, los usuarios pueden redactar, enviar y recibir mensajes directos. La función principal es facilitar la **interacción y negociación** en torno a servicios o proyectos, constituyendo un canal clave de coordinación. Garantiza que los mensajes se entreguen correctamente y mantiene la trazabilidad de la comunicación.  
+<img src="imgs\CandidateContextDiscovery2.png" alt="CandidateContextDiscovery2" title="CandidateContextDiscovery2"/>
+
+Portafolio:  
+El portafolio actúa como el espacio donde los *sellers* pueden **gestionar y exhibir sus trabajos destacados**. Las acciones contemplan añadir, editar o actualizar proyectos que reflejen sus competencias y experiencia. Por su parte, los *buyers* tienen la posibilidad de consultar los portafolios de los sellers como criterio de decisión. Este contexto asegura que la información creativa y profesional sea accesible, actualizada y confiable.  
+<img src="imgs\CandidateContextDiscovery3.png" alt="CandidateContextDiscovery3" title="CandidateContextDiscovery3"/>
+
+Gig:  
+Este contexto gestiona todo el ciclo de vida de un **gig** o propuesta de servicio. Incluye desde la **creación de un gig**, la elección por parte del *buyer*, la negociación de la oferta (incluyendo ajustes de precio y condiciones) hasta la aceptación o rechazo por parte del *seller/freelancer*.  
+<img src="imgs\CandidateContextDiscovery4.png" alt="CandidateContextDiscovery4" title="CandidateContextDiscovery4"/>
+
+Pull:  
+Este contexto se ocupa de la **formalización y cierre del acuerdo** entre *buyer* y *seller*. Incluye aceptar o rechazar ofertas, realizar el pago, entregar el servicio y confirmar si el resultado fue satisfactorio. Una vez todo está completado, la pull se marca como finalizada. Aquí se asegura que la **transacción quede registrada y validada**.  
+<img src="imgs\CandidateContextDiscovery5.png" alt="CandidateContextDiscovery5" title="CandidateContextDiscovery5"/>
+
 #### 2.5.1.2. Domain Message Flows Modeling
 En esta sección se presentan los **Domain Message Flows** de GigU, elaborados a partir de la técnica de **Domain Storytelling** y del brainstorming realizado previamente. El objetivo es describir cómo los diferentes **bounded contexts** de la plataforma (User, Portfolio, Gig, Pull y Chat), así como servicios externos como el proveedor de pagos, **intercambian mensajes y eventos de dominio** para dar soporte a los principales flujos de negocio a través de eventos clave que representan acciones del negocio.
 
