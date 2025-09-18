@@ -694,20 +694,21 @@ Para cada bounded context, se siguió una serie de pasos clave:
 
 Gracias a esta metodología, el equipo logró definir bounded contexts robustos y coherentes, cada uno cumpliendo un rol específico dentro de la arquitectura general del sistema.
 
-* Bounded Context Gig*
+**Bounded Context Gig:**
 
-* Bounded Context Pull*
+**Bounded Context Pull:**
+
 Este bounded context encapsula el proceso de negociación entre un buyer y un seller sobre un Gig, estructurando el ciclo completo desde la apertura de una oferta hasta su cierre como transacción completada. Define claramente los límites funcionales del contexto, asegurando su independencia y cohesión dentro del dominio de contratación basada en Gigs.
 
 El contexto modela el Pull como una entidad central con reglas de negocio específicas para manejar la evolución del precio y los cambios de estado de la negociación. Se establece un lenguaje ubicuo preciso que incluye términos como Pull, Gig, priceInit, priceUpdate y state, facilitando la comunicación técnica y de negocio.
 
 ![CanvasesPullBoundedContextr](imgs/CanvasesPullBoundedContextr.JPG)
 
-* Bounded Context Chat*
+**Bounded Context Chat:**
 
-* Bounded Context User*
+**Bounded Context User:**
 
-* Bounded Context Portfolio*
+**Bounded Context Portfolio:**
 
 
 ### 2.5.2. Context Mapping
