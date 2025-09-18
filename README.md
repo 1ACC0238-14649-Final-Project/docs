@@ -683,6 +683,33 @@ Al completarse una **Pull**, el contexto notifica a **User (IAM)** para actualiz
 <img src="imgs/DomainMessageFlowsModeling6.png" alt="DomainMessageFlowsModeling6" title="DomainMessageFlowsModeling6"/>
 
 #### 2.5.1.3. Bounded Context Canvases
+Esta sección del documento detalla el trabajo realizado por el equipo para estructurar los bounded contexts identificados durante el proceso. La construcción de estos contextos se llevó a cabo de manera iterativa, asegurando que cada uno reflejara con precisión los principios de diseño y el conocimiento del dominio.
+Para cada bounded context, se siguió una serie de pasos clave:
+* Definición General del Contexto: Se establecieron claramente el propósito y los límites de cada contexto, garantizando su alineación con el ámbito del negocio.
+* Identificación de Reglas de Negocio y Lenguaje Ubicuo: Se documentaron las principales reglas de negocio y se definió un lenguaje común para facilitar la comunicación entre los miembros del equipo.
+* Análisis de Capacidades: Se evaluaron las funcionalidades necesarias que debía ofrecer cada contexto.
+* Organización en Capas: Cuando fue pertinente, se estructuraron las capacidades en capas para mejorar la claridad y mantenibilidad del diseño.
+* Identificación de Dependencias: Se analizaron las relaciones con otros contextos y sistemas externos, mapeando las dependencias relevantes.
+* Revisión del Diseño: Se validó la arquitectura propuesta, priorizando un bajo acoplamiento y su alineación con los objetivos estratégicos del negocio.
+
+Gracias a esta metodología, el equipo logró definir bounded contexts robustos y coherentes, cada uno cumpliendo un rol específico dentro de la arquitectura general del sistema.
+
+* Bounded Context Gig*
+
+* Bounded Context Pull*
+Este bounded context encapsula el proceso de negociación entre un buyer y un seller sobre un Gig, estructurando el ciclo completo desde la apertura de una oferta hasta su cierre como transacción completada. Define claramente los límites funcionales del contexto, asegurando su independencia y cohesión dentro del dominio de contratación basada en Gigs.
+
+El contexto modela el Pull como una entidad central con reglas de negocio específicas para manejar la evolución del precio y los cambios de estado de la negociación. Se establece un lenguaje ubicuo preciso que incluye términos como Pull, Gig, priceInit, priceUpdate y state, facilitando la comunicación técnica y de negocio.
+
+![CanvasesPullBoundedContextr](imgs/CanvasesPullBoundedContextr.JPG)
+
+* Bounded Context Chat*
+
+* Bounded Context User*
+
+* Bounded Context Portfolio*
+
+
 ### 2.5.2. Context Mapping
 Para esta sección se analizaron las relaciones entre cada Bounded Contexts para asignar los patrones de context mapping a cada uno.
 
