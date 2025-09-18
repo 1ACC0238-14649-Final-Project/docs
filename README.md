@@ -697,7 +697,6 @@ Gracias a esta metodología, el equipo logró definir bounded contexts robustos 
 **Bounded Context Gig:**
 
 **Bounded Context Pull:**
-
 Este bounded context encapsula el proceso de negociación entre un buyer y un seller sobre un Gig, estructurando el ciclo completo desde la apertura de una oferta hasta su cierre como transacción completada. Define claramente los límites funcionales del contexto, asegurando su independencia y cohesión dentro del dominio de contratación basada en Gigs.
 
 El contexto modela el Pull como una entidad central con reglas de negocio específicas para manejar la evolución del precio y los cambios de estado de la negociación. Se establece un lenguaje ubicuo preciso que incluye términos como Pull, Gig, priceInit, priceUpdate y state, facilitando la comunicación técnica y de negocio.
@@ -705,7 +704,11 @@ El contexto modela el Pull como una entidad central con reglas de negocio espec�
 ![CanvasesPullBoundedContextr](imgs/CanvasesPullBoundedContextr.JPG)
 
 **Bounded Context Chat:**
+Este bounded context encapsula el proceso de comunicación en tiempo real entre un buyer y un seller dentro de la plataforma GigU, estructurando el ciclo completo de envío, recepción y lectura de mensajes. Define claramente los límites funcionales del contexto, asegurando su independencia y cohesión como un soporte esencial en las interacciones entre usuarios durante la contratación de servicios freelance.
 
+El contexto modela el Chat como una entidad central con reglas de negocio específicas para garantizar la validez de los mensajes, el control de estados de lectura y la persistencia confiable de la comunicación. Se establece un lenguaje ubicuo preciso que incluye términos como Chat, senderId, receiverId, content, sentAt e isRead, facilitando la comunicación técnica y de negocio.
+
+![CanvasesPullBoundedContextr](imgs/CanvasesChatBoundedContex.png)
 **Bounded Context User:**
 
 **Bounded Context Portfolio:**
