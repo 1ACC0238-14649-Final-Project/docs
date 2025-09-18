@@ -731,6 +731,15 @@ El contexto modela la UserAccount como entidad central con reglas específicas p
 
 **Bounded Context Portfolio:**
 
+El Bounded Context Canvas del Portfolio BC es una representación estructurada que define el alcance y los límites del subdominio
+encargado de la gestión de portafolios dentro de la plataforma GigU. Este canvas describe cómo los sellers construyen y administran 
+sus portafolios con proyectos y medios asociados, mientras que los buyers los consultan junto con reseñas para evaluar la reputación y 
+experiencia antes de contratar. Además, refleja sus interacciones con otros sistemas mediante comunicaciones entrantes y salientes, el
+lenguaje ubicuo que uniformiza conceptos clave como Portfolio, Project y Review, y las decisiones de negocio que gobiernan la creación,
+actualización e indexación de proyectos. En conjunto, proporciona una visión estratégica y táctica que asegura la alineación entre negocio,
+tecnología y dominio.
+
+![CanvasesPortfolioBoundedContext](imgs/BoundedContextPortfolioCanvas.png)
 
 ### 2.5.2. Context Mapping
 Para esta sección se analizaron las relaciones entre cada Bounded Contexts para asignar los patrones de context mapping a cada uno.
@@ -1442,7 +1451,396 @@ El Domain Layer del BC User (IAM) modela la identidad y el perfil de los usuario
 <img src="imgs\usergigu-diagram.png" alt="usergigu-diagram" title="usergigu-diagram"/>
 
 ##### 2.6.4.6.2. Bounded Context Database Design Diagram
+
 <img src="imgs\userDB.png" alt="userDB" title="userDB"/>
+
+
+### 2.6.5. Bounded Context 5(Portfolio)
+
+Se encarga de actuar como el espacio donde los sellers pueden gestionar y exhibir sus trabajos destacados.  
+Permite añadir, editar y actualizar proyectos que reflejen sus competencias y experiencia.  
+Los buyers pueden consultar los portafolios como criterio de decisión.  
+Este bounded context asegura que la información creativa y profesional sea accesible, actualizada y confiable.
+
+
+#### 2.6.5.1. Domain Layer
+
+Contiene la lógica de negocio pura y los agregados representan los conceptos clave: Portfolio, Project(obra/proyecto), 
+Media(Archivos, imágenes, enlaces), SkillTag(etiquetas de habilidad) y Review(comentario). Estos agregados encapsulan 
+invariantes, reglas de negocio y operaciones que garantizan la consistencia.
+
+##### Aggregate 1: Portfolio
+
+**Nombre**: Portfolio  
+**Categoría**: Entity  
+**Descripción**: Representa el conjunto de trabajos públicos y privados de un seller. Mantiene consistencia sobre la visibilidad, orden y metadatos del portafolio.
+
+**Attributes**  
+
+| Nombre     | Tipo de datos     | Visibilidad | Descripción |
+|------------|-------------------|-------------|-------------|
+| id         | UUID              | Private     | Identificador único. |
+| ownerId    | UUID              | Private     | Identificador del user/seller propietario. |
+| title      | String            | Private     | Título público del portafolio. |
+| description| String            | Private     | Descripción introductoria. |
+| projects   | List              | Private     | Referencias a proyectos incluidos (ordenado). |
+| createdAt  | LocalDateTime     | Private     | Fecha de creación. |
+| updatedAt  | LocalDateTime     | Private     | Fecha de actualización. |
+
+**Methods**  
+
+| Nombre | Tipo de retorno | Visibilidad | Descripción |
+|--------|-----------------|-------------|-------------|
+| addProject(project: Project) | Void | Public | Añade un proyecto al portafolio, validando duplicados y permisos. |
+| removeProject(projectId: UUID) | Void | Public | Remueve un proyecto por su identificador único. |
+| updateMetadata(title: String, description: String) | Void | Public | Actualiza la metadata del portafolio. |
+
+
+##### Aggregate 2: Project
+
+**Nombre**: Project  
+**Categoría**: Entity  
+**Descripción**: Representa una pieza de trabajo que exhibe competencias (ej: desarrollo web, diseño gráfico, estudio de caso).
+
+**Attributes**  
+
+| Nombre          | Tipo de datos                  | Visibilidad | Descripción |
+|-----------------|--------------------------------|-------------|-------------|
+| id              | UUID                           | Private     | Identificador único. |
+| ownerId         | UUID                           | Private     | Identificador del propietario. |
+| title           | String                         | Private     | Título público del proyecto. |
+| shortDescription| String                         | Private     | Descripción breve. |
+| estimatedHours  | Integer                        | Private     | Tiempo en horas. |
+| complexity      | Enum(LOW, MEDIUM, HIGH)        | Private     | Nivel de complejidad. |
+| priceFrom       | Money (Value Object)           | Private     | Precio indicado. |
+| media           | List                           | Private     | Lista de medios. |
+| skillTags       | Set (Value Object)             | Private     | Colección de habilidades. |
+| isPublished     | Boolean                        | Private     | Estado de publicación. |
+| createdAt       | LocalDateTime                  | Private     | Fecha de creación. |
+| updatedAt       | LocalDateTime                  | Private     | Fecha de actualización. |
+
+**Methods**  
+
+| Nombre | Tipo de retorno | Visibilidad | Descripción |
+|--------|-----------------|-------------|-------------|
+| publish(publish: Publish) | Void | Public | Publica un proyecto validando permisos. |
+| unpublish(publish: Publish) | Void | Public | Despublica un proyecto. |
+| updateContent(title: String, description: String) | Void | Public | Actualiza el contenido del proyecto. |
+| addMedia(media: Media) | Void | Public | Agrega un archivo multimedia. |
+| removeMedia(mediaId: UUID) | Boolean | Public | Elimina un archivo multimedia. |
+| addSkillTag(tag: SkillTag) | Void | Public | Agrega una habilidad. |
+| removeSkillTag(tag: SkillTag) | Void | Public | Elimina una habilidad. |
+| estimatePrice(params: EstimationParams) | Money | Public | Estima un precio. |
+
+---
+
+##### Aggregate 3: Media
+
+**Nombre**: Media  
+**Categoría**: Entity/Value Object  
+**Descripción**: Representa archivos multimedia o enlaces asociados a un proyecto.
+
+**Attributes**  
+
+| Nombre     | Tipo de datos | Visibilidad | Descripción |
+|------------|---------------|-------------|-------------|
+| id         | UUID          | Private     | Identificador único. |
+| projectId  | UUID          | Private     | Identificador del proyecto. |
+| type       | Enum (IMAGE, VIDEO, DOCUMENT, EXTERNAL_LINK) | Private | Tipo de medio. |
+| url        | String        | Private     | URL del recurso. |
+| uploadedAt | LocalDateTime | Private     | Fecha de carga. |
+
+**Methods**  
+
+| Nombre | Tipo de retorno | Visibilidad | Descripción |
+|--------|-----------------|-------------|-------------|
+| publish(publish: Publish) | Boolean | Public | Verifica accesibilidad del recurso. |
+
+---
+
+##### Aggregate 4: Review
+
+**Nombre**: Review  
+**Categoría**: Entity  
+**Descripción**: Comentarios o valoraciones breves que un buyer puede dejar en un proyecto o portafolio.
+
+**Attributes**  
+
+| Nombre     | Tipo de datos | Visibilidad | Descripción |
+|------------|---------------|-------------|-------------|
+| id         | UUID          | Private     | Identificador único. |
+| authorId   | UUID          | Private     | Identificador del autor. |
+| targetType | Enum (PROJECT, PORTFOLIO) | Private | Define si aplica a un proyecto o portafolio. |
+| targetId   | UUID          | Private     | Identificador del objetivo. |
+| rating     | Integer       | Private     | Calificación. |
+| comment    | String        | Private     | Opinión opcional. |
+| createdAt  | LocalDateTime | Private     | Fecha de creación. |
+
+**Methods**  
+
+| Nombre | Tipo de retorno | Visibilidad | Descripción |
+|--------|-----------------|-------------|-------------|
+| show() | Void | Public | Muestra la reseña. |
+| hide() | Void | Public | Oculta la reseña. |
+
+---
+
+#### 2.6.5.2. Interface Layer
+
+Esta capa es responsable de exponer la API REST, recibir y formatear las peticiones externas, realizar validaciones 
+básicas de entrada, mapear entre DTOs y objetos de dominio, manejar errores a nivel de API y delegar la lógica de 
+negocio a la capa de Aplicación.
+
+##### Controller 1: PortfolioController
+
+###### Attributes
+| Nombre | Tipo de dato | Visibilidad | Descripción |
+| :---: | :---: | :---: | :--- |
+| portfolioService | PortfolioService | Private | Lógica de gestión de portafolio. |
+| portfolioMapper | PortfolioMapper | Private | Conversión entre DTOs y dominio. |
+
+###### Endpoints
+| Ruta | Método | Descripción |
+| :--- | :---: | :--- |
+| /api/portfolio/{sellerId} | GET | Recupera el portafolio público. |
+| /api/portfolio/{sellerId}/projects | GET | Lista los proyectos del portafolio. |
+| /api/portfolio/{sellerId} | PUT | Actualiza metadata del portafolio (dueño). |
+
+---
+
+##### Controller 2: ProjectController
+
+###### Attributes
+| Nombre | Tipo de dato | Visibilidad | Descripción |
+| :---: | :---: | :---: | :--- |
+| projectService | PortfolioService | Private | Gestión de proyectos. |
+| projectMapper | ProjectMapper | Private | Conversión DTO/dominio. |
+| mediaUploadService | MediaUploadService | Private | Gestión de carga multimedia. |
+
+###### Endpoints
+| Ruta | Método | Descripción |
+| :--- | :---: | :--- |
+| /api/projects | POST | Crea un nuevo proyecto. |
+| /api/projects/{id} | PUT | Actualiza un proyecto existente. |
+| /api/projects/{id} | GET | Obtiene detalles de un proyecto. |
+| /api/projects/{id} | DELETE | Elimina un proyecto. |
+
+---
+
+##### Controller 3: MediaController
+
+###### Attributes
+| Nombre | Tipo de dato | Visibilidad | Descripción |
+| :---: | :---: | :---: | :--- |
+| mediaMapper | MediaMapper | Private | Conversión DTO/dominio. |
+
+###### Endpoints
+| Ruta | Método | Descripción |
+| :--- | :---: | :--- |
+| /api/media/{id} | GET | Devuelve o redirige al archivo multimedia. |
+| /api/media/{id} | DELETE | Elimina un archivo multimedia. |
+
+---
+
+##### Controller 4: ReviewController
+
+###### Attributes
+| Nombre | Tipo de dato | Visibilidad | Descripción |
+| :---: | :---: | :---: | :--- |
+| reviewService | ReviewService | Private | Lógica de reseñas. |
+
+###### Endpoints
+| Ruta | Método | Descripción |
+| :--- | :---: | :--- |
+| /api/projects/{id}/reviews | POST | Agrega una reseña a un proyecto. |
+| /api/projects/{id}/reviews | GET | Lista reseñas visibles. |
+
+---
+
+##### DTOs
+| Nombre | Descripción |
+| :---: | :--- |
+| PortfolioResponseDto | { id, ownerId, title, description, visibility, projects: List } |
+| ProjectCreateDto | { title, shortDescription, longDescription, estimatedHours, complexity, skillTags } |
+| ProjectResponseDto | { id, title, shortDescription, longDescription, media: List, skillTags, isPublished } |
+| MediaUploadResponseDto | { id, url, thumbnailUrl } |
+| ReviewDto | { id, authorId, rating, comment, createdAt } |
+
+---
+
+##### Mappers
+| Nombre | Descripción |
+| :---: | :--- |
+| portfolioMapper | Relación entre Portfolio y PortfolioResponseDto |
+| projectMapper | Relación entre Project y ProjectResponseDto |
+| mediaMapper | Relación entre Media y MediaDto |
+
+---
+
+
+#### 2.6.5.3. Application Layer
+
+##### Servicio 1: PortfolioService
+
+###### Dependencies
+| Nombre | Tipo de objeto | Visibilidad | Descripción |
+| :---: | :---: | :---: | :--- |
+| portfolioRepository | PortfolioRepository | Private | Persistencia de portafolios. |
+| projectRepository | ProjectRepository | Private | Persistencia de proyectos. |
+| portfolioMapper | PortfolioMapper | Private | Conversión dominio/DTO. |
+
+###### Methods
+| Nombre | Tipo de retorno | Visibilidad | Descripción |
+| :---: | :---: | :---: | :--- |
+| createOrUpdatePortfolio(UpdatePortfolioCommand) | PortfolioResponseDto | Public | Crea o actualiza un portafolio. |
+| getPortfolioBySeller(UUID sellerId, UUID viewerId) | PortfolioResponseDto | Public | Obtiene portafolio según permisos. |
+| reorderPortfolioProjects(ReorderCommand) | Void | Public | Reordena proyectos en el portafolio. |
+
+---
+
+##### Servicio 2: ProjectService
+
+###### Dependencies
+| Nombre | Tipo de objeto | Visibilidad | Descripción |
+| :---: | :---: | :---: | :--- |
+| projectRepository | ProjectRepository | Private | Persistencia de proyectos. |
+| projectMapper | ProjectMapper | Private | Conversión dominio/DTO. |
+
+###### Methods
+| Nombre | Tipo de retorno | Visibilidad | Descripción |
+| :---: | :---: | :---: | :--- |
+| createProject(CreateProjectCommand) | ProjectResponseDto | Public | Crea un nuevo proyecto. |
+| updateProject(UpdateProjectCommand) | ProjectResponseDto | Public | Actualiza información de un proyecto. |
+| deleteProject(DeleteProjectCommand) | Void | Public | Elimina un proyecto. |
+
+---
+
+##### Servicio 3: MediaService
+
+###### Dependencies
+| Nombre | Tipo de objeto | Visibilidad | Descripción |
+| :---: | :---: | :---: | :--- |
+| mediaRepository | MediaRepository | Private | Persistencia de Media. |
+| mediaStorageGateway | MediaStorageGateway | Private | Comunicación con almacenamiento. |
+| mediaMapper | MediaMapper | Private | Conversión dominio/DTO. |
+
+###### Methods
+| Nombre | Tipo de retorno | Visibilidad | Descripción |
+| :---: | :---: | :---: | :--- |
+| uploadMedia(UploadMediaCommand) | MediaDto | Public | Gestiona carga de media. |
+| deleteMedia(DeleteMediaCommand) | Void | Public | Elimina un archivo multimedia. |
+
+---
+
+##### Servicio 4: ReviewService
+
+###### Dependencies
+| Nombre | Tipo de objeto | Visibilidad | Descripción |
+| :---: | :---: | :---: | :--- |
+| reviewRepository | ReviewRepository | Private | Persistencia de reseñas. |
+
+###### Methods
+| Nombre | Tipo de retorno | Visibilidad | Descripción |
+| :---: | :---: | :---: | :--- |
+| addReview(AddReviewCommand) | ReviewDto | Public | Agrega reseña (solo compradores válidos). |
+| listReviews(ListReviewsQuery) | List | Public | Lista reseñas visibles. |
+
+---
+
+##### Commands & Queries
+| Nombre |
+| :---: |
+| CreateProjectCommand |
+| UpdateProjectCommand |
+| PublishCommand |
+| DeleteProjectCommand |
+| UpdatePortfolioCommand |
+| ReorderCommand |
+| UploadMediaCommand |
+| DeleteMediaCommand |
+| SearchProjectsQuery |
+| AddReviewCommand |
+| ListReviewsQuery |
+
+---
+
+#### 2.6.5.4. Infrastructure Layer
+
+##### JpaPortfolioRepositoryImpl
+
+| Nombre | Categoría | Implementa | Descripción |
+| :---: | :---: | :---: | :--- |
+| JpaPortfolioRepositoryImpl | Repository Implementation | PortfolioRepository | Implementación con JPA/ORM para portfolios. |
+
+**Funcionalidad clave**
+- Busca portafolios por sellerId.
+- Guarda (insert/update) portfolios.
+- Elimina portfolios.
+
+---
+
+##### JpaProjectRepositoryImpl
+
+| Nombre | Categoría | Implementa | Descripción |
+| :---: | :---: | :---: | :--- |
+| JpaProjectRepositoryImpl | Repository Implementation | ProjectRepository | Implementación con JPA/ORM para proyectos. |
+
+**Funcionalidad clave**
+- Busca proyectos por ownerId.
+- Búsqueda filtrada por tags o keywords.
+- Guarda proyectos.
+- Elimina proyectos.
+
+---
+
+##### MediaStorageGatewayImpl
+
+| Nombre | Categoría | Implementa | Descripción |
+| :---: | :---: | :---: | :--- |
+| MediaStorageGatewayImpl | Storage Service Implementation | MediaStorageGateway | Gestión de archivos multimedia. |
+
+**Funcionalidad clave**
+- `upload(file)`: Sube archivo y retorna `{url, thumbnailUrl}`.
+- `delete(path)`: Elimina archivo del almacenamiento.
+
+---
+
+#### 2.6.5.5. Bounded Context Software Architecture Component Level Diagrams
+
+El Component Diagram detalla la descomposición interna del container Portfolio BC en tres niveles principales: Interface
+Layer (APIs REST), Application Layer (App Services) y Domain & Infrastructure Layer. Las relaciones entre componentes 
+reflejan cómo los servicios de dominio coordinan portfolios, proyectos y reseñas, mientras que los repositorios JPA 
+encapsulan la persistencia. La modularidad permite mantener la lógica de cada agregado separada pero conectada:
+
+- PortfolioService gestiona la relación entre portfolios, proyectos y reseñas.
+- ProjectService gestiona proyectos y su multimedia asociada.
+- ReviewService centraliza la lógica de reseñas.
+
+
+![ComponentLevelDiagram](imgs/ComponentLevelDiagramPortfolio.png)
+
+---
+
+#### 2.6.5.6. Bounded Context Software Architecture Code Level Diagrams
+
+##### 2.6.5.6.1. Bounded Context Domain Layer Class Diagrams
+
+El diagrama de clases del dominio del Portfolio BC(Bounded Context) muestra las principales entidades y servicios de 
+negocio. Mediante el bounded context Portfolio que contiene múltiples Projects, el cual puede tener múltiples Media y 
+Reviews. Asimismo cuenta con servicios como PortfolioService, ProjectService y ReviewService, que aplican reglas de 
+negocio, coordinan relaciones entre entidades y mantienen la consistencia del agregado.
+
+![DomainLayerClassDiagram](imgs/DiagramClassPortfolio.png)
+
+
+##### 2.6.5.6.2. Bounded Context Database Design Diagram
+
+Este diagrama de base de datos detalla las tablas para el sistema de gestión de portafolios. Muestra la tabla central 
+portfolios relacionada con projects, media y reviews, estableciendo la estructura para administrar portafolios de 
+vendedores, proyectos publicados, archivos multimedia y reseñas de compradores.
+![DatabaseDesignDiagram](imgs/DiagramDataBasePortfolio.png)
+
+
 
 # Capítulo III: Solution UI/UX Design
 ## 3.1. Product design
