@@ -721,7 +721,13 @@ Este bounded context encapsula el proceso de comunicación en tiempo real entre 
 El contexto modela el Chat como una entidad central con reglas de negocio específicas para garantizar la validez de los mensajes, el control de estados de lectura y la persistencia confiable de la comunicación. Se establece un lenguaje ubicuo preciso que incluye términos como Chat, senderId, receiverId, content, sentAt e isRead, facilitando la comunicación técnica y de negocio.
 
 ![CanvasesPullBoundedContextr](imgs/CanvasesChatBoundedContex.png)
+
 **Bounded Context User:**
+El Bounded Context Canvas del User (IAM) encapsula la gestión de identidad y perfil dentro de GigU, estructurando el ciclo completo desde el registro y autenticación hasta la lectura y actualización del perfil público. Este define quién puede crear cuentas, cómo se valida la unicidad del email, qué datos conforman el perfil, cuál es el rol activo y cómo se mantiene el rating del usuario.
+
+El contexto modela la UserAccount como entidad central con reglas específicas para proteger credenciales (password hash), controlar cambios sensibles (email único), actualizar información pública y publicar eventos para comunicarlos con otros BCs. Su lenguaje ubicuo incluye términos como UserAccount, Profile, Role, Rating, profilePicture, bio, createdAt/updatedAt y Auth, sirviendo como base de confianza para las interacciones entre compradores y freelancers en GigU.
+
+![CanvasesUserBoundedContext](imgs/BoundedContextUserCanva.png)
 
 **Bounded Context Portfolio:**
 
