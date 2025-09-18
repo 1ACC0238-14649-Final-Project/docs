@@ -39,8 +39,8 @@ ABET – EAC - Student Outcome 7: La capacidad de adquirir y aplicar nuevos cono
 
 | Criterio específico | Acciones realizadas | Conclusiones |
 | ----- | ----- | ----- |
-| **7.c1. Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de ingeniería de software** | **Irving Allcca** TB1:  <br>**Diego Cacho** TB1:  <br>**Adrian Donayre** TB1:  <br>**Mariano Oblitas** TB1:  <br>**Carlos Fernandez** TB1:  |  |
-| **7.c2. Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de tecnologías de ingeniería de software** | **Irving Allcca** TB1:  <br>**Diego Cacho** TB1:  <br>**Adrian Donayre** TB1:  <br>**Mariano Oblitas** TB1:  <br>**Carlos Fernandez** TB1: |  |
+| **7.c1. Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de ingeniería de software** | **Irving Allcca** TB1:  <br>**Diego Cacho** TB1: Para la TB1, realice diversos puntos relacionados con el bounded context Chat, esto me permitio conocer aun mas acerca de nuestro proyecto, teniendo en cuenta el funcionamiento interno de este. <br>**Adrian Donayre** TB1:  <br>**Mariano Oblitas** TB1:  <br>**Carlos Fernandez** TB1:  |  |
+| **7.c2. Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de tecnologías de ingeniería de software** | **Irving Allcca** TB1:  <br>**Diego Cacho** TB1: El avance realizado en la primera entrega del proyecto me permitio adentrame a las soluciones de problemas con la tecnología de desarrollo móvil de Android, de esta manera organice diversos puntos y logre comprender mas la lógica de GigU en un entorno móvil. <br>**Adrian Donayre** TB1:  <br>**Mariano Oblitas** TB1:  <br>**Carlos Fernandez** TB1: |  |
 
 
 # Tabla de Contenidos
