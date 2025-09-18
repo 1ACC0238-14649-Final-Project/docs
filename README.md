@@ -134,7 +134,19 @@ ABET – EAC - Student Outcome 7: La capacidad de adquirir y aplicar nuevos cono
       * [2.6.3.6. Bounded Context Software Architecture Code Level Diagrams](#2636-bounded-context-software-architecture-code-level-diagrams)
 
         * [2.6.3.6.1. Bounded Context Domain Layer Class Diagrams](#26361-bounded-context-domain-layer-class-diagrams)
-        * [2.6.3.6.2. Bounded Context Database Design Diagram](#26362-bounded-context-database-design-diagram)  
+        * [2.6.3.6.2. Bounded Context Database Design Diagram](#26362-bounded-context-database-design-diagram)
+
+    * [2.6.4. Bounded Context 4](#264-bounded-context-4)
+
+      * [2.6.4.1. Domain Layer](#2641-domain-layer)
+      * [2.6.4.2. Interface Layer](#2642-interface-layer)
+      * [2.6.4.3. Application Layer](#2643-application-layer)
+      * [2.6.4.4. Infrastructure Layer](#2644-infrastructure-layer)
+      * [2.6.4.5. Bounded Context Software Architecture Component Level Diagrams](#2645-bounded-context-software-architecture-component-level-diagrams)
+      * [2.6.4.6. Bounded Context Software Architecture Code Level Diagrams](#2646-bounded-context-software-architecture-code-level-diagrams)
+
+        * [2.6.4.6.1. Bounded Context Domain Layer Class Diagrams](#26461-bounded-context-domain-layer-class-diagrams)
+        * [2.6.4.6.2. Bounded Context Database Design Diagram](#26462-bounded-context-database-design-diagram)  
 
 * [Capítulo III: Solution UI/UX Design](#capítulo-iii-solution-uiux-design)
 
@@ -1147,6 +1159,16 @@ Incluye las implementaciones de acceso a la persistencia y servicios auxiliares 
 
 ##### 2.6.3.6.2. Bounded Context Database Design Diagram
 ![DatabaseGigU](imgs/DatabaseGigU.png)
+
+### 2.6.4. Bounded Context 4
+#### 2.6.4.1. Domain Layer
+#### 2.6.4.2. Interface Layer
+#### 2.6.4.3. Application Layer
+#### 2.6.4.4. Infrastructure Layer
+#### 2.6.4.5. Bounded Context Software Architecture Component Level Diagrams
+#### 2.6.4.6. Bounded Context Software Architecture Code Level Diagrams
+##### 2.6.4.6.1. Bounded Context Domain Layer Class Diagrams
+##### 2.6.4.6.2. Bounded Context Database Design Diagram
 
 # Capítulo III: Solution UI/UX Design
 ## 3.1. Product design
