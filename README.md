@@ -1161,14 +1161,282 @@ Incluye las implementaciones de acceso a la persistencia y servicios auxiliares 
 ![DatabaseGigU](imgs/DatabaseGigU.png)
 
 ### 2.6.4. Bounded Context 4
+
+Este bounded context administra identidad, autenticación y perfil de los usuarios. Asimismo, soporta registro, inicio de sesión, edición de perfil, rol activo y calificación visible. Así como también publica cambios relevantes para otros contextos. 
+
 #### 2.6.4.1. Domain Layer
+El Domain Layer contiene las reglas fundamentales del negocio relacionadas con los Users.  
+**Aggregate**
+
+| Nombre | Categoría | Descripción |
+| :---: | :---: | :---: |
+| UserAccount | Entity (Aggregate Root) | Cuenta de usuario unificada con nombre, email y contraseña. |
+
+**Attributes**
+
+| Nombre | Tipo de dato | Visibilidad | Descripción |
+| ----- | ----- | ----- | ----- |
+| id | Long | Private | Identificador único del usuario. |
+| name | String | Private | Nombre público |
+| email | String | Private | Único. Credencial de acceso y notificaciones. |
+| passwordHash | String | Private | Hash seguro de contraseña. |
+| role | Enum {BUYER, SELLER} | Private | Rol activo del usuario en la plataforma. |
+| profilePicture | String | Private | URL de foto de perfil. |
+| biografia | String | Private | Descripción corta del usuario. |
+| calificacion | Decimal | Private | Promedio visible. |
+| createdAt | DateTime | Public | Fecha/hora de creación del usuario. |
+| updatedAt | DateTime | Public | Fecha/hora de última actualización. |
+
+**Methods**
+
+| Nombre | Retorno | Visibilidad | Descripción |
+| ----- | ----- | ----- | ----- |
+| UserAccount(name, email, passwordHash, role?) | UserAccount | Public | Construye la cuenta con email único y password ya hasheado. Si no se indica role, por defecto BUYER. |
+| verifyPassword(raw, hashingService) | bool | Public | Compara raw con passwordHash usando hashingService.matches(...). |
+| changePassword(newRaw, hashingService) | void | Public | Reemplaza passwordHash por hashingService.encode(newRaw) y actualiza updatedAt. |
+| updateProfile(name?, email?, profilePicture?, biografia?) | void | Public | Actualiza datos del perfil. |
+| changeRole(newRole: Role) | void | Public | Cambia el rol activo. |
+| updateCalificacion(nuevoPromedio: Decimal) | void | public | Establece calificación validando el rango \[0,5\]. |
+| issueToken(tokenService) | string | public | Devuelve un JWT tras autenticación exitosa. |
+
 #### 2.6.4.2. Interface Layer
+La Interface Layer expone las operaciones de User (IAM) mediante endpoints REST.  
+Se encarga de recibir solicitudes externas, validar datos y delegar la lógica a los Command/Query Services del contexto.
+
+**Controllers**
+
+| Nombre | Categoría | Descripción |
+| ----- | ----- | ----- |
+| AuthController | Controller | Controlador para registro e inicio de sesión (emisión de JWT). |
+| UsersController | Controller | Controlador para consultas y actualizaciones del perfil. |
+
+**Attributes**
+
+| Nombre | Tipo de dato | Visibilidad | Descripción |
+| ----- | ----- | ----- | ----- |
+| userQueryService | IUserQueryService | Private | Servicio de consulta de usuarios. |
+| userCommandService | IUserCommandService | Private | Servicio de comandos de usuarios. |
+| tokenService | ITokenService | Private | Generación y validación de JWT. |
+| hashingService | IHashingService | Private | Hashing y verificación de contraseñas. |
+| fileStorageService | IFileStorageService | Private | Manejo de uploads para profilePicture. |
+
+**Endpoints**
+
+| Ruta | Método | Descripción |
+| ----- | ----- | ----- |
+| /api/v1/auth/sign-up | POST | Registra un usuario nuevo con *name, email, password*. Devuelve token \+ usuario. |
+| /api/v1/auth/sign-in | POST | Autentica con *email \+ password*. Devuelve token \+ usuario. |
+| /api/v1/users/me | GET | Devuelve el perfil del usuario autenticado a partir del JWT. |
+| /api/v1/users/{id} | GET | Devuelve un usuario por su identificador. |
+| /api/v1/users | GET | Lista usuarios. |
+| /api/v1/users/{id} | PUT | Actualiza el perfil. |
+| /api/v1/users/{id}/role | PUT | Cambia el rol activo. |
+| /api/v1/users/{id}/rating | PUT | Actualiza la calificación. |
+| /api/v1/users/{id}/profile-picture | PUT | Sube/actualiza la foto de perfil. |
+
+**DTOs**
+
+**Request DTOs**
+
+| Nombre | Descripción |
+| ----- | ----- |
+| SignUpRequestDto | Contiene los campos name, email, password. |
+| SignInRequestDto | Contiene los campos email, password. |
+| UpdateProfileRequestDto | Contiene los campos name, email, biografia. |
+| ChangeRoleRequestDto | Solo contiene dos roles, BUYER y SELLER. |
+| UpdateRatingRequestDto | Contiene el campo calificacion. |
+| UploadProfilePictureRequestDto | Contiene el campo file (multipart/form-data) |
+
+**Response DTOs**
+
+| Nombre | Descripción |
+| ----- | ----- |
+| AuthResponseDto | Resultado de login/registro: { token, user: UserResponseDto } |
+| UserResponseDto | Representa un usuario: { id, name, email, role, profilePicture, biografia, calificacion, createdAt, updatedAt } |
+| ListUsersResource | Listado: { items: UserResponseDto\[\], page?, size?, total? } |
+
 #### 2.6.4.3. Application Layer
+Esta capa coordina la lógica de negocio entre el dominio, la infraestructura y los casos de uso expuestos por la Interface Layer.  
+**Service 1: AuthApplicationService**
+
+| Nombre | Categoría | Descripción |
+| ----- | ----- | ----- |
+| AuthApplicationService | Service | Orquesta registro e inicio de sesión. Aplica hashing de contraseña, verifica unicidad de email y emite JWT. |
+
+**Dependencies**
+
+| Nombre | Tipo de objeto | Visibilidad | Descripción |
+| ----- | ----- | ----- | ----- |
+| userRepository | UserRepository | Private | Acceso a persistencia de UserAccount. |
+| hashingService | IHashingService | Private | Encargado de hashear y verificar contraseñas. |
+| tokenService | ITokenService | Private | Genera JWT y arma el AuthResponse. |
+| unitOfWork | UnitOfWork | Private | Maneja confirmación/rollback de transacciones |
+
+**Methods**
+
+| Nombre | Tipo de retorno | Visibilidad | Descripción |
+| ----- | ----- | ----- | ----- |
+| signUp(request: SignUpRequestDto) | AuthResponseDto | Public | Crea UserAccount con name, email (único) y password hasheado. Persiste y devuelve token con usuario. |
+| signIn(request: SignInRequestDto) | AuthResponseDto | Public | Verifica email con password (hashing), y retorna token con usuario. |
+
+**Service 2: UserApplicationService**
+
+| Nombre | Categoría | Descripción |
+| ----- | ----- | ----- |
+| UserApplicationService | Service | Orquesta consultas y actualizaciones de perfil: nombre, email, biografía, rol, calificación y profile picture, además de listados y lecturas puntuales. |
+
+**Dependencies**
+
+| Nombre | Tipo de objeto | Visibilidad | Descripción |
+| ----- | ----- | ----- | ----- |
+| userRepository | UserRepository | Private | Acceso a UserAccount. |
+| fileStorageService | IFileStorageService | Private | Guarda y obtiene archivos de profilePicture. |
+| domainEventPublisher | DomainEventPublisher | Private | Publica eventos como ProfileUpdated para sincronizar otros BCs. |
+| unitOfWork | UnitOfWork | Private | Maneja confirmación/rollback de transacciones. |
+
+**Methods**
+
+| Nombre | Tipo de retorno | Visibilidad | Descripción |
+| ----- | ----- | ----- | ----- |
+| getMe(currentUserId: Long) | UserResponseDto | Public | Retorna el perfil del usuario autenticado. |
+| getById(id: Long) | UserResponseDto | Public | Retorna un usuario por su id. |
+| listUsers(role?: Role, q?: String, page?: int, size?: int) | ListUsersResource | Public | Lista usuarios con filtros por rol y búsqueda por nombre/email |
+| updateProfile(id: Long, request: UpdateProfileRequestDto) | UserResponseDto | Public | Actualiza name?, email? y biografia?. Publica ProfileUpdated. |
+| changeRole(id: Long, request: ChangeRoleRequestDto) | UserResponseDto | Public | Cambia el rol activo. |
+| updateRating(id: Long, request: UpdateRatingRequestDto) | UserResponseDto | Public | Actualiza calificacion validando rango. Al cerrar Pulls. |
+| uploadProfilePicture(id: Long, request: UploadProfilePictureRequestDto) | UserResponseDto | Public | Sube/actualiza profilePicture, guarda URL y retorna el perfil actualizado. |
+
+**Commands**
+
+* RegisterUserCommand  
+* AuthenticateUserCommand  
+* UpdateUserProfileCommand  
+* ChangeUserRoleCommand  
+* UpdateUserRatingCommand  
+* UploadProfilePictureCommand
+
+**Queries**
+
+* GetCurrentUserQuery  
+* GetUserByIdQuery  
+* ListUsersQuery  
+* SearchUsersQuery  
+* GetUserByEmailQuery
+
 #### 2.6.4.4. Infrastructure Layer
+En esta capa se implementan concretamente los contratos definidos en Domain/Application para persistencia, seguridad, almacenamiento de archivos y publicación de eventos. Aquí se integran servicios externos y componentes técnicos auxiliares.
+
+**JpaUserRepositoryImpl**
+
+| Nombre | Categoría | Implementa | Descripción |
+| ----- | ----- | ----- | ----- |
+| JpaUserRepositoryImpl | Repository Implementation | UserRepository | Implementación JPA/ORM para el agregado UserAccount. Mapea a tablas y gestiona consultas/actualizaciones. |
+
+**Funcionalidad clave**
+
+* findById(id), findByEmail(email).  
+* existsByEmail(email).  
+* save(user), update(user).  
+* Filtro por rol y búsqueda por nombre/email: list(role?, q?, page?, size?).  
+* Manejo de createdAt/updatedAt desde capa de persistencia.
+
+**JwtTokenServiceImpl**
+
+| Nombre | Categoría | Implementa | Descripción |
+| ----- | ----- | ----- | ----- |
+| JwtTokenServiceImpl | Security Service Implementation | ITokenService | Servicio de emisión/validación de JWT para autenticación. |
+
+**Funcionalidad clave**
+
+* generateToken(subject, claims).  
+* validate(token).  
+* getSubject(token) / getClaims(token).  
+* Firma con clave secreta/keystore y expiración configurable.
+
+**BCryptHashingServiceImpl**
+
+| Nombre | Categoría | Implementa | Descripción |
+| ----- | ----- | ----- | ----- |
+| BCryptHashingServiceImpl | Security Service Implementation | IHashingService | Hash y verificación de contraseñas con BCrypt. |
+
+**Funcionalidad clave**
+
+* encode(rawPassword).  
+* matches(rawPassword, passwordHash).
+
+**ProfilePictureStorageImpl**
+
+| Nombre | Categoría | Implementa | Descripción |
+| ----- | ----- | ----- | ----- |
+| ProfilePictureStorageImpl | Storage Service Implementation | IFileStorageService | Almacenamiento de profile pictures en proveedor externo. Devuelve URLs públicas o firmadas. |
+
+**Funcionalidad clave**
+
+* upload(file).  
+* delete(key).  
+* getUrl(key).
+
+**DomainEventPublisherImpl**
+
+| Nombre | Categoría | Implementa | Descripción |
+| ----- | ----- | ----- | ----- |
+| DomainEventPublisherImpl | Messaging/Event Implementation | DomainEventPublisher | Envía notificaciones automáticas cuando los usuarios hacen cambios importantes. |
+
+**Funcionalidad clave**
+
+* publish(ProfileUpdated|UserRoleChanged|UserRatingUpdated, payload).  
+* Suscriptores en otros BCs.
+
+**UnitOfWorkImpl**
+
+| Nombre | Categoría | Implementa | Descripción |
+| ----- | ----- | ----- | ----- |
+| UnitOfWorkImpl | Transaction Management Impl | UnitOfWork | Garantiza que operaciones relacionadas se hagan todas juntas o ninguna, evitando que la base de datos quede en estado inconsistente. |
+
+**Funcionalidad clave**
+
+* Manejo de excepciones y rollback automático.
+
 #### 2.6.4.5. Bounded Context Software Architecture Component Level Diagrams
+El primer diagrama muestra a los tipos de usuario que interactúan con la plataforma y cómo utilizan el sistema para autenticarse y gestionar su perfil.
+
+<img src="imgs\ContextoUser.png" alt="ContextoUser" title="ContextoUser"/>
+
+En el siguiente diagrama destaca tres piezas:
+
+1. La **Web/Mobile App** que usan Buyer y Seller.  
+2. La **User API** que expone endpoints de registro, login y perfil.   
+3. La **Base de Datos** donde persiste la cuenta y metadatos de usuario.  
+    La App consume la API vía HTTPS/JSON y la API persiste en la BD.
+
+<img src="imgs\ContenedoresUser.png" alt="ContenedoresUser" title="ContenedoresUser"/>
+
+En el siguiente diagrama se detalla la estructura interna de la User API. Se ven:
+
+* **Controllers** recibiendo solicitudes REST.  
+* **Application Services** orquestando casos de uso.  
+* **Infrastructure**: JpaUserRepositoryImpl (acceso a datos), JwtTokenServiceImpl (emisión/validación de JWT), BCryptHashingServiceImpl (hashing de contraseñas), entre otros.
+
+<img src="imgs\Componentes1User.png" alt="Componentes1User" title="Componentes1User"/>
+
+En el siguiente diagrama se muestran los componentes del cliente para autenticación y perfil. Las pantallas delegan en el ApiService, cómo se maneja el token en el cliente y cómo se realizan las llamadas a la API de User:
+
+* **Authentication Screens UI** (pantallas de login/registro) y **Profile Screens UI** (ver/editar perfil).  
+* **ApiService** como cliente HTTP que inyecta el JWT en encabezados y llama a la User API.  
+* **TokenService** para almacenamiento seguro del token.  
+* **HTTP Client** base.
+
+<img src="imgs\Componentes2User.png" alt="Componentes2User" title="Componentes2User"/>
+
 #### 2.6.4.6. Bounded Context Software Architecture Code Level Diagrams
 ##### 2.6.4.6.1. Bounded Context Domain Layer Class Diagrams
+
+El Domain Layer del BC User (IAM) modela la identidad y el perfil de los usuarios. El agregado raíz UserAccount concentra nombre, email (único), contraseña hasheada, rol, foto de perfil, biografía y calificación, además de marcas de creación/actualización. Asimismo, los commands y queries representan las solicitudes del negocio; los Domain Services (interfaces) abstraen hashing y emisión de JWT que el agregado puede utilizar sin acoplarse a infraestructura, en otras palabras, solo sabe que existe un contrato que le permite generar tokens.
+
+<img src="imgs\usergigu-diagram.png" alt="usergigu-diagram" title="usergigu-diagram"/>
+
 ##### 2.6.4.6.2. Bounded Context Database Design Diagram
+<img src="imgs\userDB.png" alt="userDB" title="userDB"/>
 
 # Capítulo III: Solution UI/UX Design
 ## 3.1. Product design
