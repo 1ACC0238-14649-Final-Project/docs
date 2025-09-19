@@ -2620,6 +2620,13 @@ En el primer Sprint solamente se ha desarrollado la Landing Page por lo que no s
 ### 4.3.3. Evaluaciones según heurísticas
 
 # Conclusiones y recomendaciones
+
+* TB1:
+
+GigU atiende una necesidad concreta en el entorno universitario y emprendedor, ofreciendo una solución que permite a los estudiantes monetizar sus habilidades mientras adquieren experiencia profesional en un entorno real. A la vez, brinda a los emprendedores y pequeños empresarios acceso a talento joven, creativo y accesible, que puede cubrir tareas específicas sin los altos costos de una agencia o empleados fijos.
+
+La propuesta de valor de GigU va más allá de conectar usuarios, ya que incorpora funcionalidades clave como cotización inteligente, visibilidad mediante portafolios, acuerdos formales y un sistema de pagos seguro. Esto no solo aumenta la confianza entre las partes, sino que también profesionaliza la experiencia freelance desde etapas tempranas, promoviendo relaciones laborales más justas, eficientes y formativas.
+
 # Video App Validation
 # Video About the product
 # Video About the team
