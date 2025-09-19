@@ -230,8 +230,8 @@ ABET – EAC - Student Outcome 7: La capacidad de adquirir y aplicar nuevos cono
       * [Contenido y entregables específicos del Hito (Semana 15)](#contenido-y-entregables-específicos-del-hito-semana-15)
   * [4.3. Validation Interviews](#43-validation-interviews)
 
-    * [4.3.1. Diseño de ](#431-diseño-de-)
-    * [4.3.2. Registro de ](#432-registro-de-)
+    * [4.3.1. Diseño de Entrevistas](#431-diseño-de-)
+    * [4.3.2. Registro de Entrevistas](#432-registro-de-)
     * [4.3.3. Evaluaciones según heurísticas](#433-evaluaciones-según-heurísticas)
 
 * [Conclusiones y recomendaciones](#conclusiones-y-recomendaciones)
@@ -418,8 +418,8 @@ Los competidores que hemos identificado para GigU son las plataformas freelancer
 ### 2.1.2. Estrategias y tácticas frente a competidores
 GigU aplicará una estrategia de diferenciación enfocada en el talento universitario, destacando por su enfoque educativo, precios accesibles y alianzas con instituciones académicas. Frente a los grandes competidores del mercado freelance, GigU se posiciona como una alternativa confiable y de propósito social, conectando clientes con estudiantes verificados. Su valor está en ofrecer soluciones personalizadas, soporte en español y una experiencia centrada en el desarrollo profesional de los jóvenes. Aprovechará las debilidades de otras plataformas como su falta de personalización o enfoque regional, mientras mitiga amenazas como la falta de experiencia estudiantil con garantías y filtros de calidad
 
-## 2.2. 
-### 2.2.1. Diseño de 
+## 2.2. Entrevistas
+### 2.2.1. Diseño de entrevistas
 **Segmento objetivo 1: Estudiantes Universitarios Freelancers**
 
 ¿Cual es tu nombre completo?
@@ -474,7 +474,7 @@ GigU aplicará una estrategia de diferenciación enfocada en el talento universi
 
 ¿Qué factores tomas en cuenta al elegir a un freelancer: precio, portafolio, tiempo de entrega, reputación, otro? ¿Cuál de ellos pesa más para ti al decidir?
 
-### 2.2.2. Registro de 
+### 2.2.2. Registro de entrevistas
 **Segmento objetivo \#1: Estudiantes Universitarios Freelancers** 
 
 Entrevistado N°1: Bruno Sebastián Gamarra Torres
@@ -635,7 +635,7 @@ Fabrizio Morales es un joven emprendedor que dirige un negocio de venta de vapes
 
 Link de entrevista https://upcedupe-my.sharepoint.com/:v:/g/personal/u202213241_upc_edu_pe/ERWRYYotMDNKrb9UZXiaV90BczcuHnygJ1UOZNQE1nmmxQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=v3wSIJ 
 
-#### **2.2.3 Análisis de ** 
+#### **2.2.3 Análisis de entrevistas** 
 
 El Segmento 1: Estudiantes Universitarios Freelancers muestra jóvenes motivados principalmente por la necesidad de ganar experiencia y generar ingresos adicionales mientras estudian. Bruno, Werner y Mario coinciden en que conseguir clientes es complicado debido a la falta de confianza de los empleadores hacia estudiantes y a la necesidad de contar con un portafolio sólido. Utilizan redes sociales y plataformas como Workana para buscar oportunidades, y prefieren métodos de pago sencillos como Yape y transferencias, aunque han enfrentado problemas de demoras en pagos. Para ellos, una plataforma ideal debería facilitar contratos, reseñas reales, chats integrados y sugerencias de proyectos alineados a sus habilidades, además de asegurar los pagos. Valoran la visibilidad de su talento más allá de la experiencia previa, dándoles la oportunidad de competir en el mercado freelance.
 
