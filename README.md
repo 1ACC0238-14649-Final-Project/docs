@@ -1197,15 +1197,260 @@ Representar la distribución física del sistema, mostrando cómo los diferentes
 - **Seguridad:** comunicación cifrada TLS, gestión de secretos en KeyVault y firewall de aplicaciones web.
 
 ## 2.6. Tactical-Level Domain-Driven Design
-### 2.6.1. Bounded Context 1
-#### 2.6.1.1. Domain Layer
-#### 2.6.1.2. Interface Layer
-#### 2.6.1.3. Application Layer
-#### 2.6.1.4. Infrastructure Layer
+## 2.6.1. Bounded Context 1
+
+El Bounded Context de **Gigs** representa el catálogo de servicios freelance ofrecidos en la plataforma.  
+Este contexto se encarga de la gestión completa del ciclo de vida de los gigs, incluyendo su creación, búsqueda, filtrado, actualización y eliminación.  
+Un **Gig** es un servicio específico que un freelancer (*seller*) ofrece a los compradores (*buyers*) de la plataforma.  
+
+### 2.6.1.1. Domain Layer  
+
+El **Domain Layer** encapsula la lógica principal de negocio de los Gigs. Incluye la entidad raíz **Gig**, sus invariantes, reglas de negocio y servicios de dominio.  
+
+#### Aggregate  
+
+| Nombre | Categoría | Descripción |
+|--------|-----------|-------------|
+| Gig | Entity (Aggregate Root) | Representa un servicio freelance ofrecido por un seller. Contiene toda la información necesaria para que un buyer pueda evaluar y adquirir el servicio. |
+
+#### Attributes  
+
+| Nombre | Tipo de dato | Visibilidad | Descripción |
+|--------|-------------|-------------|-------------|
+| Id | int | Public | Identificador único del Gig. |
+| Image | string | Public | Imagen del gig en formato base64. |
+| Title | string | Public | Título descriptivo del gig (máx. 200 caracteres). |
+| Description | string | Public | Descripción detallada del servicio (máx. 2000 caracteres). |
+| SellerId | UUID | Public | Identificador del vendedor que ofrece el gig. |
+| Price | decimal | Public | Precio del servicio (debe ser mayor a 0). |
+| Tags | List<string> | Public | Lista de etiquetas para categorización y búsqueda. |
+| Category | string | Public | Categoría principal del gig (máx. 100 caracteres). |
+| DeliveryDays | int | Public | Días de entrega del servicio (1–365 días). |
+| IsResponsive | bool | Public | Indica si el gig incluye diseño responsive. |
+| RevisionCount | int | Public | Número de revisiones incluidas (por defecto 3). |
+| PageCount | int | Public | Número de páginas del servicio. |
+| ExtraFeatures | List<string> | Public | Lista de características adicionales del servicio. |
+| CustomAnimations | bool | Public | Indica si incluye animaciones personalizadas. |
+| CreatedAt | DateTime | Public | Fecha de creación del gig. |
+
+#### Methods  
+
+| Nombre | Tipo de retorno | Visibilidad | Descripción |
+|--------|----------------|-------------|-------------|
+| Gig(constructor) | Gig | Public | Inicializa un Gig con los parámetros básicos requeridos. |
+
+#### Domain Services  
+
+| Nombre | Categoría | Descripción |
+|--------|-----------|-------------|
+| IGigDomainService | Domain Service Interface | Define las operaciones de lógica de negocio para gigs. |
+| GigDomainService | Domain Service | Implementa las reglas de negocio y validaciones del dominio. |
+
+#### Domain Service Methods  
+
+| Nombre | Tipo de retorno | Visibilidad | Descripción |
+|--------|----------------|-------------|-------------|
+| ValidateGigOwnership(gigId: int, sellerId: int) | Boolean | Public | Valida que un gig pertenezca a un seller específico. |
+| IsCategoryValid(category: string) | Boolean | Public | Valida que la categoría esté en la lista de categorías permitidas. |
+| IsUserActiveFreelancer(sellerId: int) | Boolean | Public | Verifica que el usuario sea un freelancer activo. |
+| ValidateGigRequirements(gigId: int) | Boolean | Public | Valida los requisitos mínimos del gig. |
+| AreTagsValid(tags: List<string>) | Boolean | Public | Valida que las etiquetas sean válidas. |
+| ValidateExtraFeatures(features: List<string>) | Boolean | Public | Valida que las características extra sean permitidas. |
+
+#### Repository Interface  
+
+| Nombre | Categoría | Descripción |
+|--------|-----------|-------------|
+| IGigRepository | Repository Interface | Define las operaciones de persistencia para la entidad Gig. |
+
+#### Repository Methods  
+
+| Nombre | Tipo de retorno | Visibilidad | Descripción |
+|--------|----------------|-------------|-------------|
+| GetById(id: int) | GigResource | Public | Obtiene un gig por su identificador. |
+| Create(gig: Gig) | GigResource | Public | Crea un nuevo gig en el repositorio. |
+| Update(gig: Gig) | GigResource | Public | Actualiza un gig existente. |
+| Delete(id: int) | Boolean | Public | Elimina un gig del repositorio. |
+| Exists(id: int) | Boolean | Public | Verifica si un gig existe. |
+| GetAll(...) | IEnumerable<Gig> | Public | Obtiene todos los gigs con paginación y ordenamiento. |
+| GetBySellerId(sellerId: int, ...) | IEnumerable<Gig> | Public | Obtiene gigs por vendedor. |
+| GetByCategory(category: string, ...) | IEnumerable<Gig> | Public | Obtiene gigs por categoría. |
+| Search(searchTerm: string, ...) | IEnumerable<Gig> | Public | Busca gigs por término de búsqueda. |
+| GetByTags(tags: List<string>, ...) | IEnumerable<Gig> | Public | Obtiene gigs por etiquetas. |
+| GetWithCustomAnimations(...) | IEnumerable<Gig> | Public | Obtiene gigs con animaciones personalizadas. |
+
+#### Commands  
+
+| Nombre | Categoría | Descripción |
+|--------|-----------|-------------|
+| CreateGigCommand | Command | Comando para crear un nuevo gig. |
+| UpdateGigCommand | Command | Comando para actualizar un gig existente. |
+
+#### Queries  
+
+| Nombre | Categoría | Descripción |
+|--------|-----------|-------------|
+| GetGigByIdQuery | Query | Consulta para obtener un gig por ID. |
+| GetAllGigsQuery | Query | Consulta para obtener todos los gigs con filtros. |
+| GetGigsBySellerIdQuery | Query | Consulta para obtener gigs por vendedor. |
+| GetGigsByCategoryQuery | Query | Consulta para obtener gigs por categoría. |
+| GetGigsByTagsQuery | Query | Consulta para obtener gigs por etiquetas. |
+
+#### Exceptions  
+
+| Nombre | Categoría | Descripción |
+|--------|-----------|-------------|
+| GigNotFoundException | Exception | Excepción lanzada cuando no se encuentra un gig. |
+| GigValidationException | Exception | Excepción lanzada cuando falla la validación de un gig. |
+
+#### Validators  
+
+| Nombre | Categoría | Descripción |
+|--------|-----------|-------------|
+| CreateGigCommandValidator | Validator | Validador para comandos de creación de gigs. |
+| UpdateGigCommandValidator | Validator | Validador para comandos de actualización de gigs. |
+
+### 2.6.1.2. Interface Layer  
+
+| Nombre | Categoría | Descripción |
+|--------|-----------|-------------|
+| GigController | Controller | Controlador REST que gestiona todas las operaciones de gigs. |
+
+#### Controller Attributes  
+
+| Nombre | Tipo de dato | Visibilidad | Descripción |
+|--------|--------------|-------------|-------------|
+| _gigCommandService | GigCommandService | Private | Servicio de comandos para operaciones de escritura. |
+| _gigQueryService | GigQueryService | Private | Servicio de consultas para operaciones de lectura. |
+
+#### Endpoints  
+
+| Ruta | Método | Descripción |
+|------|--------|-------------|
+| /api/v1/gig | GET | Lista todos los gigs con filtros y paginación. |
+| /api/v1/gig/{id} | GET | Obtiene un gig específico por ID. |
+| /api/v1/gig/seller/{sellerId} | GET | Lista gigs de un vendedor específico. |
+| /api/v1/gig/category/{category} | GET | Lista gigs por categoría. |
+| /api/v1/gig/tags | GET | Lista gigs por etiquetas. |
+| /api/v1/gig | POST | Crea un nuevo gig. |
+| /api/v1/gig/{id} | PUT | Actualiza un gig existente. |
+| /api/v1/gig/{id} | DELETE | Elimina un gig. |
+| /api/v1/gig/stats/category/{category}/count | GET | Obtiene el conteo de gigs por categoría. |
+| /api/v1/gig/stats/seller/{sellerId}/count | GET | Obtiene el conteo de gigs por vendedor. |
+| /api/v1/gig/{id}/exists | GET | Verifica si un gig existe. |
+
+#### DTOs  
+
+| Nombre | Descripción |
+|--------|-------------|
+| CreateGigResource | DTO para crear un nuevo gig con validaciones. |
+| UpdateGigResource | DTO para actualizar un gig existente. |
+| GigResource | DTO de respuesta con todos los campos del gig. |
+| ListGigsResource | DTO para listas paginadas de gigs. |
+
+#### Transform Assemblers  
+
+| Nombre | Categoría | Descripción |
+|--------|-----------|-------------|
+| GigResourceFromEntityAssembler | Assembler | Convierte entidades Gig a DTOs de respuesta. |
+| CreateGigCommandFromResourceAssembler | Assembler | Convierte DTOs de request a comandos de dominio. |
+| UpdateGigCommandFromResourceAssembler | Assembler | Convierte DTOs de actualización a comandos de dominio. |
+
+### 2.6.1.3. Application Layer  
+
+#### Command Services  
+
+| Nombre | Categoría | Descripción |
+|--------|-----------|-------------|
+| GigCommandService | Service | Orquesta la creación, actualización y eliminación de gigs. |
+
+#### Command Service Dependencies  
+
+| Nombre | Tipo de objeto | Visibilidad | Descripción |
+|--------|---------------|-------------|-------------|
+| _gigRepository | IGigRepository | Private | Repositorio para acceso a datos de gigs. |
+| _gigDomainService | IGigDomainService | Private | Servicio de dominio para validaciones. |
+| _createValidator | CreateGigCommandValidator | Private | Validador para comandos de creación. |
+| _updateValidator | UpdateGigCommandValidator | Private | Validador para comandos de actualización. |
+
+#### Command Service Methods  
+
+| Nombre | Tipo de retorno | Visibilidad | Descripción |
+|--------|----------------|-------------|-------------|
+| CreateGig(CreateGigCommand command) | GigResource | Public | Crea un nuevo gig con validaciones. |
+| UpdateGig(UpdateGigCommand command) | GigResource | Public | Actualiza un gig existente. |
+| DeleteGig(int gigId, int sellerId) | Boolean | Public | Elimina un gig validando propiedad. |
+
+#### Query Services  
+
+| Nombre | Categoría | Descripción |
+|--------|-----------|-------------|
+| GigQueryService | Service | Orquesta las consultas y búsquedas de gigs. |
+
+#### Query Service Dependencies  
+
+| Nombre | Tipo de objeto | Visibilidad | Descripción |
+|--------|---------------|-------------|-------------|
+| GigRepository | IGigRepository | Private | Repositorio para acceso a datos de gigs. |
+
+#### Query Service Methods  
+
+| Nombre | Tipo de retorno | Visibilidad | Descripción |
+|--------|----------------|-------------|-------------|
+| GetGigById(GetGigByIdQuery query) | GigResource | Public | Obtiene un gig por ID. |
+| GetAllGigs(GetAllGigsQuery query) | List<Gig> | Public | Obtiene todos los gigs con filtros. |
+| GetGigsBySellerId(GetGigsBySellerIdQuery query) | List<Gig> | Public | Obtiene gigs por vendedor. |
+| GetGigsByCategory(GetGigsByCategoryQuery query) | List<Gig> | Public | Obtiene gigs por categoría. |
+| GetGigsByTags(GetGigsByTagsQuery query) | List<Gig> | Public | Obtiene gigs por etiquetas. |
+| GetGigCountByCategory(string category) | Int | Public | Obtiene conteo de gigs por categoría. |
+| GetGigCountBySellerId(int sellerId) | Int | Public | Obtiene conteo de gigs por vendedor. |
+| GigExists(int id) | Boolean | Public | Verifica si un gig existe. |
+
+### 2.6.1.4. Infrastructure Layer  
+
+#### Repository Implementation  
+
+| Nombre | Categoría | Implementa | Descripción |
+|--------|-----------|------------|-------------|
+| GigRepository | Repository | IGigRepository | Implementación con Entity Framework Core para persistencia de gigs. |
+
+#### Repository Dependencies  
+
+| Nombre | Tipo de objeto | Visibilidad | Descripción |
+|--------|---------------|-------------|-------------|
+| Context | GigUContext | Protected | Contexto de Entity Framework para acceso a base de datos. |
+
+#### Repository Key Features  
+
+| Funcionalidad | Descripción |
+|---------------|-------------|
+| CRUD Operations | Crear, leer, actualizar y eliminar gigs |
+| Advanced Queries | Búsqueda por múltiples criterios |
+| Pagination | Soporte para paginación en todas las consultas |
+| Sorting | Ordenamiento por diferentes campos |
+| Filtering | Filtros por categoría, precio, días de entrega, etiquetas |
+| Search | Búsqueda de texto en título, descripción y categoría |
+| Counting | Métodos para obtener conteos con filtros |
+| Performance | Uso de *AsNoTracking* para consultas de solo lectura |
+
+#### Database Context Integration  
+
+| Nombre | Categoría | Descripción |
+|--------|-----------|-------------|
+| GigUContext | DbContext | Contexto principal de Entity Framework que incluye la configuración de la entidad Gig. |
+
 #### 2.6.1.5. Bounded Context Software Architecture Component Level Diagrams
 #### 2.6.1.6. Bounded Context Software Architecture Code Level Diagrams
+
+![Context Database Design Diagram](https://imgur.com/yx1rcI8.png)
+
 ##### 2.6.1.6.1. Bounded Context Domain Layer Class Diagrams
+
+![Context Database Design Diagram](https://imgur.com/Zxhsju9.png)
+
 ##### 2.6.1.6.2. Bounded Context Database Design Diagram
+
+![Context Database Design Diagram](https://imgur.com/akW5So3.png)
 
 ### 2.6.2. Bounded Context 2
 El bounded context Pulls representa el proceso de negociación y transacción entre un buyer y un seller dentro de la plataforma, siempre basado en un Gig.  
