@@ -1000,6 +1000,11 @@ Para cada bounded context, se siguió una serie de pasos clave:
 Gracias a esta metodología, el equipo logró definir bounded contexts robustos y coherentes, cada uno cumpliendo un rol específico dentro de la arquitectura general del sistema.
 
 **Bounded Context Gig:**
+Este bounded context encapsula la gestión integral de los Gigs, entendidos como las propuestas de servicio que los sellers ofrecen dentro de la plataforma. Define los límites funcionales para administrar todo su ciclo de vida: desde la creación y publicación inicial de un gig, pasando por su exploración y selección por parte de los buyers, hasta la fase de negociación de condiciones (precio, plazos y características) y la aceptación o rechazo por el seller/freelancer.
+
+El contexto modela al Gig como la entidad raíz del dominio, con atributos y reglas de negocio que garantizan la consistencia de la información publicada y su validez dentro de la plataforma. Asimismo, se establece un lenguaje ubicuo claro, donde términos como Gig, seller, buyer, category, price, deliveryDays y extraFeatures forman parte del vocabulario común entre los equipos técnicos y de negocio, favoreciendo la cohesión y la comunicación dentro del dominio de contratación basada en servicios freelance.
+
+![CanvasesGIGBoundedContextr](https://imgur.com/Bqv29J8.png)
 
 **Bounded Context Pull:**
 Este bounded context encapsula el proceso de negociación entre un buyer y un seller sobre un Gig, estructurando el ciclo completo desde la apertura de una oferta hasta su cierre como transacción completada. Define claramente los límites funcionales del contexto, asegurando su independencia y cohesión dentro del dominio de contratación basada en Gigs.
