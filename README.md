@@ -2462,7 +2462,6 @@ SellerPath
 
 BuyerPath
 
-
 [Figma Prototyping](https://www.figma.com/proto/e9rRUYfYEnuXsDprZFbRJh/GigU-Mobile?node-id=1-807&p=f&t=2Hq2t1l8xhwXIZt4-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A1330&show-proto-sidebar=1)
 
 # Capítulo IV: Product Implementation & Validation
@@ -2688,8 +2687,19 @@ GigU atiende una necesidad concreta en el entorno universitario y emprendedor, o
 La propuesta de valor de GigU va más allá de conectar usuarios, ya que incorpora funcionalidades clave como cotización inteligente, visibilidad mediante portafolios, acuerdos formales y un sistema de pagos seguro. Esto no solo aumenta la confianza entre las partes, sino que también profesionaliza la experiencia freelance desde etapas tempranas, promoviendo relaciones laborales más justas, eficientes y formativas.
 
 # Video App Validation
+
 # Video About the product
+
 # Video About the team
+
 # Glosario
+
 # Bibliografía
+
+
 # Anexos
+
+[Landing Page](https://1acc0238-14649-final-project.github.io/landing/)
+
+[Figma Mobile Applications Prototyping](https://www.figma.com/proto/e9rRUYfYEnuXsDprZFbRJh/GigU-Mobile?node-id=1-807&p=f&t=2Hq2t1l8xhwXIZt4-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A1330&show-proto-sidebar=1)
+
