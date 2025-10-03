@@ -2388,7 +2388,28 @@ vendedores, proyectos publicados, archivos multimedia y reseñas de compradores.
 # Capítulo III: Solution UI/UX Design
 ## 3.1. Product design
 ### 3.1.1. Style Guidelines
+
+En esta parte, presentaremos el plan que hemos creado para definir el diseño, los estilos y el aspecto visual de nuestro sitio web y de las páginas de la aplicación. Nuestro objetivo es ofrecer a los usuarios una interfaz intuitiva y agradable. Para lograrlo, hemos optado por incorporar elementos visuales que sean claros y visualmente atractivos, además de establecer límites que eviten el uso de gráficos que puedan resultar poco estéticos.
+
+
 #### 3.1.1.1. General Style Guidelines
+
+**Colores**
+
+La selección de colores en esta guía tiene un papel clave en asegurar una identidad visual coherente, accesible y atractiva. Los tonos principales como GigU Primary (#16335A) y GigU Primary Light (#2F94DA) establecen una base sólida para la marca, mientras que colores como Semantic/Red (#DC1010) y los tonos neutros (White #FFFFFF, Neutral/White #F0F0F3, Empty/Gray #C4C4C4) refuerzan la jerarquía visual, la legibilidad y la claridad en la comunicación. Por su parte, los colores de texto como Text/DarkGray (#838383) y Text/Black (#1B1B1B) aseguran una lectura óptima. En conjunto, esta paleta está diseñada para facilitar una experiencia visual armoniosa y efectiva en todos los puntos de contacto.
+
+![Colors](imgs/StylesColors.JPG)
+
+
+**Tipografía**
+
+La tipografía seleccionada para esta identidad visual es Poppins, una fuente moderna y versátil que contribuye significativamente a la claridad, coherencia y estilo del contenido. Su diseño geométrico y equilibrado facilita la lectura en diferentes tamaños y dispositivos, al mismo tiempo que aporta una apariencia profesional y contemporánea. Definir su uso en términos de tamaños, pesos y espaciados permite mantener una jerarquía visual clara y una experiencia de usuario uniforme. En conjunto, el uso de Poppins refuerza la personalidad de la marca y mejora la comunicación visual de forma consistente y efectiva.
+
+
+**Tono de comunicación y lenguaje aplicado**
+
+El tono de comunicación es un elemento clave dentro del sistema de estilos, ya que define la forma en que la marca se expresa y se relaciona con su audiencia. Determinar si el tono será formal, cercano, técnico o amigable influye directamente en cómo se interpreta el mensaje y en la conexión emocional que se genera. Asimismo, el lenguaje utilizado —incluyendo la selección de palabras, la estructura de las frases y el nivel de complejidad— contribuye a lograr una comunicación clara, accesible y alineada con la identidad de la marca. Establecer estas pautas asegura una experiencia coherente y efectiva en todos los canales y puntos de contacto.
+
 ### 3.1.2. Information Architecture
 #### 3.1.2.1. Organization Systems
 #### 3.1.2.2. Labelling Systems
