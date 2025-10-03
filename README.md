@@ -2420,7 +2420,6 @@ Los mock-ups integran los elementos visuales (tipografías, colores, íconos, im
 
 Esta sección presenta la propuesta de diseño de experiencia de usuario (UX) e interfaz de usuario (UI) para las aplicaciones móviles que conforman la experiencia digital del producto. La propuesta busca ofrecer una navegación intuitiva, eficiente y accesible, que garantice una experiencia positiva desde cualquier dispositivo móvil.
 Se tuvo en cuenta el comportamiento del usuario en entornos móviles, priorizando la usabilidad con una estructura de navegación clara, flujos de usuario optimizados, retroalimentación visual y componentes táctiles accesibles. El diseño también está basado en principios de diseño inclusivo y en el Design System establecido previamente para mantener coherencia visual entre todas las plataformas digitales del producto.
-![LandingPageMockup](imgs/LandingPageMockup.jpg)
 
 #### 3.1.4.1. Mobile Applications Wireframes
 
