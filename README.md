@@ -2454,6 +2454,17 @@ Los diseños están optimizados para dispositivos móviles, priorizando la acces
 #### 3.1.4.4. Mobile Applications User Flow Diagrams
 #### 3.1.4.5. Mobile Applications Prototyping
 
+Tenemos 3 starting points:
+
+Register/Login
+
+SellerPath
+
+BuyerPath
+
+
+[Figma Prototyping](https://www.figma.com/proto/e9rRUYfYEnuXsDprZFbRJh/GigU-Mobile?node-id=1-807&p=f&t=2Hq2t1l8xhwXIZt4-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A1330&show-proto-sidebar=1)
+
 # Capítulo IV: Product Implementation & Validation
 ## 4.1. Software Configuration Management
 ### 4.1.1. Software Development Environment Configuration
