@@ -2396,8 +2396,26 @@ vendedores, proyectos publicados, archivos multimedia y reseñas de compradores.
 #### 3.1.2.4. Searching Systems
 #### 3.1.2.5. Navigation Systems
 ### 3.1.3. Landing Page UI Design
+En esta sección se detalla la propuesta de diseño de interfaz de usuario (UI) para la Landing Page, alineada con las decisiones previas sobre diseño y arquitectura de información. La propuesta busca equilibrar estética, funcionalidad y accesibilidad, asegurando una experiencia intuitiva para distintos tipos de usuarios y dispositivos.
+
+El diseño parte de una estructura jerárquica clara, que responde a los objetivos de comunicación y conversión del sitio. Se aplicaron principios de diseño visual como consistencia, contraste, alineación y proximidad. Además, se tuvo en cuenta el diseño inclusivo, implementando elementos accesibles y adaptativos, asegurando que todos los usuarios puedan interactuar de manera efectiva con la interfaz.
+
 #### 3.1.3.1. Landing Page Wireframe
+
+En esta sección se presentan los wireframes de la Landing Page.
+Los wireframes representan la estructura funcional del sitio sin aplicar aún el diseño visual final. Se enfocan en mostrar la jerarquía de la información, la distribución de los bloques de contenido y la navegación esperada del usuario.
+
+
+![LandingPageWireFrame](imgs/LandingPageWireFrame.jpg)
+
 #### 3.1.3.2. Landing Page Mock-up
+
+A partir de los wireframes, se desarrollaron los mock-ups con el diseño visual final, aplicando el Design System definido para los productos digitales del proyecto. 
+Los mock-ups integran los elementos visuales (tipografías, colores, íconos, imágenes) y componentes interactivos, respetando la identidad visual y los principios de accesibilidad.
+
+
+![LandingPageMockup](imgs/LandingPageMockup.jpg)
+
 ### 3.1.4. Mobile Applications UX/UI Design
 #### 3.1.4.1. Mobile Applications Wireframes
 #### 3.1.4.2. Mobile Applications Wireflow Diagrams
