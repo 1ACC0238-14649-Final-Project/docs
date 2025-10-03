@@ -2417,9 +2417,41 @@ Los mock-ups integran los elementos visuales (tipografías, colores, íconos, im
 ![LandingPageMockup](imgs/LandingPageMockup.jpg)
 
 ### 3.1.4. Mobile Applications UX/UI Design
+
+Esta sección presenta la propuesta de diseño de experiencia de usuario (UX) e interfaz de usuario (UI) para las aplicaciones móviles que conforman la experiencia digital del producto. La propuesta busca ofrecer una navegación intuitiva, eficiente y accesible, que garantice una experiencia positiva desde cualquier dispositivo móvil.
+Se tuvo en cuenta el comportamiento del usuario en entornos móviles, priorizando la usabilidad con una estructura de navegación clara, flujos de usuario optimizados, retroalimentación visual y componentes táctiles accesibles. El diseño también está basado en principios de diseño inclusivo y en el Design System establecido previamente para mantener coherencia visual entre todas las plataformas digitales del producto.
+![LandingPageMockup](imgs/LandingPageMockup.jpg)
+
 #### 3.1.4.1. Mobile Applications Wireframes
+
+En esta sección se presentan los wireframes de las aplicaciones móviles en baja fidelidad, los cuales permiten visualizar la estructura y navegación de la app sin incluir aún el diseño visual definitivo.
+Los wireframes muestran las principales pantallas y flujos de interacción clave dentro de la aplicación. Estos incluyen elementos fundamentales como la pantalla de inicio, login/register, navegación principal, pantalla de contenido o servicios, y los llamados a la acción (CTA) más relevantes.
+
+
 #### 3.1.4.2. Mobile Applications Wireflow Diagrams
 #### 3.1.4.3. Mobile Applications Mock-ups
+
+En esta sección se presentan los mock-ups finales de la aplicación móvil, tanto en alta fidelidad como aplicando el Design System definido para los productos digitales. Los mock-ups muestran la apariencia visual definitiva de la interfaz, incorporando elementos gráficos, tipografías, iconografía, colores, y estilos interactivos, todos alineados con los principios de usabilidad y diseño inclusivo.
+Los diseños están optimizados para dispositivos móviles, priorizando la accesibilidad, la estética visual, la consistencia entre pantallas y la facilidad de navegación por parte del usuario.
+
+
+![BothLogIn](imgs/BothLogIn.png)
+![BothSignUp](imgs/BothSignUp.png)
+![BothSplashScreen](imgs/BothSplashScreen.png)
+![BuyerAccount](imgs/BuyerAccount.png)
+![BuyerGigDetail](imgs/BuyerGigDetail.png)
+![BuyerGigs](imgs/BuyerGigs.png)
+![BuyerMyPulls](imgs/BuyerMyPulls.png)
+![BuyerPeekSellerAccount](imgs/BuyerPeekSellerAccount.png)
+![BuyerPullDetail](imgs/BuyerPullDetail.png)
+![SellerAccount](imgs/SellerAccount.png)
+![SellerCreateGig](imgs/SellerCreateGig.png)
+![SellerCreateGigExtras](imgs/SellerCreateGigExtras.png)
+![SellerGigDetail](imgs/SellerGigDetail.png)
+![SellerMyGigs](imgs/SellerMyGigs.png)
+![BSellerMyPulls](imgs/SellerMyPulls.png)
+![BSellerPullDetail](imgs/SellerPullDetail.png)
+
 #### 3.1.4.4. Mobile Applications User Flow Diagrams
 #### 3.1.4.5. Mobile Applications Prototyping
 
