@@ -2412,10 +2412,61 @@ El tono de comunicación es un elemento clave dentro del sistema de estilos, ya 
 
 ### 3.1.2. Information Architecture
 #### 3.1.2.1. Organization Systems
+- **Jerárquico:** La información está organizada de mayor a menor importancia  
+* Encabezado (navegación)  
+* Hero Section  
+* Sección de confianza  
+* Sobre Nosotros  
+* Servicios  
+* Clientes  
+* Contacto
+
+- **Modular y Seccional:** Cada área está contenida en su propio  
+* Presenta clases semánticas (about-section, services-section, etc.)
+
 #### 3.1.2.2. Labelling Systems
+
+* **Menú principal:**  
+  Inicio, Nosotros, Servicios, Clientes, Contacto.  
+    
+* **Botones de acción:**  
+  “Explorar más”, “Ver más”, “Enviar correo”.  
+    
+* **Formulario:**  
+  Campos etiquetados por placeholder: Nombre, Correo, Contraseña.
+
 #### 3.1.2.3. SEO Tags and Meta Tags
+**3.1.2.3. SEO Tags and Meta Tags**
+
+* **Meta Tags presentes:**  
+  HTML, CopiarEditar, \<title\>GigU \- Soluciones Web\</title\>  
+    
+* **Mejoras Sugeridas:**  
+  Añadir una descripción clara del negocio. Etiquetas, og:image, entre otras para redes sociales. Uso de etiquetas semánticas como “,,,” para SEO técnico
+
 #### 3.1.2.4. Searching Systems
+**3.1.2.4. Searching Systems**
+
+* **Buscador en la landing page y header:**  
+  Filtro por tipo de aplicación o categoría (administrativas, educativas, gestión). Resultados ordenados por coincidencia y fecha
+
 #### 3.1.2.5. Navigation Systems
+
+* **Navegación superior:**  
+  Menú fijo con links anclados (\#nosotros, \#servicios, etc.). Botón de llamada a la acción “Empezar”.  
+    
+* **Flujo lógico:**  
+  Registro/Login primero → Página principal después.
+
+* **Internacionalización:**  
+  Sitio en español; estructura preparada para multilenguaje si se extiende.  
+    
+* **Footer con navegación secundaria:**  
+  WhatsApp, Email, Dirección, y redes sociales como Facebook, Instagram y LinkedIn.  
+    
+* **Estructura modular:**  
+  WhatsApp, Email, Dirección, y redes sociales como Facebook, Instagram y LinkedIn.
+
 ### 3.1.3. Landing Page UI Design
 En esta sección se detalla la propuesta de diseño de interfaz de usuario (UI) para la Landing Page, alineada con las decisiones previas sobre diseño y arquitectura de información. La propuesta busca equilibrar estética, funcionalidad y accesibilidad, asegurando una experiencia intuitiva para distintos tipos de usuarios y dispositivos.
 
