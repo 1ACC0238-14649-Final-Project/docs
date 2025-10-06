@@ -2522,31 +2522,37 @@ En este espacio se muestran los flujos de navegación entre las pantallas de la 
 **User goal:** Como nuevo usuario, quiero registrarme para usar GigU.
 
 ![UserGoal1](imgs/wireflow-gigu1.png)
+
 El usuario accede a la aplicación GigU e ingresa a la pantalla de inicio de sesión o registro. Luego selecciona en crear cuenta y se muestra un formulario para completar sus datos personales y es redirigido según su tipo de usuario
 
 **User goal:** Como freelancer, quiero publicar y administrar mis servicios ofrecidos a los clientes
 
 ![UserGoal2](imgs/wireflow-gigu2.png)
+
 El usuario crea un nuevo servicio y es dirigido a un form de selección, donde completa datos adicionales al servicio y crea el servicio. Seguidamente puede revisar los servicios que publico anteriormente, así como ver los detalles de cada servicio.
 
 **User goal:** Como freelancer, quiero personalizar mi perfil.
 
 ![UserGoal3](imgs/wireflow-gigu3.png)
+
 El usuario se dirige al botón del icono de user, donde es dirigido a su perfil, espacio donde encuentra la opción de personalizar perfil y es dirigido a un espacio donde edita sus datos personales.
 
 **User goal:** Como freelancer, quiero visualizar las solicitudes de contratación y negociar en tiempo real.
 
 ![UserGoal4](imgs/wireflow-gigu4.png)
+
 El usuario recibe las solicitudes de contratación por parte de un cliente, entonces visualiza los detalles de la solicitud, además de poder aceptar o cancelar. Asimismo puede tener una conversación mediante un chat con el cliente, de esta forma acordar detalles o negociar mediante un diálogo a tiempo real.
 
 **User goal:** Como cliente, quiero visualizar las distintas opciones sobre servicios publicados y seleccionarlas para evaluar su contratación.
 
 ![UserGoal5](imgs/wireflow-gigu5.png)
+
 El usuario al estar en la pantalla principal puede visualizar los servicios publicados por los freelancers que pueda considerar adecuados según sus necesidades, al seleccionar en un servicio es dirigido a una pantalla donde puede ver los detalles y realizar la contratación del servicio.
 
 **User goal:** Como cliente, quiero negociar un servicio ofrecido por un freelancer.
 
 ![UserGoal6](imgs/wireflow-gigu6.png)
+
 El usuario, al seleccionar un servicio tiene opción de negociar, por lo que es dirigido a una pantalla donde modifica el precio recomendado según su presupuesto y puede dialogar con el freelancer para llegar a un acuerdo. Además, puede cancelar el servicio si lo considera necesario.
 
 #### 3.1.4.3. Mobile Applications Mock-ups
@@ -2577,26 +2583,32 @@ Las siguiente User Flow se desarrollaron según los Wireflows anteriormente defi
 
 **User goal:** Como nuevo usuario, quiero registrarme para usar GigU.
 ![UserFlow1](imgs/userflow1.png)
+
 El usuario ingresa a la aplicación GigU e ingresa a la plataforma como usuario registrado si tiene una cuenta, si en caso no lo tiene, ingresa a registrarse. Seguidamente se registra completando un form con sus datos y escoge un rol, si es cliente, es dirigido a la pantalla de perfil Cliente, si no es cliente, es dirigido a la pantalla de perfil Freelancer.
 
 **User goal:** Como freelancer, quiero publicar y administrar mis servicios ofrecidos a los clientes
 ![UserFlow2](imgs/userflow2.png)
+
 El Freelancer puede visualizar y gestionar sus servicios publicados, si quiere agregar uno más, crea un nuevo gig y es dirigido a una pantalla donde completa la información relacionada al servicio, así como agrega información adicional. Como siguiente paso debe decidir si confirmar la creación del servicio, dando oportunidad de rehacer sus decisiones si lo considera pertinente, si cancela es dirigido a la primera pantalla para verificar que cambió hacer o cancelar completamente, si acepta la creación es dirigido a una pantalla donde se muestra el gig publicado
 
 **User goal:** Como freelancer, quiero personalizar mi perfil.
 ![UserFlow3](imgs/userflow3.png)
+
 El Freelancer accede a la plataforma y es dirigido a la pantalla inicial, selecciona el botón con icono de user y se muestra el perfil del usuario, toma la decisión de editar su información personal, así como la configuración de la información pública como los servicios.
 
 **User goal:** Como freelancer, quiero visualizar las solicitudes de contratación y negociar en tiempo real.
 ![UserFlow4](imgs/userflow4.png)
+
 El Freelancer navega en sus gigs y puede visualizar las pulls que tiene seleccionando la opción de My Pulls, donde visualiza las solicitudes de contratación y al seleccionar en alguna, se le dirige a un pull, donde un cliente negocia el precio, así como negociar si el caso lo requiere. Si el Freelancer acepta, continúa con la negociación, pero si el Freelancer cancela, es dirigido a la pantalla My Pulls
 
 **User goal:** Como cliente, quiero visualizar las distintas opciones sobre servicios publicados y seleccionarlas para evaluar su contratación.
 ![UserFlow5](imgs/userflow5.png)
+
 El cliente ingresa a la plataforma y visualiza los diversos gigs publicados por los Freelancer en la pantalla Gigs, donde puede buscar a un Freelancer en específico o escoger un servicio publicado por algun Freelancer, si encuentra a un usuario, es dirigido a la pantalla Seller Account, donde puede visualizar el perfil del Freelancer y sus servicios publicados. Si no lo encuentra, regresa a la pantalla Gigs, donde al seleccionar un servicio publicado, es dirigido a la información del Gig, para conocer más sobre el servicio .
 
 **User goal:** Como cliente, quiero negociar un servicio ofrecido por un freelancer.
 ![UserFlow6](imgs/userflow6.png)
+
 El cliente al seleccionar en comprar un gig, es dirigido a la pantalla My Pulls, donde visualiza los pulls que ha iniciado, así como el pull que se realiza al escoger un servicio, al seleccionar el pull que inicio, es dirigido a la pantalla Pull Details, donde modifica el precio recomendado según su presupuesto, si en caso llega a negociar, continua con el chat iniciado con el Freelancer involucrado, si en caso cancela la negociación, es redirigido a la pantalla My Pulls para seleccionar otro pull que inicio anteriormente y poder ver el estado de la misma.
 
 #### 3.1.4.5. Mobile Applications Prototyping
