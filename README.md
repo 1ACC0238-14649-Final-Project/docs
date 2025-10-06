@@ -2498,8 +2498,57 @@ Se tuvo en cuenta el comportamiento del usuario en entornos móviles, priorizand
 En esta sección se presentan los wireframes de las aplicaciones móviles en baja fidelidad, los cuales permiten visualizar la estructura y navegación de la app sin incluir aún el diseño visual definitivo.
 Los wireframes muestran las principales pantallas y flujos de interacción clave dentro de la aplicación. Estos incluyen elementos fundamentales como la pantalla de inicio, login/register, navegación principal, pantalla de contenido o servicios, y los llamados a la acción (CTA) más relevantes.
 
+![Both_SplashScreenWireframe](imgs/Both_SplashScreenWireframe.png)
+![Both_LogInWireframe](imgs/Both_LogInWireframe.png)
+![Both_SignUpWireframe](imgs/Both_SignUpWireframe.png)
+![Seller_My_GigsWireframe](imgs/Seller_My_GigsWireframe.png)
+![Seller_Gig_DetailWireframe](imgs/Seller_Gig_DetailWireframe.png)
+![Seller_Create_GigWireframe](imgs/Seller_Create_GigWireframe.png)
+![Seller_Create_Gig_ExtrasWireframe](imgs/Seller_Create_Gig_ExtrasWireframe.png)
+![Seller_My_PullsWireframe](imgs/Seller_My_PullsWireframe.png)
+![Seller_Pull_DetailWireframe](imgs/Seller_Pull_DetailWireframe.png)
+![Seller_AccountWireframe](imgs/Seller_AccountWireframe.png)
+![Seller_Account_EditWireframe](imgs/Seller_Account_EditWireframe.png)
+![Buyer_GigsWireframe](imgs/Buyer_GigsWireframe.png)
+![Buyer_Gig_DetailWireframe](imgs/Buyer_Gig_DetailWireframe.png)
+![Buyer_My_PullsWireframe](imgs/Buyer_My_PullsWireframe.png)
+![Buyer_Pull_DetailWireframe](imgs/Buyer_Pull_DetailWireframe.png)
+![Buyer_AccountWireframe](imgs/Buyer_AccountWireframe.png)
+![Buyer_Peek_Seller_AccountWireframe](imgs/Buyer_Peek_Seller_AccountWireframe.png)
 
 #### 3.1.4.2. Mobile Applications Wireflow Diagrams
+En este espacio se muestran los flujos de navegación entre las pantallas de la Mobile Application, resaltando las interacciones de los usuarios con los elementos que se muestran en cada vista. Asimismo se detallan los cambios de pantalla y de estado que ocurre según las acciones realizadas en la interfaz.
+
+**User goal:** Como nuevo usuario, quiero registrarme para usar GigU.
+
+![UserGoal1](imgs/wireflow-gigu1.png)
+El usuario accede a la aplicación GigU e ingresa a la pantalla de inicio de sesión o registro. Luego selecciona en crear cuenta y se muestra un formulario para completar sus datos personales y es redirigido según su tipo de usuario
+
+**User goal:** Como freelancer, quiero publicar y administrar mis servicios ofrecidos a los clientes
+
+![UserGoal2](imgs/wireflow-gigu2.png)
+El usuario crea un nuevo servicio y es dirigido a un form de selección, donde completa datos adicionales al servicio y crea el servicio. Seguidamente puede revisar los servicios que publico anteriormente, así como ver los detalles de cada servicio.
+
+**User goal:** Como freelancer, quiero personalizar mi perfil.
+
+![UserGoal3](imgs/wireflow-gigu3.png)
+El usuario se dirige al botón del icono de user, donde es dirigido a su perfil, espacio donde encuentra la opción de personalizar perfil y es dirigido a un espacio donde edita sus datos personales.
+
+**User goal:** Como freelancer, quiero visualizar las solicitudes de contratación y negociar en tiempo real.
+
+![UserGoal4](imgs/wireflow-gigu4.png)
+El usuario recibe las solicitudes de contratación por parte de un cliente, entonces visualiza los detalles de la solicitud, además de poder aceptar o cancelar. Asimismo puede tener una conversación mediante un chat con el cliente, de esta forma acordar detalles o negociar mediante un diálogo a tiempo real.
+
+**User goal:** Como cliente, quiero visualizar las distintas opciones sobre servicios publicados y seleccionarlas para evaluar su contratación.
+
+![UserGoal5](imgs/wireflow-gigu5.png)
+El usuario al estar en la pantalla principal puede visualizar los servicios publicados por los freelancers que pueda considerar adecuados según sus necesidades, al seleccionar en un servicio es dirigido a una pantalla donde puede ver los detalles y realizar la contratación del servicio.
+
+**User goal:** Como cliente, quiero negociar un servicio ofrecido por un freelancer.
+
+![UserGoal6](imgs/wireflow-gigu6.png)
+El usuario, al seleccionar un servicio tiene opción de negociar, por lo que es dirigido a una pantalla donde modifica el precio recomendado según su presupuesto y puede dialogar con el freelancer para llegar a un acuerdo. Además, puede cancelar el servicio si lo considera necesario.
+
 #### 3.1.4.3. Mobile Applications Mock-ups
 
 En esta sección se presentan los mock-ups finales de la aplicación móvil, tanto en alta fidelidad como aplicando el Design System definido para los productos digitales. Los mock-ups muestran la apariencia visual definitiva de la interfaz, incorporando elementos gráficos, tipografías, iconografía, colores, y estilos interactivos, todos alineados con los principios de usabilidad y diseño inclusivo.
@@ -2524,6 +2573,32 @@ Los diseños están optimizados para dispositivos móviles, priorizando la acces
 ![BSellerPullDetail](imgs/SellerPullDetail.png)
 
 #### 3.1.4.4. Mobile Applications User Flow Diagrams
+Las siguiente User Flow se desarrollaron según los Wireflows anteriormente definidos y muestran la secuencia de pasos que los usuario realizarán en la aplicación.
+
+**User goal:** Como nuevo usuario, quiero registrarme para usar GigU.
+![UserFlow1](imgs/userflow1.png)
+El usuario ingresa a la aplicación GigU e ingresa a la plataforma como usuario registrado si tiene una cuenta, si en caso no lo tiene, ingresa a registrarse. Seguidamente se registra completando un form con sus datos y escoge un rol, si es cliente, es dirigido a la pantalla de perfil Cliente, si no es cliente, es dirigido a la pantalla de perfil Freelancer.
+
+**User goal:** Como freelancer, quiero publicar y administrar mis servicios ofrecidos a los clientes
+![UserFlow2](imgs/userflow2.png)
+El Freelancer puede visualizar y gestionar sus servicios publicados, si quiere agregar uno más, crea un nuevo gig y es dirigido a una pantalla donde completa la información relacionada al servicio, así como agrega información adicional. Como siguiente paso debe decidir si confirmar la creación del servicio, dando oportunidad de rehacer sus decisiones si lo considera pertinente, si cancela es dirigido a la primera pantalla para verificar que cambió hacer o cancelar completamente, si acepta la creación es dirigido a una pantalla donde se muestra el gig publicado
+
+**User goal:** Como freelancer, quiero personalizar mi perfil.
+![UserFlow3](imgs/userflow3.png)
+El Freelancer accede a la plataforma y es dirigido a la pantalla inicial, selecciona el botón con icono de user y se muestra el perfil del usuario, toma la decisión de editar su información personal, así como la configuración de la información pública como los servicios.
+
+**User goal:** Como freelancer, quiero visualizar las solicitudes de contratación y negociar en tiempo real.
+![UserFlow4](imgs/userflow4.png)
+El Freelancer navega en sus gigs y puede visualizar las pulls que tiene seleccionando la opción de My Pulls, donde visualiza las solicitudes de contratación y al seleccionar en alguna, se le dirige a un pull, donde un cliente negocia el precio, así como negociar si el caso lo requiere. Si el Freelancer acepta, continúa con la negociación, pero si el Freelancer cancela, es dirigido a la pantalla My Pulls
+
+**User goal:** Como cliente, quiero visualizar las distintas opciones sobre servicios publicados y seleccionarlas para evaluar su contratación.
+![UserFlow5](imgs/userflow5.png)
+El cliente ingresa a la plataforma y visualiza los diversos gigs publicados por los Freelancer en la pantalla Gigs, donde puede buscar a un Freelancer en específico o escoger un servicio publicado por algun Freelancer, si encuentra a un usuario, es dirigido a la pantalla Seller Account, donde puede visualizar el perfil del Freelancer y sus servicios publicados. Si no lo encuentra, regresa a la pantalla Gigs, donde al seleccionar un servicio publicado, es dirigido a la información del Gig, para conocer más sobre el servicio .
+
+**User goal:** Como cliente, quiero negociar un servicio ofrecido por un freelancer.
+![UserFlow6](imgs/userflow6.png)
+El cliente al seleccionar en comprar un gig, es dirigido a la pantalla My Pulls, donde visualiza los pulls que ha iniciado, así como el pull que se realiza al escoger un servicio, al seleccionar el pull que inicio, es dirigido a la pantalla Pull Details, donde modifica el precio recomendado según su presupuesto, si en caso llega a negociar, continua con el chat iniciado con el Freelancer involucrado, si en caso cancela la negociación, es redirigido a la pantalla My Pulls para seleccionar otro pull que inicio anteriormente y poder ver el estado de la misma.
+
 #### 3.1.4.5. Mobile Applications Prototyping
 
 Tenemos 3 starting points:
