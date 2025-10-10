@@ -422,8 +422,8 @@ Los competidores que hemos identificado para GigU son las plataformas freelancer
 ### 2.1.2. Estrategias y tácticas frente a competidores
 GigU aplicará una estrategia de diferenciación enfocada en el talento universitario, destacando por su enfoque educativo, precios accesibles y alianzas con instituciones académicas. Frente a los grandes competidores del mercado freelance, GigU se posiciona como una alternativa confiable y de propósito social, conectando clientes con estudiantes verificados. Su valor está en ofrecer soluciones personalizadas, soporte en español y una experiencia centrada en el desarrollo profesional de los jóvenes. Aprovechará las debilidades de otras plataformas como su falta de personalización o enfoque regional, mientras mitiga amenazas como la falta de experiencia estudiantil con garantías y filtros de calidad
 
-## 2.2. istas
-### 2.2.1. Diseño de istas
+## 2.2. Entrevistas
+### 2.2.1. Diseño de Entrevistas
 **Segmento objetivo 1: Estudiantes Universitarios Freelancers**
 
 ¿Cual es tu nombre completo?
@@ -478,7 +478,7 @@ GigU aplicará una estrategia de diferenciación enfocada en el talento universi
 
 ¿Qué factores tomas en cuenta al elegir a un freelancer: precio, portafolio, tiempo de entrega, reputación, otro? ¿Cuál de ellos pesa más para ti al decidir?
 
-### 2.2.2. Registro de istas
+### 2.2.2. Registro de Entrevistas
 **Segmento objetivo \#1: Estudiantes Universitarios Freelancers** 
 
 istado N°1: Bruno Sebastián Gamarra Torres
@@ -2866,6 +2866,37 @@ Para el Sprint 2, buscamos desarrollar y desplegar una nuestro backend y fronten
 | Velocity | 38 |
 | Total Story Points | 38 |
 #### 4.2.2.2. Sprint Backlog 2
+| Task ID | User Story |                            Description                            |            Assigned To            | Estimated Hours |   Status  | Epic |
+| :-----: | :--------: | :---------------------------------------------------------------: | :-------------------------------: | :-------------: | :-------: | :--: |
+|   T01   |    US01    |             Implementar barra de navegación responsive            |   Mariano Moises Oblitas Davila   |        5        | Completed | EP01 |
+|   T02   |    US01    |             Diseñar componentes de navegación en Figma            |    Diego Alonso Cacho Seminario   |        3        | Completed | EP01 |
+|   T03   |    US02    |                Desarrollar botones CTA principales                |   Carlos Fredy Fernández Camayo   |        3        | Completed | EP02 |
+|   T04   |    US08    |              Crear contenido de sección de beneficios             | Irving Washington Allcca Guerrero |        2        | Completed | EP04 |
+|   T05   |    US08    |           Implementar interfaz de tarjetas de beneficios          |   Adrian Ricardo Donayre Alvarez  |        5        | Completed | EP04 |
+|   T06   |    US11    |                   Diseñar tarjetas de servicios                   |   Mariano Moises Oblitas Davila   |        3        | Completed | EP04 |
+|   T07   |    US11    |                Programar interactividad de tarjetas               |    Diego Alonso Cacho Seminario   |        5        | Completed | EP04 |
+|   T08   |    US12    |             Investigar y compilar preguntas frecuentes            | Irving Washington Allcca Guerrero |        3        | Completed | EP05 |
+|   T09   |    US12    |                    Implementar acordeón de FAQ                    | Irving Washington Allcca Guerrero |        5        | Completed | EP05 |
+|   T10   |    US03    |         Both_Sign Up: UI + validaciones, errores y loading        |   Mariano Moises Oblitas Davila   |        5        |   Completed  | EP01 |
+|   T11   |    US03    |     Persistencia de sesión (DataStore) + interceptor de sesión    |   Mariano Moises Oblitas Davila   |        3        |   Completed   | EP01 |
+|   T12   |    US04    |        Both_Log In: selector de rol y routing a Buyer_Gigs        |   Mariano Moises Oblitas Davila   |        6        |   Completed   | EP01 |
+|   T13   |    US06    |           Flujo “Olvidé mi contraseña” (mock) + feedback          |   Mariano Moises Oblitas Davila   |        3        |   Completed   | EP01 |
+|   T14   |    US07    |        Restablecer contraseña (mock) + estados éxito/error        |   Mariano Moises Oblitas Davila   |        3        |   Completed   | EP01 |
+|   T15   |    US25    |     Buyer_Gigs: búsqueda por keyword con lista paginada (mock)    |   Adrian Ricardo Donayre Alvarez  |        6        |   Completed   | EP02 |
+|   T16   |    US26    |                  Chips de filtros por habilidades                 |   Adrian Ricardo Donayre Alvarez  |        4        |   Completed   | EP02 |
+|   T17   |    US29    |         Ordenar por relevancia/calificación (client-side)         |   Adrian Ricardo Donayre Alvarez  |        3        |   Completed   | EP02 |
+|   T18   |      —     |            Data layer: interfaces de repos + mocks JSON           | Irving Washington Allcca Guerrero |        6        |   Completed   | EP02 |
+|   T19   |      —     |    Diseño Figma: Buyer_Gigs, Gig_Detail, Peek_Seller (estados)    |    Diego Alonso Cacho Seminario   |        4        |   Completed   | EP02 |
+|   T20   |    US30    |  CTA **Contratar** en Buyer_Gig_Detail con sheet de confirmación  |   Adrian Ricardo Donayre Alvarez  |        6        |   Completed   | EP03 |
+|   T21   |    US31    |   Pantalla de **Confirmación** con ID de orden y estado inicial   |   Adrian Ricardo Donayre Alvarez  |        4        |   Completed   | EP03 |
+|   T22   |    US24    |       Uploader (máx 3 imágenes/archivos) previo a contratar       |   Adrian Ricardo Donayre Alvarez  |        5        |   Completed   | EP03 |
+|   T23   |    US27    |       Slider de **precio** + rango persistente en Buyer_Gigs      |   Adrian Ricardo Donayre Alvarez  |        4        |   Completed   | EP02 |
+|   T24   |    US28    |      Chips de **experiencia** (Junior/Mid/Senior) combinables     |   Adrian Ricardo Donayre Alvarez  |        3        |   Completed   | EP02 |
+|   T25   |    US39    |             Sección **Ratings** en Peek_Seller_Account            | Irving Washington Allcca Guerrero |        5        |   Completed   | EP06 |
+|   T26   |    US41    |         **Calificar al Cliente** desde cierre de proyecto         | Irving Washington Allcca Guerrero |        4        |   Completed   | EP06 |
+|   T27   |    US33    |           Buyer_Account: **Historial de contrataciones**          |    Diego Alonso Cacho Seminario   |        4        |   Completed   | EP07 |
+|   T28   |    US34    | **Proyectos activos** con estado (Solicitado/En curso/Finalizado) |    Diego Alonso Cacho Seminario   |        5        |   Completed   | EP07 |
+|   T29   |      —     |       Buyer_Pull_Detail: vista mínima de orden con timeline       | Irving Washington Allcca Guerrero |        4        |   Completed   | EP03 |
 #### 4.2.2.3. Development Evidence for Sprint Review
 #### 4.2.2.4. Testing Suite Evidence for Sprint Review
 #### 4.2.2.5. Execution Evidence for Sprint Review
