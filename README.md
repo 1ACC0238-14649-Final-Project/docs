@@ -230,8 +230,8 @@ ABET – EAC - Student Outcome 7: La capacidad de adquirir y aplicar nuevos cono
       * [Contenido y entregables específicos del Hito (Semana 15)](#contenido-y-entregables-específicos-del-hito-semana-15)
   * [4.3. Validation Interviews](#43-validation-interviews)
 
-    * [4.3.1. Diseño de Entrevistas](#431-diseño-de-)
-    * [4.3.2. Registro de Entrevistas](#432-registro-de-)
+    * [4.3.1. Diseño de istas](#431-diseño-de-)
+    * [4.3.2. Registro de istas](#432-registro-de-)
     * [4.3.3. Evaluaciones según heurísticas](#433-evaluaciones-según-heurísticas)
 
 * [Conclusiones y recomendaciones](#conclusiones-y-recomendaciones)
@@ -418,8 +418,8 @@ Los competidores que hemos identificado para GigU son las plataformas freelancer
 ### 2.1.2. Estrategias y tácticas frente a competidores
 GigU aplicará una estrategia de diferenciación enfocada en el talento universitario, destacando por su enfoque educativo, precios accesibles y alianzas con instituciones académicas. Frente a los grandes competidores del mercado freelance, GigU se posiciona como una alternativa confiable y de propósito social, conectando clientes con estudiantes verificados. Su valor está en ofrecer soluciones personalizadas, soporte en español y una experiencia centrada en el desarrollo profesional de los jóvenes. Aprovechará las debilidades de otras plataformas como su falta de personalización o enfoque regional, mientras mitiga amenazas como la falta de experiencia estudiantil con garantías y filtros de calidad
 
-## 2.2. Entrevistas
-### 2.2.1. Diseño de entrevistas
+## 2.2. istas
+### 2.2.1. Diseño de istas
 **Segmento objetivo 1: Estudiantes Universitarios Freelancers**
 
 ¿Cual es tu nombre completo?
@@ -474,16 +474,16 @@ GigU aplicará una estrategia de diferenciación enfocada en el talento universi
 
 ¿Qué factores tomas en cuenta al elegir a un freelancer: precio, portafolio, tiempo de entrega, reputación, otro? ¿Cuál de ellos pesa más para ti al decidir?
 
-### 2.2.2. Registro de entrevistas
+### 2.2.2. Registro de istas
 **Segmento objetivo \#1: Estudiantes Universitarios Freelancers** 
 
-Entrevistado N°1: Bruno Sebastián Gamarra Torres
+istado N°1: Bruno Sebastián Gamarra Torres
 
 * Sexo: Masculino 
 * Edad: 23 
 * Ubicación en la que vive: Surco 
 
-Acerca de la entrevista:
+Acerca de la ista:
  
 * Instante en el que inicia: 0:03 minutos
 * Duración: 3:44
@@ -492,9 +492,9 @@ Resumen:
 
 Bruno Sebastián Gamarra Torres, un joven de 23 años que vive en Surco, ofrece servicios de diseño gráfico y edición de video como freelancer desde hace algunos meses, motivado por la necesidad económica y el deseo de ganar experiencia. Consigue clientes principalmente a través de redes sociales como Instagram y TikTok, pero enfrenta dificultades como la falta de confianza de algunos clientes por ser estudiante. Utiliza Yape, Plin y transferencias para cobrar, aunque a veces sufre retrasos en los pagos. Para él, una plataforma ideal debería permitir dejar reseñas reales, tener chat integrado y un sistema de contratos. 
 
-![imgs](imgs/Seg1EntrevistaWener.png)
+![imgs](imgs/Seg1istaWener.png)
 
-Entrevistado N°2:Werner Lang
+istado N°2:Werner Lang
 
 Sexo:Masculino
 
@@ -637,9 +637,25 @@ Link de entrevista https://upcedupe-my.sharepoint.com/:v:/g/personal/u202213241_
 
 #### **2.2.3 Análisis de entrevistas** 
 
-El Segmento 1: Estudiantes Universitarios Freelancers muestra jóvenes motivados principalmente por la necesidad de ganar experiencia y generar ingresos adicionales mientras estudian. Bruno, Werner y Mario coinciden en que conseguir clientes es complicado debido a la falta de confianza de los empleadores hacia estudiantes y a la necesidad de contar con un portafolio sólido. Utilizan redes sociales y plataformas como Workana para buscar oportunidades, y prefieren métodos de pago sencillos como Yape y transferencias, aunque han enfrentado problemas de demoras en pagos. Para ellos, una plataforma ideal debería facilitar contratos, reseñas reales, chats integrados y sugerencias de proyectos alineados a sus habilidades, además de asegurar los pagos. Valoran la visibilidad de su talento más allá de la experiencia previa, dándoles la oportunidad de competir en el mercado freelance.
+El Segmento 1: Estudiantes Universitarios Freelancers muestra jóvenes motivados principalmente por la necesidad de ganar experiencia y generar ingresos adicionales mientras estudian. Bruno, Werner y Mario coinciden en que conseguir clientes es complicado debido a la falta de confianza de los empleadores hacia estudiantes y a la necesidad de contar con un portafolio sólido. Este patrón revela un insight clave: más allá de la experiencia, los estudiantes perciben que el mayor obstáculo es la desconfianza por parte de los potenciales clientes, lo que resalta la importancia de contar con mecanismos de validación como reseñas, calificaciones o contratos formales dentro de una plataforma.
 
-En el Segmento 2: Personas y Emprendimientos que buscan contratar freelancers, encontramos a Janet, Yulia y Fabrizio, quienes buscan apoyo externo principalmente para tareas de marketing, diseño y ventas. Sus principales preocupaciones son la calidad del trabajo, la responsabilidad del freelancer y la facilidad para gestionar pagos y acuerdos. Prefieren plataformas que ofrezcan perfiles detallados, portafolios visibles, comentarios de otros clientes y herramientas de negociación claras. Aunque Janet tiene más experiencia y prefiere manejar directamente los pagos, Yulia y Fabrizio valoran que la plataforma gestione los acuerdos para evitar problemas. En todos los casos, el portafolio visual y las buenas referencias son los factores decisivos para la contratación, y están dispuestos a pagar más si el resultado los impacta positivamente.
+Los estudiantes utilizan redes sociales y plataformas como Workana para buscar oportunidades, pero estas herramientas no siempre les dan visibilidad suficiente. Aquí se detecta otro insight importante: los freelancers desean que se les conecte con oportunidades según sus habilidades, no solo según su historial o experiencia previa. Esto abre la oportunidad para una plataforma que sugiera proyectos alineados con las competencias específicas del usuario.
+
+Respecto a los pagos, todos prefieren métodos sencillos como Yape y transferencias, aunque han enfrentado problemas con retrasos o falta de cumplimiento por parte de los clientes. Esto sugiere que los métodos de pago informales generan inseguridad, y refuerza la necesidad de que la plataforma incluya un sistema de cobros seguro y automático, que proteja tanto al freelancer como al contratante.
+
+Además del aspecto económico, un insight adicional es que estos jóvenes no solo buscan ganar dinero, sino también construir una reputación profesional y prepararse para su futuro laboral. Por eso, valoran herramientas que les permitan mostrar su trabajo, recibir retroalimentación y desarrollarse profesionalmente.
+
+En resumen, para este segmento, una plataforma ideal debería facilitar contratos, reseñas reales, chats integrados, sugerencias de proyectos alineados a sus habilidades y, sobre todo, asegurar los pagos. Valoran la visibilidad de su talento más allá de la experiencia previa, dándoles la oportunidad de competir en el mercado freelance.
+
+En el Segmento 2: Personas y Emprendimientos que buscan contratar freelancers, encontramos a Yulia y Fabrizio, quienes buscan apoyo externo principalmente para tareas de marketing, diseño y ventas. Ambos muestran una fuerte preocupación por la calidad del trabajo y la responsabilidad del freelancer, siendo esto más determinante incluso que el precio. Aquí emerge un insight relevante: el portafolio visual tiene más peso en la decisión de contratación que el costo del servicio. Si el trabajo los impacta positivamente, están dispuestos a pagar más.
+
+También es evidente que hay una desconfianza natural hacia freelancers sin referencias o validaciones previas. Esto implica que las recomendaciones, testimonios y perfiles detallados son elementos clave para generar confianza y deben estar integrados en cualquier plataforma freelance que busque ser confiable.
+
+En cuanto a la gestión de acuerdos y pagos, varios entrevistados (especialmente Yulia y Fabrizio) manifestaron su preferencia por no tener que negociar ni coordinar pagos directamente con el freelancer, revelando así otro insight clave: existe una necesidad de simplificar el proceso de contratación mediante herramientas automáticas de negociación, acuerdos y pago dentro de la plataforma.
+
+Finalmente, se identificó que el impacto emocional del trabajo recibido también influye en la percepción de valor, lo que lleva a algunos usuarios a pagar más de lo que tenían previsto si el resultado los sorprende positivamente. Esto indica que la creatividad y la presentación del trabajo tienen un rol emocional importante en la toma de decisiones.
+
+En todos los casos, el portafolio visual y las buenas referencias son los factores decisivos para la contratación, y están dispuestos a pagar más si el resultado los impacta positivamente. La plataforma ideal, según este segmento, debería ofrecer perfiles completos, herramientas de negociación, reseñas confiables, chats formales y una forma segura y automatizada de gestionar los pagos y acuerdos.
 
 ## 2.3. Needfinding
 En esta sección se presentarán los artefactos resultantes del proceso de análisis de la información de la información recolectada de los segmentos objetivos 
