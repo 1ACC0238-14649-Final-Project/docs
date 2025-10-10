@@ -422,8 +422,8 @@ Los competidores que hemos identificado para GigU son las plataformas freelancer
 ### 2.1.2. Estrategias y tácticas frente a competidores
 GigU aplicará una estrategia de diferenciación enfocada en el talento universitario, destacando por su enfoque educativo, precios accesibles y alianzas con instituciones académicas. Frente a los grandes competidores del mercado freelance, GigU se posiciona como una alternativa confiable y de propósito social, conectando clientes con estudiantes verificados. Su valor está en ofrecer soluciones personalizadas, soporte en español y una experiencia centrada en el desarrollo profesional de los jóvenes. Aprovechará las debilidades de otras plataformas como su falta de personalización o enfoque regional, mientras mitiga amenazas como la falta de experiencia estudiantil con garantías y filtros de calidad
 
-## 2.2. istas
-### 2.2.1. Diseño de istas
+## 2.2. Entrevistas
+### 2.2.1. Diseño de Entrevistas
 **Segmento objetivo 1: Estudiantes Universitarios Freelancers**
 
 ¿Cual es tu nombre completo?
@@ -478,7 +478,7 @@ GigU aplicará una estrategia de diferenciación enfocada en el talento universi
 
 ¿Qué factores tomas en cuenta al elegir a un freelancer: precio, portafolio, tiempo de entrega, reputación, otro? ¿Cuál de ellos pesa más para ti al decidir?
 
-### 2.2.2. Registro de istas
+### 2.2.2. Registro de Entrevistas
 **Segmento objetivo \#1: Estudiantes Universitarios Freelancers** 
 
 istado N°1: Bruno Sebastián Gamarra Torres
