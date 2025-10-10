@@ -2794,13 +2794,28 @@ En el alcance del sprint 1 se ha desarrollado el landing page como primera insta
 En la presente entrega del Sprint 1 no se incluye esta sección debido a que se realizó principalmente la Landing Page. Este se consiguió realizar correctamente teniendo en cuenta las necesidades de nuestros usuarios.
 
 #### 4.2.1.5. Execution Evidence for Sprint Review
-Se evidencia el avance del Primer Sprint por medio del siguiente video acerca de la Landing Page: \*link landing page\*
+
+#### Sección principal: Conecta, Colabora y Crea
+<img src="imgs\landing1.png" alt="landing1" title="landing1"/>
+
+#### Sección “Por qué elegir GigU”
+<img src="imgs\landing2.png" alt="landing2" title="landing2"/>
+
+#### Sección “Qué puedes hacer en GigU”
+<img src="imgs\landing3.png" alt="landing3" title="landing3"/>
 
 #### 4.2.1.6. Services Documentation Evidence for Sprint Review
 En el primer Sprint solamente se ha desarrollado la Landing Page por lo que no se ha hecho uso de servicios web.
 
 #### 4.2.1.7. Software Deployment Evidence for Sprint Review
-\*link landing page\*
+En nuestro primer sprint logramos desplegar la landing page. Esto lo logramos en la herramienta Firebase.
+
+<img src="imgs\despliegueLanding1.jpeg" alt="desplieguelanding1" title="desplieguelanding1"/>
+
+<img src="imgs\despliegueLanding2.jpeg" alt="desplieguelanding2" title="desplieguelanding2"/>
+
+**Landing page desplegada**: [https://1acc0238-14649-final-project.github.io/landing/#inicio](https://1acc0238-14649-final-project.github.io/landing/#inicio)
+
 
 #### 4.2.1.8. Team Collaboration Insights during Sprint
 \*img git flow\*
@@ -2812,7 +2827,33 @@ En el primer Sprint solamente se ha desarrollado la Landing Page por lo que no s
 #### 4.2.2.4. Testing Suite Evidence for Sprint Review
 #### 4.2.2.5. Execution Evidence for Sprint Review
 #### 4.2.2.6. Services Documentation Evidence for Sprint Review
+Para el segundo sprint planemos desplegar el backend en su totalidad para poder avanzar con el frontend. 
+A continuación, la documentación de la API REST de GigU, implementada con Swagger.
+
+#### Módulo Briefcase
+<img src="imgs\swagger1.png" alt="swagger1" title="swagger1"/>
+
+#### Módulo Chat
+<img src="imgs\swagger2.png" alt="swagger2" title="swagger2"/>
+
+#### Módulo Gig
+<img src="imgs\swagger3.png" alt="swagger3" title="swagger3"/>
+
+#### Módulo Pull
+<img src="imgs\swagger4.png" alt="swagger4" title="swagger4"/>
+
+#### Módulo User
+<img src="imgs\swagger5.png" alt="swagger5" title="swagger5"/>
+
+**API REST**: [https://gigu-backend-webapp-hzbrd3guaghphmam.canadacentral-01.azurewebsites.net/index.html](https://gigu-backend-webapp-hzbrd3guaghphmam.canadacentral-01.azurewebsites.net/index.html)
+
 #### 4.2.2.7. Software Deployment Evidence for Sprint Review
+En nuestro segundo sprint logramos desplegar el backend. Esto lo logramos realizar en Azure.
+
+<img src="imgs\despliegueBd1.jpeg" alt="despliegueBd1" title="despliegueBd1"/>
+
+<img src="imgs\despliegueBd2.jpeg" alt="despliegueBd2" title="despliegueBd2"/>
+
 #### 4.2.2.8. Team Collaboration Insights during Sprint
 ### 4.2.3. Sprint 3
 #### 4.2.3.1. Sprint Planning 3
