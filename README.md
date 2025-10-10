@@ -37,10 +37,14 @@ September 8, 2025
 
 ABET – EAC - Student Outcome 7: La capacidad de adquirir y aplicar nuevos conocimientos según sea necesario, utilizando estrategias de aprendizaje apropiadas.
 
-| Criterio específico | Acciones realizadas                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     | Conclusiones                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| ----- |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **7.c1. Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de ingeniería de software** | **Irving Allcca** TB1: Profundicé en conceptos como Candidate Context Discovery y Bounded Context: Gigs, lo que me ayudó a comprender mejor la estructura del sistema. También colaboré en el avance de la presentación del proyecto.  <br>**Diego Cacho** TB1: Para la TB1, realice diversos puntos relacionados con el bounded context Chat, esto me permitio conocer aun mas acerca de nuestro proyecto, teniendo en cuenta el funcionamiento interno de este. <br>**Adrian Donayre** TB1: Al realizar contenido relacionado al bounded context User aplicando DDD, me permitió pasar de ideas generales a una arquitectura con límites claros, lenguaje ubicuo y reglas de negocio explícitas. <br> **Mariano Oblitas** TB1: Revisé conceptos clave de arquitectura de software y Bounded Contexts, aplicándolos en la estructuración del proyecto. Además, participé en la creación del repositorio y documentos base, reforzando conocimientos en entornos colaborativos. <br>**Carlos Fernandez** TB1: Mediante el aprendizaje previo en cursos anteriores complementé lo aprendido en el desarrollo de bounded context, asi como la adecuada implementación de los diagramas relacionados.                                                                                      | El equipo demostró un avance significativo en la actualización y profundización de conocimientos técnicos esenciales para el desarrollo profesional. Cada integrante reforzó conceptos de Domain-Driven Design (DDD), Bounded Contexts y arquitectura de software, aplicándolos directamente en la estructuración del proyecto. Esto permitió pasar de ideas generales a modelos más claros y organizados, con roles y límites definidos, consolidando la base técnica del trabajo en equipo. Asimismo, el uso de repositorios, documentos colaborativos y presentaciones contribuyó a mejorar la comunicación y la integración de los aportes individuales.  |
-| **7.c2. Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de tecnologías de ingeniería de software** | **Irving Allcca** TB1: Al abordar los contextos del sistema, entendí la importancia de seguir aprendiendo para proponer soluciones más sólidas y adaptadas al desarrollo de software en equipo. <br>**Diego Cacho** TB1: El avance realizado en la primera entrega del proyecto me permitio adentrame a las soluciones de problemas con la tecnología de desarrollo móvil de Android, de esta manera organice diversos puntos y logre comprender mas la lógica de GigU en un entorno móvil. <br>**Adrian Donayre** TB1: En mi desarrollo identifiqué varias tecnologías que son factibles para la elaboración del proyecto. Así reconocí la importancia de mantener un hábito de aprendizaje constante para conocer todo el repertorio de herramientas a mi disposición.  <br>**Mariano Oblitas** TB1: Al trabajar en los Pulls y el avance de diapositivas, identifiqué la necesidad de seguir aprendiendo sobre herramientas y buenas prácticas, lo cual me ayudó a mejorar mi enfoque técnico dentro del proyecto.   <br>**Carlos Fernandez** TB1:  Para mi participación en este proyecto tuve que reforzar lo aprendido en cursos pasados, así como investigar sobre las adecuadas prácticas que se aplican para el continuo desarrollo como estudiante de Ingeniería de Software. |    Se reconoció la importancia del aprendizaje continuo como eje fundamental para el crecimiento profesional. La necesidad de investigar nuevas tecnologías, buenas prácticas y herramientas quedó reflejada en las acciones realizadas: desde la exploración de soluciones móviles hasta la implementación de metodologías de trabajo colaborativo. El equipo asumió que el aprendizaje permanente no solo refuerza los conocimientos previos, sino que también garantiza la capacidad de adaptarse a las demandas del proyecto y a la evolución constante de la ingeniería de software.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+**Student Outcome**
+
+| Criterio específico | Acciones realizadas | Conclusiones |
+| ----- | ----- | ----- |
+| **7.c1. Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de ingeniería de software** | **Irving Allcca** TB1: Profundicé en conceptos como *Candidate Context Discovery* y *Bounded Context: Gigs*, lo que me ayudó a comprender mejor la estructura del sistema. También colaboré en el avance de la presentación del proyecto. TP1:Al desarrollar las vistas buyer\_pull\_detail y buyer\_peek\_seller\_account, profundicé en la implementación de interfaces móviles orientadas a experiencia de usuario. Asimismo, la elaboración del Keynote y grabación del video me permitió reforzar conocimientos en comunicación técnica, esenciales en el ciclo de vida del desarrollo de software.  **Diego Cacho** TB1: Para la TB1, realice diversos puntos relacionados con el bounded context Chat, esto me permitió conocer aún más acerca de nuestro proyecto, teniendo en cuenta el funcionamiento interno de TP1:Implementé el frontend de la pantalla Buyer Account, lo que requirió comprender e integrar componentes específicos del framework móvil. Esto me permitió consolidar mis conocimientos sobre arquitectura cliente-servidor en aplicaciones móviles, además de aplicar conceptos aprendidos sobre gestión de configuración y sistemas organizacionales durante el avance de capítulos teóricos. **Adrian Donayre** TB1: Al realizar contenido relacionado al bounded context User aplicando DDD, me permitió pasar de ideas generales a una arquitectura con límites claros, lenguaje ubicuo y reglas de negocio explícitas. TP1:Durante el desarrollo del flujo de Gigs, traduje conceptos abstractos en funcionalidades concretas, aplicando principios de diseño modular y separación de responsabilidades. Además, la documentación del segundo sprint me ayudó a profundizar en técnicas de documentación ágil y seguimiento de procesos, competencias clave en proyectos reales de software. **Mariano Oblitas** TB1: Revisé conceptos clave de arquitectura de software y *Bounded Contexts*, aplicándolos en la estructuración del proyecto. Además, participé en la creación del repositorio y documentos base, reforzando conocimientos en entornos colaborativos. TP1: La implementación integral de la landing page, login y registro en Android Studio me permitió integrar conocimientos de diseño UX/UI con desarrollo móvil. Asimismo, realicé el despliegue de backend y base de datos, fortaleciendo mis habilidades en DevOps y despliegue continuo, fundamentales en la ingeniería moderna de software. **Carlos Fernandez** TB1: Mediante el aprendizaje previo en cursos anteriores complementé lo aprendido en el desarrollo de bounded context, asi como la adecuada implementación de los diagramas relacionados. TP1:Diseñé wireframes, wireflows y user flows para representar visualmente las interacciones del sistema, reforzando mis habilidades en diseño centrado en el usuario. Posteriormente, desarrollé la vista buyer\_my\_pulls, aplicando principios de integración entre diseño y lógica de presentación, alineados con buenas prácticas de frontend.  | El equipo demostró un avance significativo en la actualización y profundización de conocimientos técnicos esenciales para el desarrollo profesional. Cada integrante reforzó conceptos de Domain-Driven Design (DDD), Bounded Contexts y arquitectura de software, aplicándolos directamente en la estructuración del proyecto. Esto permitió pasar de ideas generales a modelos más claros y organizados, con roles y límites definidos, consolidando la base técnica del trabajo en equipo. Asimismo, el uso de repositorios, documentos colaborativos y presentaciones contribuyó a mejorar la comunicación y la integración de los aportes individuales. El equipo demostró un progreso significativo en la actualización de conocimientos técnicos y habilidades prácticas. Las tareas del TP1 complementaron lo aprendido en el TB1, permitiendo a cada miembro aplicar conceptos como DDD, arquitectura de software y desarrollo móvil. Se evidenció una madurez técnica creciente al integrar diseño, desarrollo y despliegue de componentes del sistema, fortaleciendo así la capacidad del equipo para enfrentar retos reales en la ingeniería de software. |
+| **7.c2. Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de tecnologías de ingeniería de software** | **Irving Allcca** TB1: Al abordar los contextos del sistema, entendí la importancia de seguir aprendiendo para proponer soluciones más sólidas y adaptadas al desarrollo de software en equipo. TP1: La preparación del Keynote y la grabación del video requirieron explorar nuevas herramientas de presentación técnica. Esto me hizo consciente de la necesidad de seguir aprendiendo formas efectivas de comunicar ideas de software, habilidad clave para el trabajo en equipo y la gestión de proyectos. **Diego Cacho** TB1: El avance realizado en la primera entrega del proyecto me permitió adentrarme a las soluciones de problemas con la tecnología de desarrollo móvil de Android, de esta manera organice diversos puntos y logre comprender más la lógica de GigU en un entorno móvil. TP1:En el proceso de desarrollo de la interfaz Buyer Account, identifiqué limitaciones en mis conocimientos sobre desarrollo móvil, lo que me llevó a investigar sobre componentes y buenas prácticas en Android. Esta experiencia reforzó en mí la importancia de mantener una actitud de aprendizaje continuo frente a nuevas tecnologías. **Adrian Donayre** TB1: En mi desarrollo identifiqué varias tecnologías que son factibles para la elaboración del proyecto. Así reconocí la importancia de mantener un hábito de aprendizaje constante para conocer todo el repertorio de herramientas a mi disposición. TP1:La documentación del sprint me permitió reflexionar sobre la mejora continua del equipo. Identifiqué herramientas ágiles que no dominaba, lo que me motivó a investigarlas y aplicarlas, reconociendo que el aprendizaje permanente es crucial para adaptarme a dinámicas de trabajo técnico colaborativo. **Mariano Oblitas** TB1: Al trabajar en los *Pulls* y el avance de diapositivas, identifiqué la necesidad de seguir aprendiendo sobre herramientas y buenas prácticas, lo cual me ayudó a mejorar mi enfoque técnico dentro del proyecto. TP1:Para implementar la landing page y el sistema de autenticación móvil, necesité adquirir conocimientos adicionales sobre diseño responsive, seguridad básica y despliegue en entornos reales. Esto evidenció la necesidad de mantenerme actualizado en un campo en constante evolución como lo es el desarrollo full stack. **Carlos Fernandez** TB1: Para mi participación en este proyecto tuve que reforzar lo aprendido en cursos pasados, así como investigar sobre las adecuadas prácticas que se aplican para el continuo desarrollo como estudiante de Ingeniería de Software. TP1:La construcción de flujos de usuario y su traducción al frontend me exigió investigar nuevas herramientas de diseño y principios de accesibilidad. Este proceso fortaleció mi convicción de que el aprendizaje permanente es vital para crear soluciones tecnológicamente viables y centradas en el usuario. | Se reconoció la importancia del aprendizaje continuo como eje fundamental para el crecimiento profesional. La necesidad de investigar nuevas tecnologías, buenas prácticas y herramientas quedó reflejada en las acciones realizadas: desde la exploración de soluciones móviles hasta la implementación de metodologías de trabajo colaborativo. El equipo asumió que el aprendizaje permanente no solo refuerza los conocimientos previos, sino que también garantiza la capacidad de adaptarse a las demandas del proyecto y a la evolución constante de la ingeniería de software. Se evidenció un compromiso sostenido con el aprendizaje permanente, tanto en lo técnico como en lo metodológico. Las tareas del TP1 llevaron al equipo a dominar nuevas herramientas, investigar sobre mejores prácticas y adaptarse a diversos entornos de desarrollo (web, móvil, diseño). Esta actitud proactiva frente al conocimiento fortalece la capacidad del grupo para adaptarse a entornos dinámicos y demandas tecnológicas cambiantes. |
+
+
 
 
 # Tabla de Contenidos
@@ -230,8 +234,8 @@ ABET – EAC - Student Outcome 7: La capacidad de adquirir y aplicar nuevos cono
       * [Contenido y entregables específicos del Hito (Semana 15)](#contenido-y-entregables-específicos-del-hito-semana-15)
   * [4.3. Validation Interviews](#43-validation-interviews)
 
-    * [4.3.1. Diseño de Entrevistas](#431-diseño-de-)
-    * [4.3.2. Registro de Entrevistas](#432-registro-de-)
+    * [4.3.1. Diseño de istas](#431-diseño-de-)
+    * [4.3.2. Registro de istas](#432-registro-de-)
     * [4.3.3. Evaluaciones según heurísticas](#433-evaluaciones-según-heurísticas)
 
 * [Conclusiones y recomendaciones](#conclusiones-y-recomendaciones)
@@ -418,8 +422,8 @@ Los competidores que hemos identificado para GigU son las plataformas freelancer
 ### 2.1.2. Estrategias y tácticas frente a competidores
 GigU aplicará una estrategia de diferenciación enfocada en el talento universitario, destacando por su enfoque educativo, precios accesibles y alianzas con instituciones académicas. Frente a los grandes competidores del mercado freelance, GigU se posiciona como una alternativa confiable y de propósito social, conectando clientes con estudiantes verificados. Su valor está en ofrecer soluciones personalizadas, soporte en español y una experiencia centrada en el desarrollo profesional de los jóvenes. Aprovechará las debilidades de otras plataformas como su falta de personalización o enfoque regional, mientras mitiga amenazas como la falta de experiencia estudiantil con garantías y filtros de calidad
 
-## 2.2. Entrevistas
-### 2.2.1. Diseño de entrevistas
+## 2.2. istas
+### 2.2.1. Diseño de istas
 **Segmento objetivo 1: Estudiantes Universitarios Freelancers**
 
 ¿Cual es tu nombre completo?
@@ -474,16 +478,16 @@ GigU aplicará una estrategia de diferenciación enfocada en el talento universi
 
 ¿Qué factores tomas en cuenta al elegir a un freelancer: precio, portafolio, tiempo de entrega, reputación, otro? ¿Cuál de ellos pesa más para ti al decidir?
 
-### 2.2.2. Registro de entrevistas
+### 2.2.2. Registro de istas
 **Segmento objetivo \#1: Estudiantes Universitarios Freelancers** 
 
-Entrevistado N°1: Bruno Sebastián Gamarra Torres
+istado N°1: Bruno Sebastián Gamarra Torres
 
 * Sexo: Masculino 
 * Edad: 23 
 * Ubicación en la que vive: Surco 
 
-Acerca de la entrevista:
+Acerca de la ista:
  
 * Instante en el que inicia: 0:03 minutos
 * Duración: 3:44
@@ -492,9 +496,9 @@ Resumen:
 
 Bruno Sebastián Gamarra Torres, un joven de 23 años que vive en Surco, ofrece servicios de diseño gráfico y edición de video como freelancer desde hace algunos meses, motivado por la necesidad económica y el deseo de ganar experiencia. Consigue clientes principalmente a través de redes sociales como Instagram y TikTok, pero enfrenta dificultades como la falta de confianza de algunos clientes por ser estudiante. Utiliza Yape, Plin y transferencias para cobrar, aunque a veces sufre retrasos en los pagos. Para él, una plataforma ideal debería permitir dejar reseñas reales, tener chat integrado y un sistema de contratos. 
 
-![imgs](imgs/Seg1EntrevistaWener.png)
+![imgs](imgs/Seg1istaWener.png)
 
-Entrevistado N°2:Werner Lang
+istado N°2:Werner Lang
 
 Sexo:Masculino
 
@@ -637,9 +641,25 @@ Link de entrevista https://upcedupe-my.sharepoint.com/:v:/g/personal/u202213241_
 
 #### **2.2.3 Análisis de entrevistas** 
 
-El Segmento 1: Estudiantes Universitarios Freelancers muestra jóvenes motivados principalmente por la necesidad de ganar experiencia y generar ingresos adicionales mientras estudian. Bruno, Werner y Mario coinciden en que conseguir clientes es complicado debido a la falta de confianza de los empleadores hacia estudiantes y a la necesidad de contar con un portafolio sólido. Utilizan redes sociales y plataformas como Workana para buscar oportunidades, y prefieren métodos de pago sencillos como Yape y transferencias, aunque han enfrentado problemas de demoras en pagos. Para ellos, una plataforma ideal debería facilitar contratos, reseñas reales, chats integrados y sugerencias de proyectos alineados a sus habilidades, además de asegurar los pagos. Valoran la visibilidad de su talento más allá de la experiencia previa, dándoles la oportunidad de competir en el mercado freelance.
+El Segmento 1: Estudiantes Universitarios Freelancers muestra jóvenes motivados principalmente por la necesidad de ganar experiencia y generar ingresos adicionales mientras estudian. Bruno, Werner y Mario coinciden en que conseguir clientes es complicado debido a la falta de confianza de los empleadores hacia estudiantes y a la necesidad de contar con un portafolio sólido. Este patrón revela un insight clave: más allá de la experiencia, los estudiantes perciben que el mayor obstáculo es la desconfianza por parte de los potenciales clientes, lo que resalta la importancia de contar con mecanismos de validación como reseñas, calificaciones o contratos formales dentro de una plataforma.
 
-En el Segmento 2: Personas y Emprendimientos que buscan contratar freelancers, encontramos a Janet, Yulia y Fabrizio, quienes buscan apoyo externo principalmente para tareas de marketing, diseño y ventas. Sus principales preocupaciones son la calidad del trabajo, la responsabilidad del freelancer y la facilidad para gestionar pagos y acuerdos. Prefieren plataformas que ofrezcan perfiles detallados, portafolios visibles, comentarios de otros clientes y herramientas de negociación claras. Aunque Janet tiene más experiencia y prefiere manejar directamente los pagos, Yulia y Fabrizio valoran que la plataforma gestione los acuerdos para evitar problemas. En todos los casos, el portafolio visual y las buenas referencias son los factores decisivos para la contratación, y están dispuestos a pagar más si el resultado los impacta positivamente.
+Los estudiantes utilizan redes sociales y plataformas como Workana para buscar oportunidades, pero estas herramientas no siempre les dan visibilidad suficiente. Aquí se detecta otro insight importante: los freelancers desean que se les conecte con oportunidades según sus habilidades, no solo según su historial o experiencia previa. Esto abre la oportunidad para una plataforma que sugiera proyectos alineados con las competencias específicas del usuario.
+
+Respecto a los pagos, todos prefieren métodos sencillos como Yape y transferencias, aunque han enfrentado problemas con retrasos o falta de cumplimiento por parte de los clientes. Esto sugiere que los métodos de pago informales generan inseguridad, y refuerza la necesidad de que la plataforma incluya un sistema de cobros seguro y automático, que proteja tanto al freelancer como al contratante.
+
+Además del aspecto económico, un insight adicional es que estos jóvenes no solo buscan ganar dinero, sino también construir una reputación profesional y prepararse para su futuro laboral. Por eso, valoran herramientas que les permitan mostrar su trabajo, recibir retroalimentación y desarrollarse profesionalmente.
+
+En resumen, para este segmento, una plataforma ideal debería facilitar contratos, reseñas reales, chats integrados, sugerencias de proyectos alineados a sus habilidades y, sobre todo, asegurar los pagos. Valoran la visibilidad de su talento más allá de la experiencia previa, dándoles la oportunidad de competir en el mercado freelance.
+
+En el Segmento 2: Personas y Emprendimientos que buscan contratar freelancers, encontramos a Yulia y Fabrizio, quienes buscan apoyo externo principalmente para tareas de marketing, diseño y ventas. Ambos muestran una fuerte preocupación por la calidad del trabajo y la responsabilidad del freelancer, siendo esto más determinante incluso que el precio. Aquí emerge un insight relevante: el portafolio visual tiene más peso en la decisión de contratación que el costo del servicio. Si el trabajo los impacta positivamente, están dispuestos a pagar más.
+
+También es evidente que hay una desconfianza natural hacia freelancers sin referencias o validaciones previas. Esto implica que las recomendaciones, testimonios y perfiles detallados son elementos clave para generar confianza y deben estar integrados en cualquier plataforma freelance que busque ser confiable.
+
+En cuanto a la gestión de acuerdos y pagos, varios entrevistados (especialmente Yulia y Fabrizio) manifestaron su preferencia por no tener que negociar ni coordinar pagos directamente con el freelancer, revelando así otro insight clave: existe una necesidad de simplificar el proceso de contratación mediante herramientas automáticas de negociación, acuerdos y pago dentro de la plataforma.
+
+Finalmente, se identificó que el impacto emocional del trabajo recibido también influye en la percepción de valor, lo que lleva a algunos usuarios a pagar más de lo que tenían previsto si el resultado los sorprende positivamente. Esto indica que la creatividad y la presentación del trabajo tienen un rol emocional importante en la toma de decisiones.
+
+En todos los casos, el portafolio visual y las buenas referencias son los factores decisivos para la contratación, y están dispuestos a pagar más si el resultado los impacta positivamente. La plataforma ideal, según este segmento, debería ofrecer perfiles completos, herramientas de negociación, reseñas confiables, chats formales y una forma segura y automatizada de gestionar los pagos y acuerdos.
 
 ## 2.3. Needfinding
 En esta sección se presentarán los artefactos resultantes del proceso de análisis de la información de la información recolectada de los segmentos objetivos 
@@ -868,58 +888,59 @@ El impact map de GigU para las personas y emprendimientos que buscan contratar s
 ### 2.4.3. Product Backlog
 Se utilizó la escala Fibonacci para la estimación de los Story Points. En total se tuvieron **197** Story Points.
 
-| \# Orden | Epic / Story ID | Título | Descripción | Story Points (1/2/3/5/8) |
-| :---: | :---: | ----- | ----- | :---: |
-| 1 | US01 | Navegación Intuitiva en la Landing Page | Como visitante de GigU, deseo que la landing page tenga una barra de navegación clara y accesible para encontrar fácilmente las secciones importantes. | 3 |
-| 2 | US02 | Acceso rápido a funcionalidades clave | Como visitante, deseo acceder desde la landing page a secciones clave como “Publicar proyecto” o “Registrarse” para actuar rápidamente. | 3 |
-| 3 | US03 | Registro con Correo y Contraseña | Como nuevo usuario, deseo poder registrarme en la plataforma con mi correo y contraseña para acceder a las funcionalidades de GigU. | 3 |
-| 4 | US04 | Iniciar sesión como Freelancer o Cliente | Como usuario registrado, deseo poder iniciar sesión para acceder a mi cuenta y funcionalidades específicas según mi rol. | 5 |
-| 5 | US05 | Registro con redes sociales | Como visitante, deseo registrarme con Google para agilizar el proceso de creación de cuenta. | 2 |
-| 6 | US06 | Solicitar recuperación de contraseña | Como usuario, deseo solicitar la recuperación de mi contraseña para volver a acceder si la olvido. | 2 |
-| 7 | US07 | Restablecer contraseña vía correo | Como usuario, deseo poder restablecer mi contraseña desde un enlace de recuperación enviado a mi correo. | 2 |
-| 8 | US08 | Conocer los beneficios de GigU | Como visitante, deseo conocer los beneficios de usar GigU para saber por qué debería usar esta plataforma. | 1 |
-| 9 | US09 | Diferencias entre roles (freelancer / cliente)	 | Como visitante, deseo saber las diferencias entre registrarme como freelancer o cliente para elegir el rol adecuado. | 8 |
-| 10 | US10 | Experiencias de otros usuarios | Como visitante, deseo ver testimonios de usuarios anteriores para confiar en la plataforma. | 5 |
-| 11 | US11 | Detalles sobre tipos de servicios | Como visitante, deseo conocer los tipos de servicios que puedo contratar o brindar en GigU. | 5 |
-| 12 | US12 | Acceso a Preguntas Frecuentes | Como visitante, deseo ver una sección de preguntas frecuentes para resolver mis dudas comunes sin ayuda externa. | 3 |
-| 13 | US13 | Búsqueda dentro de Preguntas Frecuentes | Como usuario, deseo buscar palabras clave en la sección de FAQ para encontrar respuestas más rápido. | 3 |
-| 14 | US14 | Envío de Ticket de Soporte | Como usuario, deseo enviar un mensaje de soporte si no encuentro mi duda en la FAQ para recibir asistencia personalizada. | 3 |
-| 15 | US15 | Creación de Perfil Freelance | Como estudiante, deseo crear mi perfil freelance con mi nombre, carrera y universidad para que los clientes conozcan mi identidad profesional. | 5 |
-| 16 | US16 | Añadir Habilidades y Descripción Personal | Como freelancer, deseo añadir habilidades y una descripción personal a mi perfil para destacar mis fortalezas. | 8 |
-| 17 | US17 | Establecer Tarifas por Servicio | Como freelancer, deseo establecer mis tarifas por tipo de servicio para que los clientes vean cuánto cobro. | 8 |
-| 18 | US18 | Subir Portafolio de Proyectos | Como freelancer, deseo subir muestras de trabajos anteriores para mostrar mi experiencia a los clientes. | 5 |
-| 19 | US19 | Editar y Actualizar Perfil en Cualquier Momento | Como freelancer, deseo poder actualizar mi perfil cuando quiera para mantener mi información al día. | 3 |
-| 20 | US20 | Publicar un Servicio Personalizado | Como freelancer, deseo publicar un servicio con título, descripción y precio para ofrecerlo a potenciales clientes. | 5 |
-| 21 | US21 | Establecer Plazos de Entrega | Como freelancer, deseo definir el tiempo de entrega estimado para cada servicio para que el cliente tenga expectativas claras. | 5 |
-| 22 | US22 | Editar Servicios Publicados | Como freelancer, deseo poder editar los servicios que ya publiqué para corregir errores o actualizar precios y descripciones. | 5 |
-| 23 | US23 | Pausar o Eliminar Servicios Publicados | Como freelancer, deseo pausar o eliminar mis servicios si ya no los ofrezco o deseo ocultarlos temporalmente. | 5 |
-| 24 | US24 | Añadir Imágenes o Archivos al Servicio | Como freelancer, deseo subir imágenes o archivos de muestra a mis servicios para ayudar al cliente a visualizar mejor lo que ofrezco. | 3 |
-| 25 | US25 | Buscar Freelancers por Palabra Clave | Como cliente, deseo buscar freelancers usando palabras clave para encontrar rápidamente quienes ofrecen lo que necesito. | 3 |
-| 26 | US26 | Filtrar Freelancers por Habilidad | Como cliente, deseo filtrar freelancers según sus habilidades para encontrar al más apto para mi proyecto. | 3 |
-| 27 | US27 | Filtrar por Rango de Precios | Como cliente, deseo establecer un rango de precios para ver freelancers que cobren dentro de mi presupuesto. | 5 |
-| 28 | US28 | Filtrar por Nivel de Experiencia | Como cliente, deseo filtrar freelancers según su experiencia (básica, intermedia, avanzada) para elegir el nivel adecuado para mi necesidad. | 5 |
-| 29 | US29 | Ordenar Resultados por Relevancia o Calificación | Como cliente, deseo ordenar los resultados de búsqueda por calificación o relevancia para facilitar la comparación de perfiles. | 3 |
-| 30 | US30 | Contratar desde el Perfil del Freelancer | Como cliente, deseo poder contratar a un freelancer directamente desde su perfil para ahorrar tiempo en el proceso de negociación. | 5 |
-| 31 | US31 | Confirmación de Contratación Exitosa | Como cliente, deseo recibir una confirmación visual y por correo al contratar a un freelancer para saber que el proceso fue exitoso. | 3 |
-| 32 | US32 | Rechazar o Aceptar una Solicitud de Contrato | Como freelancer, deseo tener la opción de aceptar o rechazar una contratación directa para mantener el control sobre mi disponibilidad. | 3 |
-| 33 | US33 | Ver Historial de Contrataciones Realizadas | Como cliente, deseo ver un historial de las contrataciones directas realizadas para tener un registro de mis actividades. | 2 |
-| 34 | US34 | Visualizar Proyectos Activos | Como freelancer, deseo ver una lista de mis proyectos activos para organizarme y darles seguimiento. | 5 |
-| 35 | US35 | Gestionar Solicitudes Recibidas | Como freelancer, deseo revisar y gestionar solicitudes de nuevos proyectos para aceptar solo las que se ajusten a mi disponibilidad. | 3 |
-| 36 | US36 | Marcar Proyecto como Finalizado | Como freelancer, deseo marcar un proyecto como finalizado para indicar que mi trabajo ha sido completado. | 3 |
-| 37 | US37 | Seguimiento del Estado del Proyecto | Como cliente, deseo ver el estado de mis proyectos en curso para saber si están en espera, en proceso o finalizados. | 5 |
-| 38 | US38 | Calificar al Freelancer Finalizado el Proyecto | Como cliente, deseo dejar una calificación al freelancer al finalizar el proyecto para compartir mi experiencia con otros usuarios. | 3 |
-| 39 | US39 | Ver Calificaciones en Perfil de Freelancer | Como cliente, deseo ver las calificaciones que otros clientes han dejado en el perfil del freelancer para tomar una decisión informada. | 5 |
-| 40 | US40 | Editar Calificación Después de Proyecto | Como cliente, deseo poder editar mi calificación si he cometido un error o si hubo una mejora significativa tras el feedback. | 5 |
-| 41 | US41 | Calificar al Cliente | Como freelancer, deseo calificar al cliente luego de terminar un proyecto para que otros freelancers conozcan su reputación. | 5 |
-| 42 | US42 | Enviar Mensaje a Usuario desde Perfil | Como usuario, deseo enviar un mensaje a otro usuario desde su perfil para coordinar antes de contratar o aceptar un proyecto. | 3 |
-| 43 | US43 | Ver Historial de Conversaciones | Como usuario, deseo ver el historial de mis conversaciones previas para recordar acuerdos y detalles importantes. | 2 |
-| 44 | US44 | Notificación de Nuevo Mensaje | Como usuario, deseo recibir una notificación cuando me envíen un nuevo mensaje para no perderme ninguna comunicación importante. | 1 |
-| 45 | US45 | Bloquear o Reportar Usuario desde Chat | Como usuario, deseo poder bloquear o reportar a alguien desde el chat si recibo mensajes inapropiados o spam. | 2 |
-| 46 | US46 | Sugerencia de Precio Inteligente | Como usuario, deseo recibir una sugerencia automática de precio al momento de negociar, para basarme en un valor justo según experiencia y tipo de servicio. | 8 |
-| 47 | US47 | Ajuste Manual sobre Precio Sugerido | Como usuario, deseo poder modificar manualmente el precio sugerido para adaptarlo a mis propias condiciones. | 5 |
-| 48 | US48 | Detalle del Cálculo del Precio | Como usuario, deseo ver una explicación breve de cómo se calculó el precio sugerido para tener mayor confianza en su lógica. | 5 |
-| 49 | US49 | Comparación entre Propuesta y Oferta | Como usuario, deseo comparar mi propuesta con la oferta del otro usuario para llegar más fácilmente a un acuerdo. | 3 |
-| 50 | US50 | Historial de Precios de Servicios Similares | Como usuario, deseo ver precios promedios de servicios similares contratados anteriormente para decidir mejor mi tarifa. | 2 |
+| # Orden | User Story ID | Título | Story Points (1/2/3/5/8) |
+|:-------:|:----------------:|--------|:------------------------:|
+| 1 | US01 | Navegación Intuitiva en la Landing Page | 3 |
+| 2 | US02 | Acceso rápido a funcionalidades clave | 3 |
+| 3 | US03 | Registro con Correo y Contraseña | 3 |
+| 4 | US04 | Iniciar sesión como Freelancer o Cliente | 5 |
+| 5 | US05 | Registro con redes sociales | 2 |
+| 6 | US06 | Solicitar recuperación de contraseña | 2 |
+| 7 | US07 | Restablecer contraseña vía correo | 2 |
+| 8 | US08 | Conocer los beneficios de GigU | 1 |
+| 9 | US09 | Diferencias entre roles (freelancer / cliente) | 8 |
+| 10 | US10 | Experiencias de otros usuarios | 5 |
+| 11 | US11 | Detalles sobre tipos de servicios | 5 |
+| 12 | US12 | Acceso a Preguntas Frecuentes | 3 |
+| 13 | US13 | Búsqueda dentro de Preguntas Frecuentes | 3 |
+| 14 | US14 | Envío de Ticket de Soporte | 3 |
+| 15 | US15 | Creación de Perfil Freelance | 5 |
+| 16 | US16 | Añadir Habilidades y Descripción Personal | 8 |
+| 17 | US17 | Establecer Tarifas por Servicio | 8 |
+| 18 | US18 | Subir Portafolio de Proyectos | 5 |
+| 19 | US19 | Editar y Actualizar Perfil en Cualquier Momento | 3 |
+| 20 | US20 | Publicar un Servicio Personalizado | 5 |
+| 21 | US21 | Establecer Plazos de Entrega | 5 |
+| 22 | US22 | Editar Servicios Publicados | 5 |
+| 23 | US23 | Pausar o Eliminar Servicios Publicados | 5 |
+| 24 | US24 | Añadir Imágenes o Archivos al Servicio | 3 |
+| 25 | US25 | Buscar Freelancers por Palabra Clave | 3 |
+| 26 | US26 | Filtrar Freelancers por Habilidad | 3 |
+| 27 | US27 | Filtrar por Rango de Precios | 5 |
+| 28 | US28 | Filtrar por Nivel de Experiencia | 5 |
+| 29 | US29 | Ordenar Resultados por Relevancia o Calificación | 3 |
+| 30 | US30 | Contratar desde el Perfil del Freelancer | 5 |
+| 31 | US31 | Confirmación de Contratación Exitosa | 3 |
+| 32 | US32 | Rechazar o Aceptar una Solicitud de Contrato | 3 |
+| 33 | US33 | Ver Historial de Contrataciones Realizadas | 2 |
+| 34 | US34 | Visualizar Proyectos Activos | 5 |
+| 35 | US35 | Gestionar Solicitudes Recibidas | 3 |
+| 36 | US36 | Marcar Proyecto como Finalizado | 3 |
+| 37 | US37 | Seguimiento del Estado del Proyecto | 5 |
+| 38 | US38 | Calificar al Freelancer Finalizado el Proyecto | 3 |
+| 39 | US39 | Ver Calificaciones en Perfil de Freelancer | 5 |
+| 40 | US40 | Editar Calificación Después de Proyecto | 5 |
+| 41 | US41 | Calificar al Cliente | 5 |
+| 42 | US42 | Enviar Mensaje a Usuario desde Perfil | 3 |
+| 43 | US43 | Ver Historial de Conversaciones | 2 |
+| 44 | US44 | Notificación de Nuevo Mensaje | 1 |
+| 45 | US45 | Bloquear o Reportar Usuario desde Chat | 2 |
+| 46 | US46 | Sugerencia de Precio Inteligente | 8 |
+| 47 | US47 | Ajuste Manual sobre Precio Sugerido | 5 |
+| 48 | US48 | Detalle del Cálculo del Precio | 5 |
+| 49 | US49 | Comparación entre Propuesta y Oferta | 3 |
+| 50 | US50 | Historial de Precios de Servicios Similares | 2 |
+
 
 ## 2.5. Strategic-Level Domain-Driven Design
 En esta sección nos reunimos todo el equipo para realizar una lluvia de ideas sobre los eventos que ocurrirían en la aplicación. Primero se empezó por poner en una pizarra todos los eventos del dominio que se nos ocurrieran que podría tener la aplicación. Después empezamos a agregar los comandos que desencadenan los eventos. Finalmente ya se agregaron los demás elementos como actores, políticas, aggregates, sistemas externos, y modelos de lectura. Poco a poco al hacer esto se empezaron a formar pequeños flujos de eventos que nos servirían para los siguientes puntos.
@@ -2822,6 +2843,34 @@ En nuestro primer sprint logramos desplegar la landing page. Esto lo logramos en
 
 ### 4.2.2. Sprint 2
 #### 4.2.2.1. Sprint Planning 2
+*  Sprint Details
+
+| Field | Value |
+| :---: | :---: |
+| Sprint Number | Sprint 1 |
+| Date | 01 de Octubre de 2025 |
+| Time | 14:40 PM |
+| Location | Modalidad remota |
+| Prepared By | GigU |
+| Attendees | Todos los miembros del equipo |
+
+* Sprint Overview
+
+**Previous Sprint Summary:**  
+Para el Sprint 1, buscamos desarrollar y desplegar una landing page funcional que cumpla con todas las historias de usuario especificadas para la interacción inicial con clientes y presentación del producto.
+
+**Sprint Goal:**  
+Para el Sprint 2, buscamos desarrollar y desplegar una nuestro backend y frontend funcional que cumpla con todas las historias de usuario especificadas para la interacción inicial con clientes y presentación del producto.
+
+**Technical Specifications:**
+
+| Aspect | Details |
+| :---: | :---: |
+| Duration | 01 de octubre \- 10 deoctubre de 2025 |
+| Team Capacity | 130 horas totales |
+| Tech Stack | Android Studio, Kotlin, Jetpack Compose (M3), Navigation, Hilt, Coroutines/Flow, DataStore, Retrofit (stub), Coil, FCM (mock), JUnit/MockK, ktlint/detekt, GitHub Actions |
+| Velocity | 38 |
+| Total Story Points | 38 |
 #### 4.2.2.2. Sprint Backlog 2
 #### 4.2.2.3. Development Evidence for Sprint Review
 #### 4.2.2.4. Testing Suite Evidence for Sprint Review
