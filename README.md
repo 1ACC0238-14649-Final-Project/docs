@@ -1152,7 +1152,7 @@ El diagrama de context mapping resultante muestra a User como núcleo de identid
 **Objetivo:**  
 Mostrar el sistema GigU como un sistema central rodeado por sus actores (usuarios) y sistemas externos con los que interactúa.
 
- ![DiagramaContexto](imgs/context-diagram.png)
+ ![DiagramaContexto](imgs\struc1.png)
 
 **Contenedores:**  
 - **Landing Page:** Página web estática para presentación y redireccionamiento (al Play Store o App links).  
@@ -1166,14 +1166,11 @@ Mostrar el sistema GigU como un sistema central rodeado por sus actores (usuario
 - El API RESTful accede a la Base de Datos para lectura y escritura.  
 - El API también integra servicios externos para validaciones, autenticación y notificaciones.
 
-**Componentes Utilizados**  
- ![DiagramaContextKey](imgs/context-diagram-key.png)
-
 #### 2.5.3.2. Software Architecture Container Level Diagrams
 **Objetivo:**  
 Descomponer el sistema en contenedores tecnológicos y mostrar sus interacciones principales.
 
-   ![DiagramaContenedores](imgs/container-diagram.png)
+   ![DiagramaContenedores](imgs\struc2.png)
 
 **Contenedores:**  
 - **Landing Page:** Servida desde CDN para distribución global y alta disponibilidad.  
@@ -1187,14 +1184,11 @@ Descomponer el sistema en contenedores tecnológicos y mostrar sus interacciones
 - La API interactúa con la Base de Datos, Blob Storage y Servicios Externos.  
 - La Landing Page sirve como punto de entrada y redirección.  
 
-**Componentes Utilizados**  
- ![DiagramaContenedoresKey](imgs/container-diagram-key.png)
-
 #### 2.5.3.3. Software Architecture Deployment Diagrams
 **Objetivo:**  
 Representar la distribución física del sistema, mostrando cómo los diferentes contenedores de software (Landing Page, Aplicación Móvil, API RESTful y Base de Datos) se despliegan en la infraestructura y cómo se comunican entre sí, incluyendo servicios externos.
 
-   ![DiagramaDeployment](imgs/deployment-diagram.png)
+   ![DiagramaDeployment](imgs\struc3.png)
 
 **Nodos principales:**  
 - **Android Device (App Flutter):** Aplicación instalada en el dispositivo del usuario, con almacenamiento local y acceso a recursos del teléfono.  
