@@ -2899,8 +2899,43 @@ Para el Sprint 2, buscamos desarrollar y desplegar una nuestro backend y fronten
 |   T28   |    US34    | **Proyectos activos** con estado (Solicitado/En curso/Finalizado) |    Diego Alonso Cacho Seminario   |        5        |   Completed   | EP07 |
 |   T29   |      —     |       Buyer_Pull_Detail: vista mínima de orden con timeline       | Irving Washington Allcca Guerrero |        4        |   Completed   | EP03 |
 #### 4.2.2.3. Development Evidence for Sprint Review
+Durante el Sprint 2, se completó el desarrollo de múltiples funcionalidades clave del sistema, tanto en el backend como en el frontend. Todo el equipo participó activamente en la implementación, asegurando la entrega de 38 puntos de historia.
+
+**Evidencias de desarrollo:**
+
+* **Frontend (Android Studio):**
+
+  * Pantallas desarrolladas: `Buyer_Gigs`, `Gig_Detail`, `Buyer_Account`, `Buyer_Pull_Detail`, entre otras.
+  * Funcionalidades implementadas: login, registro, carga de gigs y pulls.
+  * Interactividad, navegación y persistencia de sesión fueron programadas exitosamente.
+
+* **Backend (Desplegado en Azure):**
+
+  * Módulos implementados y documentados vía Swagger:
+    * Briefcase
+    * Chat
+    * Gig
+    * Pull
+    * User
+  * API REST disponible: [Backend API - Swagger](https://gigu-backend-webapp-hzbrd3guaghphmam.canadacentral-01.azurewebsites.net/index.html)
+
+* **Diseño UI/UX en Figma:**
+  [Figma Mobile Applications Prototyping](https://www.figma.com/proto/e9rRUYfYEnuXsDprZFbRJh/GigU-Mobile?node-id=1-807&p=f&t=2Hq2t1l8xhwXIZt4-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A1330&show-proto-sidebar=1)
+    
 #### 4.2.2.4. Testing Suite Evidence for Sprint Review
+En esta entrega aun no se realizo aun ya que solo es el avanze de las pantallas core para nuestro sector Buyer.
+
 #### 4.2.2.5. Execution Evidence for Sprint Review
+Todas las tareas del backlog del Sprint 2 fueron completadas dentro del periodo establecido (01 al 10 de octubre de 2025), alcanzando una **velocidad de 38 puntos**, lo que representa una cobertura del 100% del backlog planeado.
+
+**Evidencias de ejecución:**
+
+* Registro completo en la tabla de backlog (T01-T29), todas las tareas marcadas como **Completed**.
+* Coordinación efectiva en modalidad remota.
+* Participación activa de todos los miembros según sus roles asignados.
+* El backend fue desplegado exitosamente en Azure con base de datos funcional conectada.
+* El frontend fue actualizado integrando múltiples funcionalidades listas para la demo.
+
 #### 4.2.2.6. Services Documentation Evidence for Sprint Review
 Para el segundo sprint planemos desplegar el backend en su totalidad para poder avanzar con el frontend. 
 A continuación, la documentación de la API REST de GigU, implementada con Swagger.
@@ -2930,6 +2965,38 @@ En nuestro segundo sprint logramos desplegar el backend. Esto lo logramos realiz
 <img src="imgs\despliegueBd2.jpeg" alt="despliegueBd2" title="despliegueBd2"/>
 
 #### 4.2.2.8. Team Collaboration Insights during Sprint
+La colaboración del equipo durante el Sprint 2 fue activa, estructurada y enfocada en cumplir los objetivos definidos.
+
+**Aportes clave por miembro:**
+
+* **Irving Allcca Guerrero:**
+
+  * Desarrollo de las vistas `buyer_pull_detail` y `peek_seller_account`.
+  * Implementación de acordeón de FAQ y ratings.
+  * Participación en la documentación del data layer con mocks JSON.
+
+* **Mariano Moisés Oblitas Dávila:**
+
+  * Encargado del desarrollo de las pantallas de login, registro, restablecimiento de contraseña, y navegación.
+  * Despliegue del backend y la base de datos en Azure.
+  * Grabación del video de la demo y elaboración de Keynote.
+  * Diseño y desarrollo de la landing page: [Landing Page](https://1acc0238-14649-final-project.github.io/landing/)
+
+* **Diego Alonso Cacho Seminario:**
+
+  * Desarrollo de `Buyer_Account` y diseño de componentes en Figma.
+  * Corrección de observaciones de TB1 y documentación de capítulos teóricos.
+
+* **Carlos Fredy Fernández Camayo:**
+
+  * Desarrollo de la vista `buyer_my_pulls`.
+  * Apoyo en wireframes, wireflows y user flows.
+
+* **Adrián Ricardo Donayre Álvarez:**
+
+  * Desarrollo completo del flujo `Gigs`, incluyendo filtros, chips, slider de precios, paginación, y flujo de contratación.
+  * Encargado de la documentación final del Sprint 2 y revisión del TB1.
+
 ### 4.2.3. Sprint 3
 #### 4.2.3.1. Sprint Planning 3
 #### 4.2.3.2. Sprint Backlog 3
@@ -2985,3 +3052,4 @@ El desarrollo de wireframes, wireflows, user flows, mock-ups y prototipos permit
 
 [Figma Mobile Applications Prototyping](https://www.figma.com/proto/e9rRUYfYEnuXsDprZFbRJh/GigU-Mobile?node-id=1-807&p=f&t=2Hq2t1l8xhwXIZt4-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A1330&show-proto-sidebar=1)
 
+[API REST (Swagger - Backend)](https://gigu-backend-webapp-hzbrd3guaghphmam.canadacentral-01.azurewebsites.net/index.html)
