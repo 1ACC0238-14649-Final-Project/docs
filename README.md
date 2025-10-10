@@ -2828,6 +2828,34 @@ En el primer Sprint solamente se ha desarrollado la Landing Page por lo que no s
 
 ### 4.2.2. Sprint 2
 #### 4.2.2.1. Sprint Planning 2
+*  Sprint Details
+
+| Field | Value |
+| :---: | :---: |
+| Sprint Number | Sprint 1 |
+| Date | 01 de Octubre de 2025 |
+| Time | 14:40 PM |
+| Location | Modalidad remota |
+| Prepared By | GigU |
+| Attendees | Todos los miembros del equipo |
+
+* Sprint Overview
+
+**Previous Sprint Summary:**  
+Para el Sprint 1, buscamos desarrollar y desplegar una landing page funcional que cumpla con todas las historias de usuario especificadas para la interacción inicial con clientes y presentación del producto.
+
+**Sprint Goal:**  
+Para el Sprint 2, buscamos desarrollar y desplegar una nuestro backend y frontend funcional que cumpla con todas las historias de usuario especificadas para la interacción inicial con clientes y presentación del producto.
+
+**Technical Specifications:**
+
+| Aspect | Details |
+| :---: | :---: |
+| Duration | 01 de octubre \- 10 deoctubre de 2025 |
+| Team Capacity | 130 horas totales |
+| Tech Stack | Android Studio, Kotlin, Jetpack Compose (M3), Navigation, Hilt, Coroutines/Flow, DataStore, Retrofit (stub), Coil, FCM (mock), JUnit/MockK, ktlint/detekt, GitHub Actions |
+| Velocity | 38 |
+| Total Story Points | 38 |
 #### 4.2.2.2. Sprint Backlog 2
 #### 4.2.2.3. Development Evidence for Sprint Review
 #### 4.2.2.4. Testing Suite Evidence for Sprint Review
