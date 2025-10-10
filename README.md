@@ -1152,7 +1152,7 @@ El diagrama de context mapping resultante muestra a User como núcleo de identid
 **Objetivo:**  
 Mostrar el sistema GigU como un sistema central rodeado por sus actores (usuarios) y sistemas externos con los que interactúa.
 
- ![DiagramaContexto](imgs\struc1.png)
+ ![DiagramaContexto](imgs/struc1.png)
 
 **Contenedores:**  
 - **Landing Page:** Página web estática para presentación y redireccionamiento (al Play Store o App links).  
@@ -1170,7 +1170,7 @@ Mostrar el sistema GigU como un sistema central rodeado por sus actores (usuario
 **Objetivo:**  
 Descomponer el sistema en contenedores tecnológicos y mostrar sus interacciones principales.
 
-   ![DiagramaContenedores](imgs\struc2.png)
+   ![DiagramaContenedores](imgs/struc2.png)
 
 **Contenedores:**  
 - **Landing Page:** Servida desde CDN para distribución global y alta disponibilidad.  
@@ -1188,7 +1188,7 @@ Descomponer el sistema en contenedores tecnológicos y mostrar sus interacciones
 **Objetivo:**  
 Representar la distribución física del sistema, mostrando cómo los diferentes contenedores de software (Landing Page, Aplicación Móvil, API RESTful y Base de Datos) se despliegan en la infraestructura y cómo se comunican entre sí, incluyendo servicios externos.
 
-   ![DiagramaDeployment](imgs\struc3.png)
+   ![DiagramaDeployment](imgs/struc3.png)
 
 **Nodos principales:**  
 - **Android Device (App Flutter):** Aplicación instalada en el dispositivo del usuario, con almacenamiento local y acceso a recursos del teléfono.  
