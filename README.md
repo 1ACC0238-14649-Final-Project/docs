@@ -2960,6 +2960,13 @@ GigU atiende una necesidad concreta en el entorno universitario y emprendedor, o
 
 La propuesta de valor de GigU va más allá de conectar usuarios, ya que incorpora funcionalidades clave como cotización inteligente, visibilidad mediante portafolios, acuerdos formales y un sistema de pagos seguro. Esto no solo aumenta la confianza entre las partes, sino que también profesionaliza la experiencia freelance desde etapas tempranas, promoviendo relaciones laborales más justas, eficientes y formativas.
 
+* TP1:
+
+El equipo logró completar de manera integral las fases de diseño UI/UX de la solución GigU, consolidando una visión coherente y funcional del producto. 
+
+El desarrollo de wireframes, wireflows, user flows, mock-ups y prototipos permitió traducir los requerimientos funcionales en experiencias de usuario intuitivas y centradas en las necesidades detectadas durante el proceso de Needfinding. Asimismo, se fortaleció la colaboración entre los integrantes al combinar habilidades de diseño, desarrollo y análisis de experiencia, logrando un sistema visual uniforme y una guía de estilo sólida para los siguientes sprints de implementación.
+
+
 # Video App Validation
 
 # Video About the product
