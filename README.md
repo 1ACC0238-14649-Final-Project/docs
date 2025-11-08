@@ -16,16 +16,36 @@
 <p align="center"><strong>Startup:</strong> GigU</p>
 <p align="center"><strong>Producto:</strong> GigU</p>
 
-# Team members:
-
-| Nombre                            | Código     |
-| --------------------------------- | ---------- |
-| Irving Washington Allcca Guerrero | U202213241 |
-| Diego Alonso Cacho Seminario      | U202223990 |
-| Adrian Ricardo Donayre Alvarez    | U202310187 |
-| Carlos Fredy Fernandez Camayo     | U202320083 |
-| Mariano Moises Oblitas Davila     | U202310222 |
-
+<!-- Nombres de integrantes -->
+<div align="center">
+    <h3>Integrantes del equipo:</h3>
+    <table border="1" cellpadding="8" cellspacing="0">
+        <tr>
+            <th>Nombres y Apellidos</th>
+            <th>Código</th>
+        </tr>
+        <tr>
+            <td>Allcca Guerrero, Irving Washington</td>
+            <td>U202213241</td>
+        </tr>
+        <tr>
+            <td>Cacho Seminario, Diego Alonso</td>
+            <td>U202223990</td>
+        </tr>
+        <tr>
+            <td>Donayre Alvarez, Adrian Ricardo</td>
+            <td>U202310187</td>
+        </tr>
+        <tr>
+            <td>Fernandez Camayo, Carlos Fredy</td>
+            <td>U202320083</td>
+        </tr>
+        <tr>
+            <td>Oblitas Davila, Mariano Moises</td>
+            <td>U202310222</td>
+        </tr>
+    </table>
+</div>
 
 <p align="center"><strong>Noviembre 2025</strong></p>
 
