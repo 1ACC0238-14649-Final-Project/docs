@@ -3071,7 +3071,152 @@ La colaboración del equipo durante el Sprint 2 fue activa, estructurada y enfoc
 ## 4.3. Validation Interviews
 ### 4.3.1. Diseño de Entrevistas
 ### 4.3.2. Registro de Entrevistas
+
 ### 4.3.3. Evaluaciones según heurísticas
+**SITE o APP A EVALUAR:** GIG U
+
+**TAREAS A EVALUAR:**  
+El alcance de la siguiente evaluación presenta la revisión de la usabilidad de las presentes tareas:
+
+1. Presentación y Funcionalidad del Landing Page  
+2. Registro de un usuario nuevo  
+3. Revisión de un Pull  
+4. Sección de Perfil
+
+No están incluidas en esta versión de evaluaciones las siguientes tareas:
+
+1. Sistema de mensajería en un Pull  
+2. Inicio de Sesión por medio de Terceros  
+3. Sistema de Precio Automático
+
+**ESCALA DE SEVERIDAD**  
+Se presenta una lista de puntuación para la calificación de las tareas.
+
+| Nivel | Descripción |
+| ----- | :---- |
+| **1** | Problema superficial: Puede ser fácilmente superado por el usuario y ocurre con muy poca frecuencia. No necesita ser arreglado a no ser que exista disponibilidad de tiempo. |
+| **2** | Problema menor: Puede ocurrir un poco más frecuentemente o es un poco más difícil de superar para el usuario. Se le debería asignar una prioridad baja resolverlo de cara al siguiente reléase |
+| **3** | Problema mayor: Ocurre frecuentemente o los usuarios no son capaces de resolverlos. Es importante que sean corregidos y se les debe asignar una prioridad alta. |
+| **4** | Problema muy grave: Un error de gran impacto que impide al usuario continuar con el uso de la herramienta. Es imperativo que sea corregido antes del lanzamiento. |
+
+**TABLA RESUMEN**
+
+| \# | Problema | Escala de severidad | Heurística/Principio violada(o) |
+| :---: | ----- | :---: | ----- |
+| **1** | El contenido mostrado en pantalla al presionar el botón de “Nosotros” no se encuentra centrado correctamente. | 1 | Aesthetic and minimalist design. |
+| **2** | El contenido mostrado en pantalla al presionar el botón de “Servicios” no se encuentra centrado correctamente. | 1 | Aesthetic and minimalist design. |
+| **3** | No se presentan ejemplos de clientes que utilizan “GigU” en la sección de “Clientes”. | 1 | Aesthetic and minimalist design. |
+| **4** | Los enlaces al presionar los botones de “Contacto” no redireccionan a otra página. | 2 | Information Architecture: Is it usable? |
+| **5** | No existe una validación con caracteres mínimos y/o incompletos para los datos de registro. | 3 | Information Architecture: Is it usable? |
+| **6** | Bloqueo lógico en la sección de “Iniciar sesión” luego de registrar un usuario. | 3 | Information Architecture: Is it usable? |
+| **7** | No es posible eliminar o cancelar un pull luego de haberlo comprado. | 2 | Information Architecture: Is it usable? |
+| **8** | Los botones de “Edit Personal Information” y “Language” en la sección de “Account” no funcionan. | 2 | Information Architecture: Is it usable? |
+
+**DESCRIPCIÓN DE PROBLEMAS**
+
+*PROBLEMA \#1: El contenido mostrado en pantalla al presionar el botón de “Nosotros” no se encuentra centrado correctamente.*
+
+*Severidad: 1*  
+*Heurística violada: Aesthetic and minimalist design.*
+
+*Problema:*  
+*Al momento de seleccionar el botón de “Nosotros” en el Landing Page, el contenido que se ejemplifica en la sección de “Sobre Nosotros” no se encuentra centrado en la pantalla, cortando parte del subtítulo.*
+
+<img src="imgs\Problema1.png" alt="Problema1" title="Problema1"/>
+
+*Recomendación:*  
+*Ajustar el movimiento y/o posición de la cámara al momento de presionar el botón de “Nosotros” para mantener el contenido a mostrar centrado correctamente en la pantalla del usuario.*
+
+*PROBLEMA \#2: El contenido mostrado en pantalla al presionar el botón de “Servicios” no se encuentra centrado correctamente.*
+
+*Severidad: 1*  
+*Heurística violada: Aesthetic and minimalist design.*
+
+*Problema:*  
+*Al momento de seleccionar el botón de “Servicios” en el Landing Page, el contenido que se ejemplifica en la sección de “Qué puedes hacer en GigU” no se encuentra centrado en la pantalla, cortando parte del subtítulo.*
+
+<img src="imgs\Problema2.png" alt="Problema2" title="Problema2"/>
+
+*Recomendación:*  
+*Ajustar el movimiento y/o posición de la cámara al momento de presionar el botón de “Servicios” para mantener el contenido a mostrar centrado correctamente en la pantalla del usuario.*
+
+*PROBLEMA \#3: No se presentan ejemplos de clientes que utilizan “GigU” en la sección de “Clientes”.*
+
+*Severidad: 1*  
+*Heurística violada: Aesthetic and minimalist design.*
+
+*Problema:*  
+*Al dirigirse hacia la sección de “Emprendimientos y freelancers que ya forman parte de nuestra red” no se presentan ejemplos reales y/o ficticios que demuestran los clientes de la plataforma de GigU.*
+
+<img src="imgs\Problema3.png" alt="Problema3" title="Problema3"/>
+
+*Recomendación:*  
+*Colocar el nombre y logo de los clientes reales y/o ficticios que demuestren a los usuarios de GigU que la plataforma es confiable y útil.*
+
+*PROBLEMA \#4: Los enlaces al presionar los botones de “Contacto” no redireccionan a otra página.*
+
+*Severidad: 2*  
+*Heurística violada: Information Architecture: Is it usable?*
+
+*Problema:*  
+*Al dirigirse hacia la sección de “Emprendimientos y freelancers que ya forman parte de nuestra red” y luego de presionar los enlaces de “Try For Free”, “Facebook”, “Instagram”, “Linkedin” y “Youtube”, estos enlaces no redireccionan hacia alguna página real o de prueba.*
+
+<img src="imgs\Problema4.png" alt="Problema4" title="Problema4"/>
+
+*Recomendación:*  
+*Redireccionar al usuario hacia las páginas indicadas en los botones ya sea creando páginas ficticias para demostrar el uso de la aplicación o redireccionar a los usuarios a la sección de “Home” de las aplicaciones mostradas en pantalla.*
+
+*PROBLEMA \#5: No existe una validación con caracteres mínimos y/o incompletos para los datos de registro.*
+
+*Severidad: 3*  
+*Heurística violada: Information Architecture: Is it usable?*
+
+*Problema:*  
+*Al momento de ingresar nuestros datos en la sección de “Registro”, no existe una validación para la cantidad mínima de caracteres y formato de datos en las entradas de “Nombre", “Apellido”, “Correo electrónico” y “Contraseña”, lo que permite al usuario crear una cuenta con datos inválidos y sin una dirección de correo con el formato de “@[empresa.com](http://empresa.com) ”.*
+
+<img src="imgs\Problema5.png" alt="Problema5" title="Problema5"/>
+
+*Recomendación:*  
+*Implementar un sistema de validación para los caracteres válidos y/o mínimos para el registro además de un sistema que verifique que el correo tenga el formato válido.*
+
+*PROBLEMA \#6: Bloqueo lógico en la sección de “Iniciar sesión” luego de registrar un usuario.*
+
+*Severidad: 3*  
+*Heurística violada:* Information Architecture: Is it usable?
+
+*Problema:*  
+*Luego de registrar un usuario en la sección de “Registro”, al presionar el botón de “¿No tienes cuenta? Regístrate” en la sección de “Iniciar sesión”, la aplicación intentará llevar al usuario al registro, sin embargo, este fallara y lo volverá a llevar al Inicio de sesión, lo que causa un bloqueo lógico.* 
+
+<img src="imgs\Problema6.png" alt="Problema6" title="Problema6"/>
+
+*Recomendación:*  
+*Implementar una revisión de errores que permitan al usuario poder volver a ingresar al registro luego de haber registrado sus datos con anterioridad. Lo que evitaría que el usuario tenga que reiniciar la aplicación.*
+
+*PROBLEMA \#7: No es posible eliminar o cancelar un pull luego de haberlo comprado.*
+
+*Severidad: 2*  
+*Heurística violada: Information Architecture: Is it usable?*
+
+*Problema:*  
+*Al realizar la compra de un Gig, no es posible efectuar una cancelación de la compra en caso haya sido realizada por accidente.*
+
+<img src="imgs\Problema7.png" alt="Problema7" title="Problema7"/>
+
+*Recomendación:*  
+*Implementar la posibilidad de cancelar una compra que haya sido realizada por accidente.*
+
+*PROBLEMA \#8: Los botones de “Edit Personal Information” y “Language” en la sección de “Account” no funcionan.*
+
+*Severidad: 2*  
+*Heurística violada: Information Architecture: Is it usable?*
+
+*Problema:*  
+*Al ingresar a la sección de “Account”, cuando se interactúa con los botones de “Edit Personal Information” y “Language”, estos no funcionan y dejan al usuario en la misma pestaña.*
+
+<img src="imgs\Problema8.png" alt="Problema8" title="Problema8"/>
+
+*Recomendación:*  
+*Desarrollar la funcionalidad de ambos botones para que el usuario pueda editar su información personal y cambiar el idioma de la aplicación.*
 
 # Conclusiones y recomendaciones
 
@@ -3086,6 +3231,8 @@ La propuesta de valor de GigU va más allá de conectar usuarios, ya que incorpo
 El equipo logró completar de manera integral las fases de diseño UI/UX de la solución GigU, consolidando una visión coherente y funcional del producto. 
 
 El desarrollo de wireframes, wireflows, user flows, mock-ups y prototipos permitió traducir los requerimientos funcionales en experiencias de usuario intuitivas y centradas en las necesidades detectadas durante el proceso de Needfinding. Asimismo, se fortaleció la colaboración entre los integrantes al combinar habilidades de diseño, desarrollo y análisis de experiencia, logrando un sistema visual uniforme y una guía de estilo sólida para los siguientes sprints de implementación.
+
+* TB2:
 
 
 # Video App Validation
