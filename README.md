@@ -3003,13 +3003,61 @@ La colaboración del equipo durante el Sprint 2 fue activa, estructurada y enfoc
 
 ### 4.2.3. Sprint 3
 #### 4.2.3.1. Sprint Planning 3
+
+| Sprint \# | Sprint 3 |
+| :---: | :---: |
+| **Sprint Planning Background** |  |
+| Date | 2025-10-30 |
+| Time | 4:30 PM |
+| Location | Modalidad remota |
+| Prepared By | Equipo GigU |
+| Attendees (to planning meeting) | Todos los miembros del equipo |
+| Sprint 3 \- 1 Review Summary | Para el Sprint anterior, se desarrolló y desplegó nuestro backend y frontend funcional que cumpla con todas las historias de usuario especificadas para la interacción inicial con clientes y presentación del producto dentro del entorno de Android. |
+| Sprint 3 \- 1 Retrospective Summary | Respecto al Sprint anterior, logramos alcanzar el resultado que esperábamos para ese Sprint, sin embargo, consideramos que hubieron secciones que se podrían mejorar. |
+| **Sprint Goal & User Stories** |  |
+| Sprint 3 Goal | Para el Sprint 3, buscamos desarrollar y desplegar la segunda sección de nuestra aplicación en el entorno de Flutter, buscamos conectar ambas secciones de manera que se puedan comunicar entre sí. |
+| Sprint 3 Velocity | \# |
+| Sum of Story Points | \# |
+
 #### 4.2.3.2. Sprint Backlog 3
+
+| Sprint \# | Sprint 3 |  |  |  |  |  |  |
+| :---: | ----- | :---: | ----- | ----- | :---: | :---: | :---: |
+| **User Story** |  | **Work-Item / Task** |  |  |  |  |  |
+| Id | Title | Id | Title | Description | Estimation (Hours) | Assigned To | Status (To-do / In-Process / To-Review / Done) |
+|  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |
+|  |  |  |  |  |  |  |  |
+
 #### 4.2.3.3. Development Evidence for Sprint Review
+
+| Repository | Branch | Commit ID | Commit Message | Commit Message Body | Committed on (Date) |
+| :---: | :---: | :---: | ----- | ----- | :---: |
+|  |  |  |  |  |  |
+|  |  |  |  |  |  |
+|  |  |  |  |  |  |
+|  |  |  |  |  |  |
+|  |  |  |  |  |  |
+|  |  |  |  |  |  |
+
 #### 4.2.3.4. Testing Suite Evidence for Sprint Review
+
+| Repository | Branch | Commit ID | Commit Message | Commit Message Body | Committed on (Date) |
+| :---: | :---: | :---: | ----- | ----- | :---: |
+|  |  |  |  |  |  |
+|  |  |  |  |  |  |
+|  |  |  |  |  |  |
+|  |  |  |  |  |  |
+|  |  |  |  |  |  |
+|  |  |  |  |  |  |
+
 #### 4.2.3.5. Execution Evidence for Sprint Review
 #### 4.2.3.6. Services Documentation Evidence for Sprint Review
 #### 4.2.3.7. Software Deployment Evidence for Sprint Review
 #### 4.2.3.8. Team Collaboration Insights during Sprint
+
 ### 4.2.4. Sprint 4
 #### 4.2.4.1. Sprint Planning 4
 #### 4.2.4.2. Sprint Backlog 4
@@ -3019,6 +3067,7 @@ La colaboración del equipo durante el Sprint 2 fue activa, estructurada y enfoc
 #### 4.2.4.6. Services Documentation Evidence for Sprint Review
 #### 4.2.4.7. Software Deployment Evidence for Sprint Review
 #### 4.2.4.8. Team Collaboration Insights during Sprint
+
 ## 4.3. Validation Interviews
 ### 4.3.1. Diseño de Entrevistas
 ### 4.3.2. Registro de Entrevistas
