@@ -3547,7 +3547,7 @@ La colaboración del equipo durante el Sprint 2 fue activa, estructurada y enfoc
 | **Sprint Goal & User Stories** |  |
 | Sprint 3 Goal | Para el Sprint 3, buscamos desarrollar y desplegar la segunda sección de nuestra aplicación en el entorno de Flutter, buscamos conectar ambas secciones de manera que se puedan comunicar entre sí. |
 | Sprint 3 Velocity | \# |
-| Sum of Story Points | \# |
+| Sum of Story Points | \41 |
 
 #### 4.2.3.2. Sprint Backlog 3
 
