@@ -3572,13 +3572,32 @@ Verificación en Trello:
 #### 4.2.3.3. Development Evidence for Sprint Review
 
 | Repository | Branch | Commit ID | Commit Message | Commit Message Body | Committed on (Date) |
-| :---: | :---: | :---: | ----- | ----- | :---: |
-|  |  |  |  |  |  |
-|  |  |  |  |  |  |
-|  |  |  |  |  |  |
-|  |  |  |  |  |  |
-|  |  |  |  |  |  |
-|  |  |  |  |  |  |
+|-----------|--------|-----------|----------------|----------------------|----------------------|
+| 1ACC0238-14649-Final-Project / mobile-android | develop | f4d5baf | Merge pull request #7 from feature/pull-view | – | 14/11/2025 |
+| 1ACC0238-14649-Final-Project / mobile-android | develop | bf0fabd | fix: reload cache | – | 14/11/2025 |
+| 1ACC0238-14649-Final-Project / mobile-android | develop | 1db2228 | feat: add pull-detail | – | 14/11/2025 |
+| 1ACC0238-14649-Final-Project / mobile-android | develop | ec35932 | fix(pull): Correction to display pull details | – | 13/11/2025 |
+| 1ACC0238-14649-Final-Project / mobile-android | develop | 55fa017 | fix(pulls): Correction of pull generation errors and pull detail routing | – | 13/11/2025 |
+| 1ACC0238-14649-Final-Project / mobile-android | develop | f3b1ed2 | feat: add pull-detail | – | 13/11/2025 |
+| 1ACC0238-14649-Final-Project / mobile-android | develop | 5f23aa1 | feat: add pull-detail | – | 13/11/2025 |
+| 1ACC0238-14649-Final-Project / mobile-android | develop | 4eb9eec | feat: update gig screen and search box | – | 12/11/2025 |
+| 1ACC0238-14649-Final-Project / mobile-android | develop | 40f4090 | feat: add search box | – | 12/11/2025 |
+| 1ACC0238-14649-Final-Project / mobile-android | develop | 2cbccf9 | chore: add gig link to gig model | – | 12/11/2025 |
+| 1ACC0238-14649-Final-Project / mobile-android | develop | 2d76de7 | fix(main-screen): navhost view | – | 12/11/2025 |
+| 1ACC0238-14649-Final-Project / mobile-android | develop | 6e60c17 | feat: gigs top bar | – | 12/11/2025 |
+| 1ACC0238-14649-Final-Project / mobile-android | develop | 7b9d17f | fix(app-database): update migration 5–6 | – | 12/11/2025 |
+| 1ACC0238-14649-Final-Project / mobile-android | develop | 068cf1d | fix: fixed routes | – | 09/11/2025 |
+| 1ACC0238-14649-Final-Project / mobile-android | develop | d0b5987 | Merge pull request #5 from feature/my-pulls | – | 27/10/2025 |
+| 1ACC0238-14649-Final-Project / mobile-android | develop | 75cc659 | feat: Implementing user profile and logout | – | 27/10/2025 |
+| 1ACC0238-14649-Final-Project / mobile-android | develop | 60c0bcb | fix: Complete implementation and correction of API consumption | – | 27/10/2025 |
+| 1ACC0238-14649-Final-Project / mobile-flutter | develop | a098391 | Merge pull request #2 from feature/create-my-gigs-and-my-gigs | – | 13/11/2025 |
+| 1ACC0238-14649-Final-Project / mobile-flutter | develop | f1915e6 | fix(pulls): corrected pull ordering | – | 13/11/2025 |
+| 1ACC0238-14649-Final-Project / mobile-flutter | develop | 378186a | feat: add seller gigs view and detail view | – | 13/11/2025 |
+| 1ACC0238-14649-Final-Project / mobile-flutter | develop | 0e0f4d5 | Merge pull request #1 from feature/create-my-gigs-and-my-gigs | – | 09/11/2025 |
+| 1ACC0238-14649-Final-Project / mobile-flutter | develop | aa0bda2 | feat(gigs): added styles | – | 09/11/2025 |
+| 1ACC0238-14649-Final-Project / mobile-flutter | develop | f2352a9 | feat(gigs): create My Gigs and My Gigs pages with repositories, models and navigation updates | – | 09/11/2025 |
+| 1ACC0238-14649-Final-Project / mobile-flutter | develop | dc82b29 | chore: add main app logic flutter | – | 08/11/2025 |
+
 
 #### 4.2.3.4. Testing Suite Evidence for Sprint Review
 
