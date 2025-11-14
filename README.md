@@ -3732,6 +3732,7 @@ Percibe que la aplicación responde bien a sus necesidades como freelancer, pues
 
 #### **Segmento objetivo #2: Personas y Emprendimientos que buscan contratar servicios freelance**
 
+[Video Validation Interviews](https://youtu.be/9RqKgm25lHY)
 
 ### 4.3.3. Evaluaciones según heurísticas
 **SITE o APP A EVALUAR:** GIG U
@@ -3897,10 +3898,14 @@ El desarrollo de wireframes, wireflows, user flows, mock-ups y prototipos permit
 
 
 # Video App Validation
+[Video Validation](https://youtu.be/9RqKgm25lHY)
 
 # Video About the product
 
+
 # Video About the team
+<img src="imgs\VideoAboutTheTeam.png" alt="VideoAboutTheTeam" title="VideoAboutTheTeam"/>
+[Video About the team](https://youtu.be/biDwHDfnlRA)
 
 # Glosario
 
@@ -3914,3 +3919,7 @@ El desarrollo de wireframes, wireflows, user flows, mock-ups y prototipos permit
 [Figma Mobile Applications Prototyping](https://www.figma.com/proto/e9rRUYfYEnuXsDprZFbRJh/GigU-Mobile?node-id=1-807&p=f&t=2Hq2t1l8xhwXIZt4-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A1330&show-proto-sidebar=1)
 
 [API REST (Swagger - Backend)](https://gigu-backend-webapp-hzbrd3guaghphmam.canadacentral-01.azurewebsites.net/index.html)
+
+[Video About the team](https://youtu.be/biDwHDfnlRA)
+
+[Video Validation Interviews](https://youtu.be/9RqKgm25lHY)
