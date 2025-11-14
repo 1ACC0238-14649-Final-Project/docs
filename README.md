@@ -3982,6 +3982,8 @@ El uso de Flutter impulsó el aprendizaje técnico del equipo y mejoró la consi
 
 # Video About the product
 
+[Video About The Product](https://youtu.be/2lPWO1vZO2Y)
+
 
 # Video About the team
 <img src="imgs\VideoAboutTheTeam.png" alt="VideoAboutTheTeam" title="VideoAboutTheTeam"/>
@@ -4005,3 +4007,5 @@ El uso de Flutter impulsó el aprendizaje técnico del equipo y mejoró la consi
 [Video About the team](https://youtu.be/biDwHDfnlRA)
 
 [Video Validation Interviews](https://youtu.be/9RqKgm25lHY)
+
+[Video About The Product](https://youtu.be/2lPWO1vZO2Y)
