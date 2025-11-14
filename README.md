@@ -91,7 +91,7 @@ ABET – EAC - Student Outcome 7: La capacidad de adquirir y aplicar nuevos cono
     * [2.3.5. Ubiquitous Language](#235-ubiquitous-language)
   * [2.4. Requirements specification](#24-requirements-specification)
 
-    * [2.4.1. ](#241-user-stories)
+    * [2.4.1. User Stories](#241-user-stories)
     * [2.4.2. Impact Mapping](#242-impact-mapping)
     * [2.4.3. Product Backlog](#243-product-backlog)
   * [2.5. Strategic-Level Domain-Driven Design](#25-strategic-level-domain-driven-design)
