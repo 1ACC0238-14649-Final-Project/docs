@@ -3611,9 +3611,85 @@ Verificación en Trello:
 |  |  |  |  |  |  |
 
 #### 4.2.3.5. Execution Evidence for Sprint Review
+
+Todas las tareas del backlog del Sprint 3 fueron completadas dentro del periodo establecido (01 al 14 de noviembre de 2025), alcanzando una velocidad de 31 puntos, lo que representa una cobertura del 100% del backlog planeado.
+
+Evidencias de ejecución:
+
+Registro completo en la tabla de backlog (T15-T48), todas las tareas marcadas como Completed.
+Coordinación efectiva en modalidad remota.
+Participación activa de todos los miembros según sus roles asignados.
+El frontend fue actualizado.
+
 #### 4.2.3.6. Services Documentation Evidence for Sprint Review
+Para este sprint no hemos desplegado nada nuevo ya que la base de datos y el backend ya estaban desplegados 100% en Azure.
+
+
+#### Módulo Briefcase
+<img src="imgs\swagger1.png" alt="swagger1" title="swagger1"/>
+
+#### Módulo Chat
+<img src="imgs\swagger2.png" alt="swagger2" title="swagger2"/>
+
+#### Módulo Gig
+<img src="imgs\swagger3.png" alt="swagger3" title="swagger3"/>
+
+#### Módulo Pull
+<img src="imgs\swagger4.png" alt="swagger4" title="swagger4"/>
+
+#### Módulo User
+<img src="imgs\swagger5.png" alt="swagger5" title="swagger5"/>
+
+**API REST**: [https://gigu-backend-webapp-hzbrd3guaghphmam.canadacentral-01.azurewebsites.net/index.html](https://gigu-backend-webapp-hzbrd3guaghphmam.canadacentral-01.azurewebsites.net/index.html)
+
+
 #### 4.2.3.7. Software Deployment Evidence for Sprint Review
+
+En este sprint no hemos desplegado w qnada nuevo ya que la base de datos y el backend ya estaban desplegados 100% en Azure.
+
+<img src="imgs\despliegueBd1.jpeg" alt="despliegueBd1" title="despliegueBd1"/>
+
+<img src="imgs\despliegueBd2.jpeg" alt="despliegueBd2" title="despliegueBd2"/>
+
+
 #### 4.2.3.8. Team Collaboration Insights during Sprint
+
+La colaboración del equipo durante el Sprint 3 fue altamente productiva, con un enfoque en completar las funcionalidades en Android y Flutter, mejorar la usabilidad y realizar pruebas de validación con los segmentos objetivo.
+
+**Aportes clave por miembro:**
+
+* **Irving Allcca Guerrero:**
+
+  * Corrección de la pantalla de visualización del pull en Android.
+  * Desarrollo de la pantalla de visualización del pull en Flutter, implementando una interfaz consistente entre ambas plataformas.
+  * Participación activa en la grabación de la entrevista de validación, asegurando la recopilación de datos valiosos para mejorar el producto.
+
+* **Mariano Moisés Oblitas Dávila:**
+
+  * Desarrollo de las pantallas de Login y Register en Flutter, mejorando la experiencia de usuario en el acceso y registro de cuentas.
+  * Realización de correcciones en la landing page, y creación de prototipos adicionales basados en el feedback recibido.
+  * Grabación del video "About The Product", asegurando que se cubrieran todos los aspectos importantes del producto para una comunicación clara.
+
+* **Diego Alonso Cacho Seminario:**
+
+  * Desarrollo de las pantallas de Profile, mejorando la capacidad de los usuarios para gestionar su información personal y visualizar su actividad.
+  * Creación de evaluaciones basadas en heurísticas, realizando pruebas de usabilidad con usuarios y ajustando las interfaces según los hallazgos.
+  * Grabación y avance de la diapositiva para la presentación del Sprint, detallando los avances en la interfaz y las mejoras implementadas.
+
+* **Carlos Fredy Fernández Camayo:**
+
+  * Implementación de las pantallas Create Gig y My Pulls en Flutter, facilitando la creación de nuevos "gigs" y la visualización de los pull requests de los usuarios.
+  * Correcciones y mejoras en la pantalla My Pull en Android, alineando la funcionalidad con los requerimientos de diseño establecidos.
+  * Participación en la entrevista al segmento objetivo "Buyer", recibiendo comentarios directos sobre la experiencia del usuario.
+
+* **Adrián Ricardo Donayre Álvarez:**
+
+  * Mejora continua de las pantallas Gigs y Gig Detail en Android, optimizando la interfaz para una mayor facilidad de uso y navegación.
+  * Desarrollo de las pantallas My Gigs y Gig Detail en Flutter, proporcionando un flujo más intuitivo para los usuarios.
+  * Realización de entrevistas al segmento objetivo universitario, obteniendo insights valiosos para el desarrollo de nuevas funcionalidades.
+  * Validación de la funcionalidad en dispositivo móvil, asegurando que todas las pantallas y características estén funcionando correctamente.
+
+
 
 ### 4.2.4. Sprint 4
 #### 4.2.4.1. Sprint Planning 4
