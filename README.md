@@ -3660,6 +3660,48 @@ Para Mario, la aplicación es funcional, atractiva y considera que le ayudará m
 
 <img src="imgs\Seg1Entrevista1-VI.png" alt="Seg1Entrevista1-VI" title="Seg1Entrevista1-VI"/>
 
+Entrevistado N°2: María Fernanda Salazar Vega
+
+* Sexo: Femenino  
+* Edad: 30
+* Ubicación en la que vive: Lima, San Borja
+
+Acerca de la entrevista:
+
+* Instante en el que inicia: 0:03
+* Duración: 8:35
+
+Resumen:  
+Para María Fernanda, la aplicación resulta visualmente atractiva, moderna y bien organizada, con un diseño limpio que facilita la lectura y evita la saturación visual. Considera que la navegación es intuitiva y que la distribución de botones e íconos está bien pensada para uso móvil. Destaca que la app comunica claramente su propósito desde la pantalla principal, permitiéndole entender rápidamente que se trata de una plataforma para gestionar y publicar gigs.
+
+Se sintió cómoda explorando las funcionalidades, aunque mencionó una ligera confusión al diferenciar entre elementos informativos y elementos interactivos dentro de los gigs, lo cual sugiere mejorar la distinción visual entre ambos. Aun así, afirma que la aplicación responde adecuadamente a sus necesidades como consultora de marketing digital, especialmente por la facilidad para editar gigs, una tarea frecuente en su campo.
+
+Propone agregar una sección de portafolio más completa y estadísticas de visualización para potenciar el valor profesional de la app. Señala que no eliminaría ninguna función, ya que todas cumplen un rol claro. En general, usaría la aplicación porque le ofrece un canal confiable, sencillo y profesional para conectar con potenciales clientes y mostrar sus servicios.
+
+<img src="imgs\Seg1Entrevista2-VI.png" alt="Seg1Entrevista2-VI" title="Seg1Entrevista2-VI"/>
+
+Entrevistado N°3: Luis Alberto Medina Flores 
+
+* Sexo: Masculino  
+* Edad: 43
+* Ubicación en la que vive: Lima, San Borja
+
+Acerca de la entrevista:
+
+* Instante en el que inicia: 0:03
+* Duración: 8:18
+
+Resumen:  
+Para Luis Alberto, la aplicación es visualmente atractiva debido a su diseño sobrio, profesional y bien organizado, lo cual considera fundamental para quienes ofrecen servicios de consultoría. Destaca que los colores, la tipografía y la distribución de elementos transmiten orden y confianza, evitando que la interfaz se sienta cargada.
+
+Señala que el diseño es moderno y muy adecuado para su uso en dispositivos móviles, con botones claramente visibles y una estructura que facilita la lectura. Desde la pantalla principal entendió de inmediato que la app sirve para publicar servicios y conectar con clientes, lo que demuestra claridad en la propuesta de valor.
+
+Aunque tuvo una ligera duda al distinguir entre elementos informativos y elementos interactivos dentro del detalle del gig, comenta que no fue un obstáculo significativo, pero sí una oportunidad de mejora para hacer más evidente esa diferencia. En general, considera que la navegación es intuitiva, con menús simples y respuestas rápidas.
+
+Percibe que la aplicación responde bien a sus necesidades como freelancer, pues permite presentar sus servicios de manera clara y ordenada. Sugiere agregar un portafolio más amplio para fortalecer la credibilidad profesional, pero no eliminaría ninguna función existente porque todas cumplen su propósito.
+
+<img src="imgs\Seg1Entrevista3-VI.png" alt="Seg1Entrevista3-VI" title="Seg1Entrevista3-VI"/>
+
 #### **Segmento objetivo #2: Personas y Emprendimientos que buscan contratar servicios freelance**
 
 
