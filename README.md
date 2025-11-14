@@ -1,5 +1,7 @@
+<div style="margin-top: 140px;"></div>
+
 <div align="center">
-  <img src="./imgs/upc-logo.png" alt="Logo de UPC" />
+  <img src="./imgs/upc-logo.png" alt="Logo de UPC" width="120" />
 </div>
 
 ## <p align="center">Universidad Peruana de Ciencias Aplicadas</p>
@@ -15,19 +17,15 @@
 <p align="center"><strong>Startup:</strong> GigU</p>
 <p align="center"><strong>Producto:</strong> GigU</p>
 
-<!-- Nombres de integrantes -->
-<div align="center">
-
 ### Integrantes:
 
 | Nombres y Apellidos | Código |
 |----------------------|--------|
 | Allcca Guerrero, Irving Washington<br/>Cacho Seminario, Diego Alonso<br/>Donayre Alvarez, Adrian Ricardo<br/>Fernandez Camayo, Carlos Fredy<br/>Oblitas Davila, Mariano Moises | U202213241<br/>U202223990<br/>U202310187<br/>U202320083<br/>U202310222 |
 
-</div>
-
-
 <p align="center"><strong>Noviembre 2025</strong></p>
+
+<div style="page-break-before: always;"></div>
 
 # Registro de versiones del informe
 | Versión | Fecha | Autores | Descripción |
