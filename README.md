@@ -18,7 +18,7 @@
 <!-- Nombres de integrantes -->
 <div align="center">
 
-### Integrantes del equipo:
+### Integrantes:
 
 | Nombres y Apellidos | Código |
 |----------------------|--------|
@@ -34,8 +34,7 @@
 | :---- | :---- | :---- | :---- |
 | TB1 | 18/09/2025 | Irving Allcca Diego Cacho Adrian Donayre Mariano Oblitas Carlos Fernandez | Capítulo I: Presentación Capítulo II: Requirements Elicitation & Analysis Capítulo III: Requirements Specification Capítulo IV: Solution Software Design Avance de Conclusiones, Bibliografía y Anexos |
 | TP1 | 10/10/2025 | Irving Allcca Diego Cacho Adrian Donayre Mariano Oblitas Carlos Fernandez | Capítulo III: Requirements Specification Capítulo IV: Solution Software Design Avance de Conclusiones, Bibliografía y Anexos |
-
-Octubre 10, 2025
+| TB2 | 14/11/2025 | Irving Allcca Diego Cacho Adrian Donayre Mariano Oblitas Carlos Fernandez | Capítulo IV: Solution Software Design Avance de Conclusiones, Bibliografía y Anexos |
 
 
 # Student Outcomes
