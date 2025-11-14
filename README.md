@@ -3069,7 +3069,6 @@ La colaboración del equipo durante el Sprint 2 fue activa, estructurada y enfoc
 #### 4.2.4.8. Team Collaboration Insights during Sprint
 
 ## 4.3. Validation Interviews
-## 4.3. Validation Interviews
 ### 4.3.1. Diseño de Entrevistas
 #### **Segmento objetivo #1: Estudiantes Universitarios Freelancers**
 
@@ -3113,6 +3112,27 @@ La colaboración del equipo durante el Sprint 2 fue activa, estructurada y enfoc
 * ¿Recomendarías la app a otros emprendedores o personas que necesiten contratar freelancers?
 
 ### 4.3.2. Registro de Entrevistas
+
+#### **Segmento objetivo #1: Estudiantes Universitarios Freelancers**
+
+Entrevistado N°1: Mario André Cacho Seminario
+
+* Sexo: Masculino  
+* Edad: 22  
+* Ubicación en la que vive: Lima, Surco
+
+Acerca de la entrevista:
+
+* Instante en el que inicia:   
+* Duración: 5:51
+
+Resumen:  
+Para Mario, la aplicación es funcional, atractiva y considera que le ayudará mucho en su trabajo al querer realizar publicaciones más generales con el objetivo de tener un alcance mayor al público que busca. Los colores, las posiciones de los botones y el diseño le parece moderno y le agrada la posibilidad de negociar el precio.
+
+<img src="imgs\Seg1Entrevista1-VI.png" alt="Seg1Entrevista1-VI" title="Seg1Entrevista1-VI"/>
+
+#### **Segmento objetivo #2: Personas y Emprendimientos que buscan contratar servicios freelance**
+
 
 ### 4.3.3. Evaluaciones según heurísticas
 **SITE o APP A EVALUAR:** GIG U
