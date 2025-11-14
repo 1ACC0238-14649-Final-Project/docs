@@ -3905,6 +3905,8 @@ El desarrollo de wireframes, wireflows, user flows, mock-ups y prototipos permit
 
 # Video About the team
 <img src="imgs\VideoAboutTheTeam.png" alt="VideoAboutTheTeam" title="VideoAboutTheTeam"/>
+
+
 [Video About the team](https://youtu.be/biDwHDfnlRA)
 
 # Glosario
