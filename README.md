@@ -3555,11 +3555,16 @@ La colaboración del equipo durante el Sprint 2 fue activa, estructurada y enfoc
 | :---: | ----- | :---: | ----- | ----- | :---: | :---: | :---: |
 | **User Story** |  | **Work-Item / Task** |  |  |  |  |  |
 | Id | Title | Id | Title | Description | Estimation (Hours) | Assigned To | Status (To-do / In-Process / To-Review / Done) |
-|  |  |  |  |  |  |  |  |
-|  |  |  |  |  |  |  |  |
-|  |  |  |  |  |  |  |  |
-|  |  |  |  |  |  |  |  |
-|  |  |  |  |  |  |  |  |
+| **US15** | Crear perfil freelance | **T01** | Crear perfil freelance | Usuario puede crear un perfil freelance | **2** | Mariano Moises Oblitas Davila | Done |
+| **US17** | Establecer tarifas por servicio | **T02** | Establecer tarifas por servicio | Se puede establecer una tarifa fija por el servicio brindado | **3** | Carlos Fredy Fernández Camayo | Done |
+| **US18** | Subir portafolio de proyectos | **T03** | Subir portafolio de proyectos | Se pueden subir proyectos de demostración | **3** | Mariano Moises Oblitas Davila | Done |
+| **US20** | Publicar un servicio personalizado | **T04** | Publicar un servicio personalizado | El usuario puede publicar un servicio personalizado con imágenes, nombre, título, etc. | **2** | Irving Washington Allcca Guerrero | Done |
+| **US46** | Recibir sugerencia automática de precio | **T05** | Recibir sugerencia automática de precio | La aplicación calcula el precio de manera automática teniendo en cuenta el producto y los extras | **3** | Irving Washington Allcca Guerrero | Done |
+| **US47** | Ajustar manualmente el precio sugerido | **T06** | Ajustar manualmente el precio sugerido | El usuario puede ajustar manualmente el precio sugerido | **2** | Carlos Fredy Fernández Camayo | Done |
+| **US48** | Ver detalle del cálculo del precio | **T07** | Ver detalle del cálculo del precio | El usuario puede ver el detalle del cálculo del precio | **2** | Diego Alonso Cacho Seminario | Done |
+| **SP03** | Investigación de motores de búsqueda y filtros | **T08** | Investigación de motores de búsqueda y filtros | Se investigó acerca de sistemas de navegación para el desarrollo de la aplicación | **7** | Adrian Ricardo Donayre Alvarez | Done |
+| **\-** | \- | **T09** | Avance del Documento | Avance del Documento en Google Docs/Github | **5** | Everyone | Done |
+| **\-** | \- | **T10** | Organización del Código | Organización del Código del Frontend/Backend | **5** | Everyone | Done |
 
 #### 4.2.3.3. Development Evidence for Sprint Review
 
