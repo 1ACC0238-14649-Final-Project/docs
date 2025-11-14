@@ -3895,6 +3895,7 @@ El equipo logró completar de manera integral las fases de diseño UI/UX de la s
 El desarrollo de wireframes, wireflows, user flows, mock-ups y prototipos permitió traducir los requerimientos funcionales en experiencias de usuario intuitivas y centradas en las necesidades detectadas durante el proceso de Needfinding. Asimismo, se fortaleció la colaboración entre los integrantes al combinar habilidades de diseño, desarrollo y análisis de experiencia, logrando un sistema visual uniforme y una guía de estilo sólida para los siguientes sprints de implementación.
 
 * TB2:
+
 En la TB2, el equipo avanzó significativamente en la construcción de la aplicación móvil de GigU mediante Flutter, desarrollando pantallas esenciales como Login, Register, Perfil, My Gigs, Gig Detail y My Pulls. Este trabajo permitió validar los principales flujos del sistema y fortalecer conocimientos en navegación, manejo de estado y diseño multiplataforma.
 
 El uso de Flutter impulsó el aprendizaje técnico del equipo y mejoró la consistencia visual del producto. Además, la grabación del About The Product y la Validation Interview aportaron retroalimentación valiosa para refinar la experiencia de usuario. Con ello, la TB2 consolidó un producto más funcional y alineado con las necesidades del segmento freelance universitario.
