@@ -3550,6 +3550,7 @@ La colaboración del equipo durante el Sprint 2 fue activa, estructurada y enfoc
 | Sum of Story Points | \41 |
 
 #### 4.2.3.2. Sprint Backlog 3
+Se puede verificar el avance del Sprint Backlog 3 por medio de este link: https://trello.com/invite/b/6916d7af3fa0683cbcd3bf0e/ATTI03a2c7bdf7a6521475c3fc944f8edd12DD7D5CD7/backlog-gigu [https://trello.com/invite/b/6916d7af3fa0683cbcd3bf0e/ATTI03a2c7bdf7a6521475c3fc944f8edd12DD7D5CD7/backlog-gigu]
 
 | Sprint \# | Sprint 3 |  |  |  |  |  |  |
 | :---: | ----- | :---: | ----- | ----- | :---: | :---: | :---: |
@@ -3565,6 +3566,11 @@ La colaboración del equipo durante el Sprint 2 fue activa, estructurada y enfoc
 | **SP03** | Investigación de motores de búsqueda y filtros | **T08** | Investigación de motores de búsqueda y filtros | Se investigó acerca de sistemas de navegación para el desarrollo de la aplicación | **7** | Adrian Ricardo Donayre Alvarez | Done |
 | **\-** | \- | **T09** | Avance del Documento | Avance del Documento en Google Docs/Github | **5** | Everyone | Done |
 | **\-** | \- | **T10** | Organización del Código | Organización del Código del Frontend/Backend | **5** | Everyone | Done |
+
+Verificación en Trello:
+
+<img src="imgs\TrelloSprint3.png" alt="TrelloSprint3" title="TrelloSprint3"/>
+
 
 #### 4.2.3.3. Development Evidence for Sprint Review
 
