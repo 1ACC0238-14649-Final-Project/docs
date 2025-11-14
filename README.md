@@ -239,8 +239,8 @@ ABET – EAC - Student Outcome 7: La capacidad de adquirir y aplicar nuevos cono
       * [Contenido y entregables específicos del Hito (Semana 15)](#contenido-y-entregables-específicos-del-hito-semana-15)
   * [4.3. Validation Interviews](#43-validation-interviews)
 
-    * [4.3.1. Diseño de istas](#431-diseño-de-)
-    * [4.3.2. Registro de istas](#432-registro-de-)
+    * [4.3.1. Diseño de Entrevistas](#431-diseño-de-entrevistas)
+    * [4.3.2. Registro de Entrevistas](#432-registro-de-entrevistas)
     * [4.3.3. Evaluaciones según heurísticas](#433-evaluaciones-según-heurísticas)
 
 * [Conclusiones y recomendaciones](#conclusiones-y-recomendaciones)
@@ -3069,7 +3069,49 @@ La colaboración del equipo durante el Sprint 2 fue activa, estructurada y enfoc
 #### 4.2.4.8. Team Collaboration Insights during Sprint
 
 ## 4.3. Validation Interviews
+## 4.3. Validation Interviews
 ### 4.3.1. Diseño de Entrevistas
+#### **Segmento objetivo #1: Estudiantes Universitarios Freelancers**
+
+##### **Preguntas personales:**
+
+* ¿Cuál es tu nombre?
+* ¿Cuántos años tienes?
+* ¿Qué carrera estás estudiando y en qué ciclo te encuentras?
+* ¿Qué tipo de servicio ofreces como freelancer?
+* ¿Cuánto tiempo llevas trabajando como freelancer?
+
+##### **Preguntas principales:**
+
+* ¿La aplicación te pareció visualmente atractiva? ¿Por qué?
+* ¿El diseño se siente moderno y adecuado para usar en un celular?
+* ¿Te resultó fácil entender de qué trata la app desde la pantalla principal?
+* ¿Hubo alguna parte de la app que te confundió o te hizo dudar?
+* ¿Te pareció intuitiva la navegación (botones, menús, gestos)?
+* ¿Sentiste que la app responde a tus necesidades como freelancer?
+* ¿Qué funciones agregarías o eliminarías para mejorar la experiencia móvil?
+* Como freelancer, ¿usarías la aplicación? ¿Por qué sí o por qué no?
+
+#### **Segmento objetivo #2: Personas y Emprendimientos que buscan contratar servicios freelance**
+
+##### **Preguntas personales:**
+
+* ¿Cuál es tu nombre?
+* ¿Cuántos años tienes?
+* ¿Cuántos años llevas como emprendedor?
+* ¿A qué se dedica tu empresa?
+* ¿Has contratado previamente a algún freelancer?
+
+##### **Preguntas principales:**
+
+* ¿Qué opinas del diseño general de la aplicación?
+* ¿La app te inspira confianza para contratar freelancers? ¿Por qué?
+* ¿La navegación te pareció clara y sencilla desde un dispositivo móvil?
+* ¿Qué parte de la app te resultó más útil o destacada?
+* ¿Qué mejorarías en la organización del contenido o en las funciones?
+* ¿Consideras que la app brinda suficiente información para tomar una decisión de contratación?
+* ¿Recomendarías la app a otros emprendedores o personas que necesiten contratar freelancers?
+
 ### 4.3.2. Registro de Entrevistas
 
 ### 4.3.3. Evaluaciones según heurísticas
