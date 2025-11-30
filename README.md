@@ -3693,13 +3693,122 @@ La colaboración del equipo durante el Sprint 3 fue altamente productiva, con un
 
 ### 4.2.4. Sprint 4
 #### 4.2.4.1. Sprint Planning 4
+
+|              Sprint \#              |                                                                                                                                           Sprint 4                                                                                                                                            |
+|:-----------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+|   **Sprint Planning Background**    |                                                                                                                                                                                                                                                                                               |
+|                Date                 |                                                                                                                                          2025-11-24                                                                                                                                           |
+|                Time                 |                                                                                                                                            3:00 PM                                                                                                                                            |
+|              Location               |                                                                                                                                       Modalidad remota                                                                                                                                        |
+|             Prepared By             |                                                                                                                                          Equipo GigU                                                                                                                                          |
+|   Attendees (to planning meeting)   |                                                                                                                                 Todos los miembros del equipo                                                                                                                                 |
+|    Sprint 4 \- 1 Review Summary     | Para el Sprint anterior, se completo el desarrollo completo de la aplicacion en su version del entorno de Android y la implementación de un gran porcentaje de funcionalidades en el entorno Flutter, lo que permitio demostrar la interacción entre los usuarios de los segmentos objetivos. |
+| Sprint 4 \- 1 Retrospective Summary |                                                                             Respecto al Sprint anterior, logramos abarca las tareas estimadas para ese Sprint, pero consideramos que deberian aplicarse mejoras.                                                                              |
+|   **Sprint Goal & User Stories**    |                                                                                                                                                                                                                                                                                               |
+|            Sprint 4 Goal            |                            Para el Sprint 4, buscamos desarrollar la aplicacion en su totalidad en su version en el entorno de Flutter, de esta manera conectar de manera efectiva a los usuarios en una aplicacion a la que tengan acceso desde sus dispositivos.                            |
+|          Sprint 4 Velocity          |                                                                                                                                              \#                                                                                                                                               |
+|         Sum of Story Points         |                                                                                                                                              \34                                                                                                                                              |
+
+* Sprint Overview
+
+**Previous Sprint Summary:**  
+Para el Sprint 2, buscamos desarrollar y desplegar una nuestro backend y frontend funcional que cumpla con todas las historias de usuario especificadas para la interacción inicial con clientes y presentación del producto.
+
+**Sprint Goal:**  
+Para el Sprint 3, buscamos desarrollar y desplegar la aplicacion frontend en el entorno Android, con el fin de poder comprobar funcionalidades de comunicacion con la aplicacion en Flutter que se encontraba en desarrollo.
+
+**Technical Specifications:**
+
+| Aspect |                                                                    Details                                                                     |
+| :---: |:----------------------------------------------------------------------------------------------------------------------------------------------:|
+| Duration |                                                    24 de noviembre \- 30 deoctubre de 2025                                                     |
+| Team Capacity |                                                               100 horas totales                                                                |
+| Tech Stack | Android Studio, Flutter, Storage, Navigation, Hilt, Coroutines/Flow, Networking, Retrofit (stub), Sqlflite, JUnit/MockK, drift, GitHub Actions |
+| Velocity |                                                                       38                                                                       |
+| Total Story Points |                                                                       30                                                                       |
+
+
 #### 4.2.4.2. Sprint Backlog 4
+
+Se puede verificar el avance del Sprint Backlog 4 por medio de este link: https://trello.com/invite/b/6916d7af3fa0683cbcd3bf0e/ATTI03a2c7bdf7a6521475c3fc944f8edd12DD7D5CD7/backlog-gigu [https://trello.com/invite/b/6916d7af3fa0683cbcd3bf0e/ATTI03a2c7bdf7a6521475c3fc944f8edd12DD7D5CD7/backlog-gigu]
+
+|   Sprint \#    | Sprint 4                     |  |  |                                                                                                                 |                    |                                   |  |
+|:--------------:|------------------------------| :---: | ----- |-----------------------------------------------------------------------------------------------------------------|:------------------:|:---------------------------------:| :---: |
+| **User Story** |                              | **Work-Item / Task** |  |                                                                                                                 |                    |                                   |  |
+|       Id       | Title                        | Id | Title | Description                                                                                                     | Estimation (Hours) |            Assigned To            | Status (To-do / In-Process / To-Review / Done) |
+|    **US16**    | Añadir habilidades           | **T01** | Añadir habilidades y descripción personal   | El usuario puede añadir habilidades y una descripción personal para destacar sus fortalezas.                    |       **2**        |  Adrian Ricardo Donayre Alvarez   | Done |
+|    **US18**    | Subir portafolio             | **T02** | Subir portafolio de proyectos  | El usuario puede subir muestras de trabajos anteriores para demostrar su experiencia a los clientes.            |       **3**        |   Carlos Fredy Fernández Camayo   | Done |
+|    **US20**    | Publicar servicio            | **T03** | Publicar un servicio personalizado | Se pueden publicar servicios con titulo, descripcion y precio personalizado para ofrecer a potenciales clientes |       **3**        |   Mariano Moises Oblitas Davila   | Done |
+|    **US26**    | Filtrar por habilidades      | **T04** | Publicar un servicio personalizado | El usuario puede filtrar freelancers segun sus habilidades                                                      |       **2**        | Irving Washington Allcca Guerrero | Done |
+|    **US27**    | Filtrar por precios          | **T05** | Filtrar por rango de precios    | El usuario puede filtrar freelancers dentro su presupuesto                                                      |       **2**        | Irving Washington Allcca Guerrero | Done |
+|    **US44**    | Notificaciones de mensajes   | **T06** | Recibir notificación de nuevo mensaje| El usuario puede verificar cuando reciba mensajes recientes en tiempo real                                      |       **3**        |   Carlos Fredy Fernández Camayo   | Done |
+|    **US45**    | Bloquear o reportar usuarios | **T07** | Bloquear o reportar usuario desde el chat  | El usuario puede bloquear o reportar a otros usuarios si recibe mensajes inapropiados                           |       **3**        |   Diego Alonso Cacho Seminario    | Done |
+|     **\-**     | \-                           | **T09** | Avance del Documento | Avance del Documento en Google Docs/Github                                                                      |       **5**        |             Everyone              | Done |
+|     **\-**     | \-                           | **T10** | Organización del Código | Organización del Código del Frontend/Backend                                                                    |       **5**        |             Everyone              | Done |
+
+Verificación en Trello:
+
+<img src="imgs/TrelloSprint4.png" alt="TrelloSprint4" title="TrelloSprint4"/>
+
+
 #### 4.2.4.3. Development Evidence for Sprint Review
+
+| Repository                                    | Branch                        | Commit ID | Commit Message                                                                                | Commit Message Body | Committed on (Date) |
+|-----------------------------------------------|-------------------------------|-----------|-----------------------------------------------------------------------------------------------|----------------------|---------------------|
+| 1ACC0238-14649-Final-Project / mobile-flutter | chore/1-add-main-app-logic    | dc82b29fb054be360152592d01047c41b0bab2b4 | chore: add main app logic flutter                                                             | – | 08/11/2025          |
+| 1ACC0238-14649-Final-Project / mobile-flutter | chore/1-add-main-app-logic    | f2352a9175087796653d34d7e594f3b63b04e5a5 | feat(gigs): create My Gigs and My Gigs pages with repositories, models and navigation updates | – | 09/11/2025          |
+| 1ACC0238-14649-Final-Project / mobile-flutter | chore/1-add-main-app-logic    | aa0bda2029e44a14f4bfbd6ce54e1e07bbdf2484 | feat(gigs): added styles                                                                      | – | 09/11/2025          |
+| 1ACC0238-14649-Final-Project / mobile-flutter | chore/1-add-main-app-logic    | 0e0f4d549f095a293c4a607c62d82421df20bfae | Merge pull request #1 from 1ACC0238-14649-Final-Project/feature/create-my-gigs-and-my-gigs    | – | 09/11/2025          |
+| 1ACC0238-14649-Final-Project / mobile-flutter | chore/1-add-main-app-logic    | 378186a169f3a1462b40f15055f1ed8609196f90 | feat: add seller gigs view and detail view                                                    | – | 13/11/2025          |
+| 1ACC0238-14649-Final-Project / mobile-flutter | chore/1-add-main-app-logic    | f1915e6a6c7cea5c3a893e9837d6f566ccb2f000 | feat(pulls): Corrected pull ordering                                                          | – | 13/11/2025          |
+| 1ACC0238-14649-Final-Project / mobile-flutter | chore/1-add-main-app-logic    | a098391948d94061a7a94e3468fb34efd5884357 | Merge pull request #2 from 1ACC0238-14649-Final-Project/feature/create-my-gigs-and-my-gigs    | – | 13/11/2025          |
+| 1ACC0238-14649-Final-Project / mobile-flutter | chore/1-add-main-app-logic    | 23d3e8debc4b7b6c7d7e9f8f97b2370411020434 | fix: states of pulls                                                                          | – | 14/11/2025          |
+
+
 #### 4.2.4.4. Testing Suite Evidence for Sprint Review
 #### 4.2.4.5. Execution Evidence for Sprint Review
+
+Para el desarrollo del Sprint, se implemento las pantallas principales en el entorno Flutter como seller-my-gigs, seller-gig-detail, seller-create-gig, seller-gig-extras, seller-my-pulls, seller-pull-detail, seller-account.
+Asimismo se desarrollo el sign-in y sign-up de manera adecuada, garantizando el acceso de los usuarios a la plataforma.
+
+<img src="imgs/Evidence1-sprint4.png" alt="Evidence1" title="Evidence1"/>
+<img src="imgs/Evidence2-sprint4.png" alt="Evidence2" title="Evidence2"/>
+<img src="imgs/Evidence3-sprint4.png" alt="Evidence3" title="Evidence3"/>
+<img src="imgs/Evidence4-sprint4.png" alt="Evidence4" title="Evidence4"/>
+<img src="imgs/Evidence5-sprint4.png" alt="Evidence5" title="Evidence5"/>
+<img src="imgs/Evidence6-sprint4.png" alt="Evidence6" title="Evidence6"/>
+<img src="imgs/Evidence7-sprint4.png" alt="Evidence7" title="Evidence7"/>
+<img src="imgs/Evidence8-sprint4.png" alt="Evidence8" title="Evidence8"/>
+<img src="imgs/Evidence9-sprint4.png" alt="Evidence9" title="Evidence9"/>
+
+
+
 #### 4.2.4.6. Services Documentation Evidence for Sprint Review
+
+Para este Sprint no se realizaron cambios en el servicio de backend desplegado, ya que los endpoints se encuentran desde el primer despliegue.
+Cabe recordadr que el despliegue del backend se realizo en Azure.
+
+#### Módulo Briefcase
+<img src="imgs/swagger1.png" alt="swagger1" title="swagger1"/>
+
+#### Módulo Chat
+<img src="imgs/swagger2.png" alt="swagger2" title="swagger2"/>
+
+#### Módulo Gig
+<img src="imgs/swagger3.png" alt="swagger3" title="swagger3"/>
+
+#### Módulo Pull
+<img src="imgs/swagger4.png" alt="swagger4" title="swagger4"/>
+
+#### Módulo User
+<img src="imgs/swagger5.png" alt="swagger5" title="swagger5"/>
+
+**API REST**: [https://gigu-backend-webapp-hzbrd3guaghphmam.canadacentral-01.azurewebsites.net/index.html](https://gigu-backend-webapp-hzbrd3guaghphmam.canadacentral-01.azurewebsites.net/index.html)
+
+
 #### 4.2.4.7. Software Deployment Evidence for Sprint Review
 #### 4.2.4.8. Team Collaboration Insights during Sprint
+
 
 ## 4.3. Validation Interviews
 ### 4.3.1. Diseño de Entrevistas
