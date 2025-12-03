@@ -4110,7 +4110,13 @@ Finalmente, en esta entrega corregimos errores y problemas que tuvimos en la TB2
 # Glosario
 
 # Bibliografía
+Kuron, L., Paquette, S., & Taskin, L. (2024). University Students in the Gig Economy: Employment Strategies, Motivations, and Learning Outcomes. Journal of Vocational Behavior, 148, 103955.
 
+Sharma, A., & Yadav, R. (2024). Cross-Platform Mobile Application Development Using Flutter: A Performance and Usability Assessment. Mobile Information Systems, 2024, 1–15.
+
+Liu, T., & Park, J. (2023). Mobile UX Design Patterns and Their Impact on User Engagement: An Empirical Study. International Journal of Human–Computer Interaction, 39(10), 1950–1965.
+
+Zhou, Y., Wu, J., & Chen, X. (2023). Building Trust in Online Freelance Marketplaces: A Systematic Review and Future Research Agenda. Internet Research, 33(7), 2256–2281.
 
 # Anexos
 
