@@ -3809,7 +3809,64 @@ Cabe recordadr que el despliegue del backend se realizo en Azure.
 
 
 #### 4.2.4.7. Software Deployment Evidence for Sprint Review
+
+Durante el Sprint Final, el equipo consolidó los avances de todo el ciclo previo mediante el despliegue funcional del sistema en sus dos plataformas principales (Android y Flutter). Se integraron las correcciones finales, y los flujos actualizados.
+
+El proceso de despliegue demostró la capacidad del equipo para preparar versiones estables del producto, configurar los entornos de distribución correspondientes y validar su funcionamiento de manera colaborativa.
+
+**Aportes clave por miembro:**
+
+* **Irving Allcca Guerrero:**
+  * Aplicación de correcciones finales en el flujo de pulls en Android, asegurando su estabilidad antes del despliegue.
+  * Implementación del flujo de consolidación del pull en Flutter, integrando validación, navegación y ajustes de UI antes del build final.
+  * Colaboración en la preparación de la presentación y grabación del video, asegurando claridad técnica en el funcionamiento de la app desplegada.
+
+* **Mariano Moisés Oblitas Dávila:**
+  * Corrección y actualización de documentación técnica previa al despliegue, asegurando que los cambios finales estuvieran reflejados en el reporte.
+  * Desarrollo del Sprint Documentation para la presentación final, alineando los entregables con la versión desplegada.
+  * Grabación y avance de diapositivas con evidencia de funcionamiento en ambos entornos (Android y Flutter), demostrando consistencia en las builds generadas.
+
+* **Diego Alonso Cacho Seminario:**
+  * Documentación detallada de las secciones Android/Flutter incluidas en el build final, garantizando trazabilidad entre código y entregables.
+  * Corrección del reporte final para reflejar las mejoras incorporadas durante los últimos ajustes previos al despliegue.
+  * Grabación y armado de diapositivas que muestran evidencia del funcionamiento del producto en sus versiones distribuidas.
+
+* **Carlos Fredy Fernández Camayo:**
+  * Implementación del **deploy final para Android y Flutter**, gestionando la generación de builds estables listas para presentación.
+  * Ajustes finales en la configuración de distribución, asegurando compatibilidad y correcto funcionamiento en dispositivos reales.
+  * Participación en la elaboración y grabación de contenido para la presentación, validando visualmente el despliegue del sistema.
+
+* **Adrián Ricardo Donayre Álvarez:**
+  * Realización de pruebas de funcionalidades en las versiones desplegadas de ambas plataformas, asegurando que los flujos críticos funcionen adecuadamente.
+  * Recopilación y organización de bibliografía técnica que respalda el enfoque utilizado, incorporándola como evidencia en el entregable final.
+  * Grabación y avance de diapositivas con evidencia de validación de las builds finales, verificando que el despliegue cumpla con los criterios del Sprint Review.
+
+
+Para este sprint se busco que la aplicacion de Gigu se encuentre distribuida en su version con el entorno Fluter y Android,
+esto mediante Firebase.
+
+- Primero se creo el proyecto en firebase
+<img src="imgs/deploy1.png" alt="deploy1" title="deploy1"/>
+- Se implemento el archivo de configuracion del apk
+<img src="imgs/deploy3.png" alt="deploy3" title="deploy3"/>
+- Se genera el apk
+<img src="imgs/deploy4.png" alt="deploy4" title="deploy4"/>
+- Se distribuye en la aplicacion y se asigna testers
+<img src="imgs/deploy2.png" alt="deploy2" title="deploy2"/>
+
+- Se crea el proyecto de flutter en firebase 
+<img src="imgs/deploy6.png" alt="deploy6" title="deploy6"/>
+- Se implementa el archivo de configuracion del apk
+<img src="imgs/deploy7.png" alt="deploy7" title="deploy7"/>
+-Se configura el entorno de android para la distribucion en firebase
+<img src="imgs/deploy8.png" alt="deploy8" title="deploy8"/>
+-Se distribuye en firebase y se asignan testers
+- 
+<img src="imgs/deploy5.png" alt="deploy5" title="deploy5"/>
 #### 4.2.4.8. Team Collaboration Insights during Sprint
+
+
+
 
 
 ## 4.3. Validation Interviews
