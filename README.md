@@ -4088,7 +4088,9 @@ El uso de Flutter impulsó el aprendizaje técnico del equipo y mejoró la consi
 
 * TF:
 
-Para el TF, 
+Para el TF, se finalizo con la versión completa de la aplicación de GigU, se desarrollaron los últimos puntos y se incluyo un nuevo servicio para mejorar la experiencia del usuario. Como entrega final, consideramos que GigU logro convertirse en una aplicación robusta capaz de resolver con la problematica incial planteada. Respecto a las tecnologías implementadas, se realizó la distribución de la aplicación mediante Firebase App Distribution, lo que nos permite a nosotros y a nuestros potenciales usuarios utilizar GigU como una herramienta de trabajo para los Frelancers y empresas que buscan servicios.
+
+Finalmente, en esta entrega corregimos errores y problemas que tuvimos en la TB2, organizamos nuestras ideas y logramos desarrollar la versión mas cercana a nuestra visión original de GigU.
 
 
 # Video App Validation
