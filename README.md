@@ -13,15 +13,15 @@
 <p align="center"><strong>Docente:</strong> David Gerardo Quevedo Velasco</p>
 
 
-# <p align="center">Informe del TF</p>
+# <p align="center">Informe del Trabajo Final</p>
 <p align="center"><strong>Startup:</strong> GigU</p>
 <p align="center"><strong>Producto:</strong> GigU</p>
 
 ### Integrantes:
 
-| Nombres y Apellidos | Código |
+| Código | Nombres y Apellidos |
 |----------------------|--------|
-| Allcca Guerrero, Irving Washington<br/>Cacho Seminario, Diego Alonso<br/>Donayre Alvarez, Adrian Ricardo<br/>Fernandez Camayo, Carlos Fredy<br/>Oblitas Davila, Mariano Moises | U202213241<br/>U202223990<br/>U202310187<br/>U202320083<br/>U202310222 |
+| U202213241<br/>U202223990<br/>U202310187<br/>U202320083<br/>U202310222 | Allcca Guerrero, Irving Washington<br/>Cacho Seminario, Diego Alonso<br/>Donayre Alvarez, Adrian Ricardo<br/>Fernandez Camayo, Carlos Fredy<br/>Oblitas Davila, Mariano Moises |
 
 <p align="center"><strong>Diciembre 2025</strong></p>
 
